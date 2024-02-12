@@ -1,0 +1,6 @@
+{
+  "name": "MiniCartContainer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MiniCartContainer.js"
+}

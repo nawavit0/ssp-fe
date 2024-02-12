@@ -1,0 +1,15 @@
+{
+  "th_TH": {
+    "title": "สมัครสมาชิกสำเร็จ",
+    "subTitle": "ยินดีต้อนรับเข้าสู่เว็บไซต์ Supersports",
+    "message": "คุณกำลังจะเข้าสู่หน้าหลักใน 3 วินาที",
+    "toProducts": "กลับไปหน้าซื้อสินค้า",
+    "toHomepage": "ช้อปต่อ"
+  },
+  "en_US": {
+    "title": "Registration successful",
+    "subTitle": "Your account has been successfully registered.",
+    "message": "You will be redirected to Home page in 3 seconds",
+    "toHomepage": "Continue Shopping"
+  }
+}

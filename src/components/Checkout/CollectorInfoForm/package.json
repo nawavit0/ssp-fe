@@ -1,0 +1,6 @@
+{
+  "name": "CollectorInfoForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CollectorInfoForm.js"
+}

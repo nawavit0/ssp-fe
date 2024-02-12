@@ -1,0 +1,406 @@
+@import '../../styles/mixins/media';
+@import '../../styles/variables.scss';
+
+.wrapper {
+  transition: transform 0.5s;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px $gray-icon-disabled;
+}
+
+.root {
+  z-index: 0;
+  position: relative;
+  perspective: 1000px;
+
+  &.flipped {
+    .flipper {
+      transform: rotateY(180deg);
+      box-shadow: 0 0 10px $white-dark;
+
+      .buttonGroup {
+        display: flex;
+        visibility: visible;
+      }
+
+      .additionContent {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobileItem{
+  @include desktop{
+    display: none;
+  }
+}
+
+.desktopItem{
+  @include tablet-vertical{
+    display: none !important;
+  }
+}
+
+.flipper {
+  transition: transform 0.5s, box-shadow 0.2s;
+  transform-style: preserve-3d;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 0 10px $white-dark;
+    cursor: pointer;
+  }
+}
+
+.additionContent {
+  display: none;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  justify-content: center;
+  height: 40px;
+  overflow: hidden;
+  padding: 0 24px;
+
+  &.show {
+    display: flex;
+
+    @include tablet-vertical {
+      display: none;
+    }
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  margin: 4px -5px 0;
+  overflow: hidden;
+
+  // @include tablet-vertical {
+  //   display: none !important;
+  // }
+
+  .button {
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid $silver;
+    flex: 1;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-evenly;
+    margin: 0 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 0 4px;
+    @include tablet-vertical{
+      margin: 0 10px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .icon {
+    position: relative;
+  }
+
+  .icon_heart {
+    position: relative;
+    font-size: 18px;
+  }
+
+  .icon_heart_active {
+    position: relative;
+  }
+
+  .forward {
+    position: relative;
+    top: -1px;
+  }
+
+  .searchIcon {
+    position: relative;
+    span {
+      position: absolute;
+      left: 6px;
+      top: 0;
+      font-size: 10px;
+    }
+  }
+}
+
+.contentHoverAble {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .colorCount {
+    display: none;
+    color: $gray-light;
+
+    @include tablet-vertical {
+      display: flex;
+    }
+  }
+
+  &:hover {
+    & + .additionContent {
+      display: none;
+    }
+
+    .buttonGroup {
+      display: flex;
+      visibility: visible;
+    }
+  }
+}
+
+.content {
+  padding: 10px;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+
+  @include tablet-vertical {
+    padding: 0;
+  }
+}
+
+.productDetails {
+  position: relative;
+
+  @include tablet-vertical {
+    padding: 0;
+  }
+
+  .brand {
+    font-size: 14px;
+    height: 20px;
+    font-weight: bold;
+    @include tablet-vertical{
+      height: auto;
+      padding-top: 29px;
+    }
+  }
+
+  .name {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $blue-zodiac;
+    white-space: normal;
+    max-width: 90%;
+    @include tablet-vertical{
+      height: 38px;
+    }
+  }
+
+  .star {
+    height: 22px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+}
+
+.priceContainer {
+  height: 46px;
+}
+
+.notifyme {
+  margin-bottom: 8px;
+}
+
+.firstReview {
+  color: $silver-2;
+  text-decoration: underline;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:hover {
+    color: $gray-main-dark;
+  }
+}
+
+.imageWrapper {
+  display: block;
+  justify-content: center;
+  padding: 0 10px 0 0;
+  margin-bottom: 7px;
+
+  @include tablet-vertical {
+    padding: 0;
+    margin: 10px;
+  }
+
+  .promoBadge {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .imageBox {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    @include desktop{
+      padding-bottom: 125%;
+      height: 0;
+    }
+    
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  .noImage {
+    background: $white-snow;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: $gray-lighter;
+    font-weight: bold;
+  }
+
+  .additionBadge {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $white-base;
+    text-align: center;
+    line-height: 32px;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.backfaceContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 26px;
+  backface-visibility: hidden;
+
+  .backfaceDetail {
+    .brand {
+      font-size: 14px;
+      height: 20px;
+      font-weight: bold;
+    }
+
+    .name {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      height: 42px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $blue-zodiac;
+      white-space: normal;
+    }
+
+    .star {
+      height: 22px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .priceContainer {
+      height: 46px;
+
+      .price {
+        height: 26px;
+      }
+    }
+  }
+
+  .buttonGroup {
+    visibility: visible;
+    display: flex;
+  }
+}
+
+.errorMessage {
+  color: $red-base;
+  font-size: 13px;
+  margin-bottom: 14px;
+  @include tablet-vertical{
+    padding-left: 0;
+  }
+}
+
+.addToCartWrapper {
+  width: 100%;
+  margin: 0 0 10px 0;
+  @include tablet-vertical{
+    margin: 0 10px 10px 10px;
+  }
+
+  &.desktop{
+    display: block;
+    @include tablet-vertical {
+      display: none;
+    }
+  }
+  &.mobile{
+    display: none;
+    @include tablet-vertical {
+      display: block;
+    }
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  position: absolute;
+  right: 0;
+  top: -7px;
+  cursor: pointer;
+  z-index: 999;
+  width: 25px;
+}
+
+.specialPriceClassname{
+  color: $red-base !important;
+}
+
+div.fontSizeForPrice{
+  font-size: 16px !important;
+}

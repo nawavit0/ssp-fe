@@ -1,0 +1,4 @@
+export default {
+  SET_PAGE_NAME: 'SET_PAGE_NAME',
+  SET_PRODUCT_SKU: 'SET_PRODUCT_SKU',
+};

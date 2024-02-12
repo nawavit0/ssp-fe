@@ -1,0 +1,51 @@
+@import '../../../styles/mixins/media';
+
+.paymentDetail {
+  align-self: center;
+
+  @include tablet-vertical {
+    display: flex;
+  }
+}
+
+.paymentImg {
+  display: block;
+  margin: 0 auto 5px;
+
+  @include tablet-vertical {
+    padding: 0 5px;
+    margin: 0 10px 0 0;
+  }
+
+  @include tablet-vertical {
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  &.samsung {
+    width: 36px;
+
+    @include tablet-vertical {
+      width: 26px;
+      align-self: center;
+    }
+  }
+
+  &.line {
+    @include tablet-vertical {
+      width: 40px;
+      align-self: center;
+    }
+  }
+}
+
+.paymentMethodTitle {
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+
+  @include tablet-vertical {
+    align-self: center;
+  }
+}

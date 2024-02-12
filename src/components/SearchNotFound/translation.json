@@ -1,0 +1,16 @@
+{
+  "th_TH": {
+    "description": "ขออภัย, ไม่พบสินค้าที่ต้องการค้นหา <br/><br/><b>คำแนะนำในการค้นหา:</b><br/><ul><li>ตรวจสอบการสะกดคำค้นหาของคุณ</li><li>กรอกคำค้นหาให้น้อยลง</li><li>ใช้คำหลักทั่วไปในการค้นหา</li></ul>",
+    "search_placeholder": "คุณกำลังมองหาอะไร?",
+    "shop_by_brand": "เลือกสินค้า ตามแบรนด์",
+    "shop": "เลือกสินค้า",
+    "assistants_text": "ไม่พบสิ่งที่คุณต้องการใช่ไหม? <br/>คุณจะได้รับความช่วยเหลือใน <br/>"
+  },
+  "en_US": {
+    "description": "Sorry, we couldn't find anything to match your search. <br/><br/><b>Search Tips:</b><br/><ul><li>Double check your spelling</li><li>Use fewer keywords</li><li>Use more general keywords</li></ul>",
+    "search_placeholder": "What are you looking for?",
+    "shop_by_brand": "Shop by Brand A-Z",
+    "shop": "SHOP",
+    "assistants_text": "Did not find what you are looking for? <br/>Our assistants will be pleased to help you in <br>"
+  }
+}

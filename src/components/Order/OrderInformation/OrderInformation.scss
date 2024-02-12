@@ -1,0 +1,58 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/media';
+
+.root {
+  .mainTitle {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 14px;
+
+    @include tablet-vertical {
+      display: flex;
+      line-height: 50px;
+      padding: 0 10px;
+      font-size: 14px;
+      font-weight: bold;
+      background: #efefef;
+    }
+
+    .btnClose {
+      background-color: transparent;
+      flex: 50% 1;
+      justify-content: flex-end;
+      margin-right: -10px;
+
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+
+  .infoRow {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 14px 0;
+
+    @include tablet-vertical {
+      padding: 0 16px 0 10px;
+    }
+
+    .left {
+      color: $gray-nobel;
+      min-width: 100px;
+    }
+
+    .right {
+      color: $gray-base;
+      text-align: right;
+      word-break: break-word;
+    }
+  }
+}
+
+@media print {
+  .btnClose {
+    display: none;
+  }
+}

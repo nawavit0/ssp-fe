@@ -1,0 +1,183 @@
+@import '../../../styles/variables.scss';
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: $red-base;
+}
+
+.promocode {
+  padding-left: 12px;
+}
+
+.promocodeWrapper {
+  height: 42px;
+}
+
+.applyPromocode {
+  border-left: 1px solid $red-base;
+  color: $white-base;
+  background-color: $red-base;
+  width: 100px;
+  height: 100%;
+}
+
+.giftcard {
+  border: 1px solid $grey-color-light;
+  border-radius: 5px;
+  margin-top: 20px;
+
+  .header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 5px 15px;
+
+    .left {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+
+      .logoT1C {
+        margin: 0 15px 0 0;
+      }
+
+      .statusT1C {
+        display: flex;
+        align-items: center;
+
+        .iconUseT1C {
+          width: 24px;
+          margin: 0 5px 0 15px;
+        }
+
+        .label {
+          color: $green-light;
+          font-weight: 400;
+          font-size: 15px;
+        }
+      }
+
+      .openT1Form {
+        color: $blue-light;
+        margin: 15px;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        background: none;
+      }
+
+      .openT1Form:focus {
+        outline: none;
+      }
+    }
+
+    .right {
+      align-self: center;
+      color: $medium-blue;
+      font-size: 16px;
+
+      .iconAdd {
+        width: 32px;
+        cursor: pointer;
+      }
+
+      .btnCancel {
+        margin: 0 15px;
+        cursor: pointer;
+      }
+
+      .btnEdit {
+        margin: 0 20px 0 10px;
+        cursor: pointer;
+      }
+
+      .iconClose {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content {
+    background-color: $white-base;
+    padding: 5px 15px;
+
+    .formGroupLogin {
+      display: flex;
+      flex-flow: column;
+
+      .formGroup {
+        width: 50%;
+        padding: 10px 0;
+
+        input {
+          height: 36px;
+        }
+      }
+    }
+
+    .formGroupT1CPoint {
+      padding: 10px 0;
+
+      .formTitle {
+        display: block;
+        font-size: 16px;
+        color: $gray-base;
+        margin: 0 0 15px 0;
+      }
+
+      .colorBlue {
+        margin: 0 5px;
+        font-weight: bold;
+        color: $blue-base;
+      }
+
+      .formInput {
+        display: flex;
+        align-items: center;
+
+        .labelAs {
+          margin: 10px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .forgotPassword {
+      color: $gray-base;
+      margin: 20px 0 0 0;
+      font-size: 14px;
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .connectT1CButton,
+    .useT1CPointButton {
+      margin: 10px 0;
+      display: block;
+      color: white;
+      width: 50%;
+      height: 45px;
+      border-radius: 3px;
+      background-color: $red-base;
+      border: solid 1px $red-base;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .connectT1CButton:disabled,
+    .useT1CPointButton:disabled {
+      opacity: 0.5;
+    }
+
+    .useT1CPointButton {
+      width: 150px;
+      height: 35px;
+      margin-left: 35px;
+    }
+  }
+}

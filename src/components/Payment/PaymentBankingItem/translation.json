@@ -1,0 +1,32 @@
+{
+  "th_TH": {
+    "kbank": "ธนาคารกสิกรไทย",
+    "scb": "ธนาคารไทยพาณิชย์",
+    "bay": "ธนาคารกรุงศรี",
+    "bbl": "ธนาคารกรุงเทพ",
+    "ktb": "ธนาคารกรุงไทย",
+    "tmb": "ธนาคารทหารไทย",
+    "uob": "ธนาคารยูโอบี",
+    "tbank": "ธนาคารธนชาติ",
+    "cimb": "ธนาคารซีไอเอ็มบีไทย",
+    "other": "ธนาคารอื่น",
+    "cash": "เงินสด",
+    "creditcard": "บัตรเครดิต",
+    "otherBank": "ธนาคารอื่นๆ"
+  },
+  "en_US": {
+    "kbank": "Kasikorn Bank",
+    "scb": "Siam Commercial Bank",
+    "bay": "Bank of Ayutthaya",
+    "bbl": "Bangkok Bank",
+    "ktb": "Krung Thai Bank",
+    "tmb": "TMB Bank",
+    "uob": "United Overseas Bank",
+    "tbank": "Thanachart Bank",
+    "cimb": "CIMB Thai Bank",
+    "other": "Other Bank",
+    "cash": "Cash",
+    "creditcard": "Credit Card",
+    "otherBank": "Other Banks"
+  }
+}

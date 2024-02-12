@@ -1,0 +1,190 @@
+@import '../../styles/mixins/media';
+
+.Container {
+  background: #F8F8F8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @keyframes pulse {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: -135% 0%;
+    }
+  }
+
+  &.isShow {
+    transition: opacity 0.2s linear;
+  }
+
+  .LineContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-90deg, #DDDDDD 0%, #F5F5F5 50%, #DDDDDD 100%);
+    animation: pulse 1.2s linear infinite;
+    background-size: 400% 400%;
+  }
+
+  &.Content {
+    background: linear-gradient(-90deg, #DDDDDD 0%, #F5F5F5 50%, #DDDDDD 100%);
+    animation: pulse 1.2s linear infinite;
+    background-size: 400% 400%;
+    .ContentContainer {
+      border: 15px solid white;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .Paragraph {
+      width: 100%;
+      margin-top: 10px;
+      height: 10px;
+      background: white;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '';
+        top: -10px;
+        right: 0;
+        background: white;
+        height: 100%;
+      }
+
+      &:nth-child(1) {
+        &:after {
+          width: 50%;
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          width: 25%;
+        }
+      }
+    }
+  }
+
+  &.Product {
+    z-index: 100;
+    background: white;
+  }
+
+  .ProductContent {
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    overflow: hidden;
+
+    @include tablet-vertical {
+      padding: 0;
+      .WrapperDetail {
+        &:after {
+          bottom: -50px;
+        }
+      }
+      .Detail {
+        height: 10px;
+        margin-top: 10px;
+      }
+    }
+
+    .Wrapper {
+      background: linear-gradient(-90deg, #DDDDDD 0%, #F5F5F5 50%, #DDDDDD 100%);
+      animation: pulse 1.2s linear infinite;
+      background-size: 400% 400%;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      border: 15px solid white;
+    }
+    .Image,
+    .WrapperDetail {
+      background: transparent;
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+
+    .Image {
+      top: 0;
+      background: transparent;
+      height: 60%;
+    }
+
+    .WrapperDetail {
+      top: 60%;
+      height: 40%;
+      border-top: 15px solid white;
+      &:after {
+        content: '';
+        position: absolute;
+        background:white;
+        bottom: -75px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .Detail {
+      width: 100%;
+      height: 15px;
+      background: white;
+      margin-top: 15px;
+      position: relative;
+      &:after {
+        content: ' ';
+        position: absolute;
+        top: -100%;
+        right: 0;
+        background: white;
+
+        z-index: 1;
+        height: 100%;
+      }
+      &:nth-child(1) {
+        &:after {
+          width: 50%;
+        }
+      }
+
+      &:nth-child(2) {
+        &:after {
+          width: 25%;
+        }
+      }
+
+    }
+
+  }
+}
+.filterBoxContent{
+  background: #F8F8F8;
+  width: 100%;
+  height: 100%;
+  @keyframes pulse {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: -135% 0%;
+    }
+  }
+  &.isShow {
+    transition: opacity 0.2s linear;
+  }
+}
+

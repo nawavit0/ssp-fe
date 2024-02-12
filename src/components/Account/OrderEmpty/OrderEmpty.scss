@@ -1,0 +1,76 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+.root {
+  text-align: center;
+  .imageEmpty {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    @include tablet-vertical {
+      margin-top: 45px;
+      margin-bottom: 10px;
+    }
+  }
+  .label1 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    @include tablet-vertical {
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      margin-bottom: 5px;
+    }
+  }
+  .label2 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    margin-bottom: 30px;
+  }
+  .button {
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 9px;
+    width: 220px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: $red-base;
+    border: solid 1px $red-base;
+    @include tablet-vertical {
+      width: auto;
+      height: 36px;
+    }
+    &:hover {
+      background-color: darken($red-base, 7%);
+      transition: 0.3s;
+    }
+    .buttonLayer {
+      display: block;
+      height: 22px;
+      font-size: 14px;
+      font-weight: bold;
+      margin: auto;
+      color: $white-base;
+      text-align: center;
+      @include tablet-vertical {
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+      }
+    }
+  }
+}

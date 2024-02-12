@@ -1,0 +1,32 @@
+@import '../../styles/mixins/media';
+@import '../../styles/mixins/utils';
+@import '../../styles/variables';
+
+.StoreContainer {
+  .ListStores {
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    @include mobile() {
+      max-height: 230px;
+    }
+  }
+
+  .ContainerFilter {
+    margin-bottom: 10px;
+    .InputFilter {
+      height: 36px;
+      width: 100%;
+      padding: 6px;
+      margin-top: 10px;
+      border: 1px solid #e4e4e4;
+      &:focus {
+        outline: none;
+        border: 1px solid #aaa;
+        transition: border 0.2s;
+      }
+    }
+  }
+}

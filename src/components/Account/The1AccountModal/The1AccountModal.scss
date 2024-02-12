@@ -1,0 +1,126 @@
+@import '../../../styles/mixins/media.scss';
+@import '../../../styles/variables';
+
+.error {
+  color: $red-base;
+}
+
+.root {
+  max-width: 442px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+
+  @include tablet-vertical {
+    width: auto !important;
+    top: 50% !important;
+    right: 16px;
+    left: 16px !important;
+    bottom: auto !important;
+    transform: translate(0, -50%) !important;
+    padding: 10px;
+  }
+
+  .modalHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include tablet-vertical {
+      flex-direction: column;
+      padding: 10px 0 20px;
+    }
+
+    .title {
+      align-self: center;
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: bold;
+
+      @include tablet-vertical {
+        padding: 10px 0 0;
+      }
+    }
+  }
+
+  .modalFooter {
+    width: 100%;
+    text-align: right;
+  }
+
+  .modalBody {
+    @include desktop {
+      padding: 22px 64px 47px 65px;
+    }
+
+    @include tablet-vertical {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 13px 0;
+      padding-bottom: 14px;
+      overflow: auto;
+    }
+    .formGroupLogin {
+      .formGroup {
+        padding: 10px 0;
+
+        @include tablet-vertical {
+          width: 100%;
+        }
+
+        input {
+          height: 36px;
+        }
+
+        label {
+          font-size: 12px;
+          padding: 6px 0;
+        }
+      }
+
+      .forgotPassword {
+        color: $gray-nobel;
+        display: flex;
+        justify-content: center;
+        padding: 6px 0;
+        font-size: 13px;
+      }
+
+      .connectT1CButton {
+        margin: 10px 0;
+        display: block;
+        color: white;
+        width: 100%;
+        height: 36px;
+        background-color: $red-base;
+        border: solid 1px $red-base;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .labelNoAccountT1 {
+        font-size: 14px;
+        line-height: 1.36;
+        color: $gray-nobel;
+        padding: 19px 0 3px 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .linkRegisterT1 {
+        font-size: 13px;
+        color: $blue-light;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.headerWrapper {
+  @include tablet-vertical {
+    display: flex !important;
+    flex-direction: column;
+    background-color: $white-base !important;
+    height: auto !important;
+  }
+}

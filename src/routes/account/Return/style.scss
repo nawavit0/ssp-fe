@@ -1,0 +1,77 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+
+.root {
+  .AccountHeader {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .AccountTitle {
+      font-size: 28px;
+      color: $gray-base;
+      font-weight: bold;
+
+      @include tablet-vertical {
+        display: none;
+      }
+    }
+
+    .addNewAddBtn {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+      color: $blue-light;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .accountContent {
+    padding: 30px 20px;
+    border: 1px solid $gray-icon-disabled;
+  }
+
+  .accountMiniTitle {
+    font-weight: bold;
+    font-size: 14px;
+    color: $gray-base;
+    margin-bottom: 24px;
+  }
+
+  .accountForm {
+    max-width: 665px;
+  }
+
+  .formButton {
+    display: flex;
+    margin: 0 -15px;
+
+    @include tablet-vertical {
+      flex-direction: column;
+    }
+
+    .submit {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 44px;
+
+      @include tablet-vertical {
+        margin-bottom: 15px;
+      }
+    }
+
+    .discard {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 36px;
+      font-weight: bold;
+    }
+  }
+
+  .downloadBtn {
+    line-height: 42px;
+    max-width: 300px;
+  }
+}

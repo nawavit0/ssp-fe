@@ -1,0 +1,20 @@
+@import '../../styles/mixins/media';
+@import '../../styles/mixins/sizes';
+
+.col {
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+}
+
+@include desktop {
+  @include x-sizes(lg);
+}
+
+@include tablet {
+  @include x-sizes(md);
+}
+
+@include tablet-vertical {
+  @include x-sizes(sm);
+}

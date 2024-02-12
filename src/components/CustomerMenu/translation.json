@@ -1,0 +1,16 @@
+{
+  "th_TH": {
+    "my_account": "บัญชีของฉัน",
+    "my_orders": "การสั่งซื้อของฉัน",
+    "return_and_exchange": "คืนสินค้า/คืนเงิน",
+    "log_out": "ออกจากระบบ",
+    "point": "{points} แต้ม"
+  },
+  "en_US": {
+    "my_account": "My Account",
+    "my_orders": "My Orders",
+    "return_and_exchange": "Return & Exchange",
+    "log_out": "Log out",
+    "point": "{points} points"
+  }
+}

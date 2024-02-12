@@ -1,0 +1,60 @@
+{
+  "th_TH": {
+    "repayment_now": "ชำระเงินอีกครั้ง",
+    "print_order": "พิมพ์รายละเอียดการสั่งซื้อ",
+    "save_order": "บันทึกรายละเอียดการสั่งซื้อ",
+    "continue_shopping": "สั่งซื้อต่อ",
+    "fullpaymentredirect": "บัตรเครดิต / บัตรเดบิต",
+    "cashondelivery": "การเก็บเงินปลายทาง",
+    "p2c2p_123": "โอนเงิน / ชำระเงินผ่านเคาเตอร์",
+    "free": "ชำระด้วยคะแนน The 1 Card",
+    "p2c2p_ipp": "การแบ่งชำระ",
+    "view_detail": "ดูรายละเอียด",
+    "order_total": "ราคาทั้งหมด",
+    "order_status": {
+      "successful": "ได้รับสินค้าแล้ว",
+      "awaiting_payment": "รอการชำระเงิน",
+      "processing": "ได้รับคำสั่งซื้อ",
+      "shipping": "อยู่ระหว่างการจัดส่ง",
+      "ready_to_ship": "เตรียมจัดส่ง",
+      "ready_to_pickup": "สินค้าพร้อมรับ",
+      "payment_fail": "ชำระเงินไม่สำเร็จ",
+      "canceled": "ยกเลิก",
+      "delivery_fail": "จัดส่งไม่สำเร็จ"
+    },
+    "collector_info_modal": "รหัสยืนยันจะถูกส่งไปยังอีเมลและหมายเลขโทรศัพท์",
+    "customer_name": "ชื่อ-นามสกุล",
+    "customer_email": "อีเมล์",
+    "customer_tel": "เบอร์โทรศัพท์",
+    "confirmation": "ยืนยันรายการ"
+  },
+  "en_US": {
+    "repayment_now": "Repayment Now",
+    "print_order": "Print this order details",
+    "save_order": "Save this order details",
+    "continue_shopping": "CONTINUE SHOPPING",
+    "fullpaymentredirect": "Credit Card (Full Payment)",
+    "cashondelivery": "Cash on Delivery / at Pickup Point",
+    "p2c2p_123": "Bank Transfer / Service Counter",
+    "free": "Pay With The 1 Card",
+    "p2c2p_ipp": "Pay by Installment",
+    "view_detail": "View Detail",
+    "order_total": "Order Total",
+    "order_status": {
+      "successful": "Successful",
+      "awaiting_payment": "Awaiting Payment",
+      "processing": "Processing",
+      "shipping": "Shipping",
+      "ready_to_ship": "Ready to ship",
+      "ready_to_pickup": "Ready to pickup",
+      "payment_fail": "Payment Fail",
+      "canceled": "Cancel",
+      "delivery_fail": "Delivery Fail"
+    },
+    "collector_info_modal": "Confirmation code will be sent to email and phone number.",
+    "customer_name": "Name",
+    "customer_email": "Email",
+    "customer_tel": "Phone No.",
+    "confirmation": "CONFIRMATION"
+  }
+}

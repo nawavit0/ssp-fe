@@ -1,0 +1,19 @@
+$cols: 12;
+
+@mixin x-sizes($x) {
+  @for $i from 1 through $cols {
+    .#{$x}#{$i} {
+      width: percentage(1 / 12 * $i)
+    }
+  }
+}
+
+$cols2: 25;
+
+@mixin x2-sizes($x) {
+  @for $i from 1 through $cols2 {
+    .#{$x}#{$i} {
+      width: percentage(1/25 * $i)
+    }
+  }
+}

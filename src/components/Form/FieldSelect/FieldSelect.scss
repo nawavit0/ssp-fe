@@ -1,0 +1,76 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/media.scss';
+
+.root {
+  .label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 8px;
+    p {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .requireField {
+      color: #ed1f1f;
+      height: 10px;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+
+  .subLabel {
+    color: #9b9b9b;
+    margin: 0 4px;
+  }
+
+  .selectContainer {
+    position: relative;
+  }
+
+  .arrowRight {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .inputField {
+    width: 100%;
+    border: 1px solid #b8b8b8;
+    line-height: 36px;
+    height: 36px;
+    background: #ffffff;
+    padding: 0 16px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    @include tablet-vertical {
+      font-size: 16px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.validatedInput {
+      border: 1px solid #ed1f1f;
+    }
+  }
+
+  .validateAlert {
+    color: #ed1f1f;
+  }
+
+  .disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}

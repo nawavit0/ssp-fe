@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+@import '../Loader/sspLoader';
+
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.loader {
+  margin: 0 auto;
+  background: url($loading-image-full-page) top center no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  height: 10em;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

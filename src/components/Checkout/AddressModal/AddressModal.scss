@@ -1,0 +1,90 @@
+@import '../../../styles/mixins/media.scss';
+
+.root {
+  max-width: 1040px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+
+  .modalHeader {
+    width: 100%;
+
+    .add {
+      position: absolute;
+      padding-left: 31px;
+
+      @include tablet-vertical {
+        display: block;
+        width: 100%;
+        margin-top: 56px;
+        text-align: center;
+        padding: 0;
+      }
+
+      .addBtn {
+        font-size: 14px;
+        font-weight: bold;
+        color: #4a90e2;
+        text-decoration: underline;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        padding-bottom: 2px;
+      }
+    }
+
+    .title {
+      flex: 1;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      @include tablet-vertical {
+        text-align: left;
+      }
+    }
+  }
+
+  .modalFooter {
+    width: 100%;
+    text-align: right;
+    .warningText {
+      color: red;
+      padding: 0 15px;
+    }
+    .submit {
+      padding-right: 28px;
+
+      @include tablet-vertical {
+        padding-right: 0;
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    .submitBtn {
+      display: inline-block;
+      padding: 0 30px;
+      line-height: 44px;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      cursor: pointer;
+      @include tablet-vertical {
+        width: 100%;
+        display: block;
+        text-align: center;
+        line-height: 36px;
+      }
+    }
+  }
+
+  .modalBody {
+    @include tablet-vertical {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 48px 0;
+      padding-bottom: 100px;
+      overflow: auto;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MiniLoginCDS",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MiniLoginCDS.js"
+}

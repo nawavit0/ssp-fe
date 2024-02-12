@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>[icon] / checkbox / ic_checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="[icon]-/-checkbox-/-ic_checked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(1.000000, 1.000000)">
+            <path d="M12.501,16 L3.499,16 C1.566,16 0,14.434 0,12.501 L0,3.499 C0,1.566 1.566,0 3.499,0 L12.501,0 C14.434,0 16,1.566 16,3.499 L16,12.501 C16,14.434 14.434,16 12.501,16" id="Fill-1" fill="#006FCF"></path>
+            <polyline id="Stroke-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="4.4043 7.6548 7.3923 10.7008 11.5953 5.2988"></polyline>
+        </g>
+    </g>
+</svg>

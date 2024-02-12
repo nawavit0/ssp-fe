@@ -1,0 +1,6 @@
+{
+  "name": "AddressForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AddressForm.js"
+}

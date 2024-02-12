@@ -1,0 +1,22 @@
+{
+  "th_TH": {
+    "wishlist_title": "รายการโปรด",
+    "wishlist_count": "(0 ชิ้น)",
+    "empty_wishlist": "คุณไม่มีรายการสินค้าที่ชื่นชอบ",
+    "go_shopping": "ไปซื้อของ",
+    "simply_click": "เพียงคลิกที่ปุ่ม ",
+    "icon_to_save": "ไอคอนเพื่อบันทึกสิ่งที่คุณชื่นชอบในภายหลัง",
+    "already_save_item": "มีรายการที่บันทึกไว้ไหม? ",
+    "sign_in": "เข้าสู่ระบบ"
+  },
+  "en_US": {
+    "wishlist_title": "WISHLIST",
+    "wishlist_count": "(0 item)",
+    "empty_wishlist": "You have no saved item in your Wishlist now.",
+    "go_shopping": "Continue Shopping",
+    "simply_click": "Simply click the ",
+    "icon_to_save": "icon to save the things you love for later.",
+    "already_save_item": "Already have saved items? ",
+    "sign_in": "Log in"
+  }
+}

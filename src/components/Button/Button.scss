@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &.blue {
+    background-color: #2a6dc9;
+    color: #ffffff;
+  }
+
+  &.red {
+    background-color: $red-base;
+    color: $white-base;
+  }
+
+  &.small {
+    width: 60px;
+  }
+
+  &.outline {
+    background: none;
+    color: #333333;
+    border: 1px solid #9b9b9b;
+  }
+  &.disableButton {
+    background-color: #cccccc !important;
+    cursor: default !important;
+  }
+}

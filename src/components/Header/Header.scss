@@ -1,0 +1,28 @@
+@import '../../styles/mixins/media';
+
+.root {
+  position: relative;
+  z-index: 9;
+
+  @include tablet-vertical {
+    display: none;
+  }
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mainHeaderContainer {
+  background: #273559;
+}
+
+@media print {
+  .root {
+    display: none;
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "th_TH": {
+    "building": "อาคาร",
+    "street": "เลขที่ / ถนน",
+    "postcode": "รหัสไปรษณีย์",
+    "postcode_format": "ระบุเพียงตัวเลขเท่านั้น",
+    "province": "จังหวัด",
+    "district": "เขต/อำเภอ",
+    "subdistrict": "แขวง/ตำบล",
+    "enterBuilding": "อาคาร, ชั้น",
+    "enterStreet": "123/45 ถนน, ซอย",
+    "enterPostcode": "12345",
+    "enterProvince": "เลือกจังหวัด",
+    "enterDistrict": "เลือกเขต/อำเภอ",
+    "enterSubdistrict": "เลือกแขวง/ตำบล",
+    "required": "โปรดระบุ",
+    "optional": "(ไม่จำเป็น)",
+    "number_required_length": "รหัสไปรษณีย์ต้องเป็นตัวเลข 5 หลัก เท่านั้น"
+  },
+  "en_US": {
+    "building": "Place / Building",
+    "street": "House no. / Street",
+    "postcode": "Postcode",
+    "postcode_format": "Number only.",
+    "province": "Province",
+    "district": "District",
+    "subdistrict": "Subdistrict",
+    "enterBuilding": "Building, floor, office, etc",
+    "enterStreet": "Street, number, etc",
+    "enterPostcode": "12345",
+    "enterProvince": "Select province",
+    "enterDistrict": "Select district",
+    "enterSubdistrict": "Select subdistrict",
+    "required": "Required field",
+    "optional": "(optional)",
+    "number_required_length": "Postcode should be 5 digit number only."
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+
+.root {
+  width: 94.5%;
+
+  @include desktop-small {
+    width: 100%
+  }
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.counterItemWrap {
+  display: block;
+  margin: 5px;  
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    opacity: 0;
+
+    &:checked + .label {
+      background: url(/icons/radio-checked.svg) top 10px right 10px no-repeat;
+      background-color: $ice-blue-light !important;
+      border: 1px solid $ice-blue
+    }
+  }
+
+  .label {
+    position: relative;
+    border: solid 1px $gray-main-light;
+    background-color: $white-base !important;
+    background: url(/icons/radio-unchecked.svg) top 10px right 10px no-repeat;
+    border-radius: 2px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    @include desktop {
+      span {
+        display: block;
+        width: 109px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+
+    .counterSection {
+      width: 25%;
+      max-width: 150px;
+      
+
+      @include desktop-small {
+        max-width: 130px;
+      }
+
+      @include tablet {
+        width: 50%;
+        max-width: none;
+      }
+
+      .counterSectionItem {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .counterLogo {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+

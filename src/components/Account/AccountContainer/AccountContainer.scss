@@ -1,0 +1,82 @@
+@import '../../../styles/mixins/media';
+
+.root {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include tablet-vertical {
+    padding-top: 0;
+  }
+
+  @media print {
+    .accountMenu, .cmsBlockAccount {
+      display: none;
+    }
+    .accountContent {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .accountMenu {
+    @include tablet-vertical {
+      display: none;
+    }
+  }
+
+  .accountContent {
+  }
+
+
+  .accountBanner {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0 -15px;
+    background: #2b333d url('/images/account-banner.png') right center no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    @include tablet-vertical {
+      height: 140px;
+      h2 {
+        text-align: center;
+      }
+    }
+
+    .text {
+      max-width: 470px;
+      line-height: 1.57;
+      font-size: 14px;
+
+      @include tablet-vertical {
+        text-align: center;
+      }
+    }
+  }
+  .childrenBox {
+    position: relative;
+    @include tablet-vertical {
+      padding: 0 10px;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      opacity: 0.6;
+      z-index: 1;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

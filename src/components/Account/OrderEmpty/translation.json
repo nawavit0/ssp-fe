@@ -1,0 +1,12 @@
+{
+  "th_TH": {
+    "label1": "คุณไม่มีคำสั่งซื้อล่าสุดเลย",
+    "label2": "เริ่มต้นการช้อปปิ้งกับเราในการสั่งซื้อครั้งแรก",
+    "continueShopping": "สั่งซื้อต่อ"
+  },
+  "en_US": {
+    "label1": "You have no recent order yet.",
+    "label2": "Start shopping with us to place your first order.",
+    "continueShopping": "CONTINUE SHOPPING"
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+    <defs>
+        <style>.cls-1{fill:#fff;}</style>
+    </defs>
+    <title>StoreLocation</title>
+    <g id="Expan_Icon" data-name="Expan Icon">
+        <path id="StoreLocation" class="cls-1"
+              d="M150,4.38a95.2,95.2,0,0,0-95.2,95.2c0,52.58,95.2,196,95.2,196s95.2-143.46,95.2-196A95.2,95.2,0,0,0,150,4.38Zm0,111.33a20.54,20.54,0,1,1,20.54-20.54A20.54,20.54,0,0,1,150,115.71Z"/>
+    </g>
+</svg>

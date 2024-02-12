@@ -1,0 +1,82 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/media.scss';
+
+.root {
+  position: relative;
+  .label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: $gray-base;
+    margin-bottom: 8px;
+    p {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .requireField {
+      color: #ed1f1f;
+      height: 10px;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+
+  .subLabel {
+    color: $gray-light;
+    margin: 0 4px;
+  }
+
+  .inputField {
+    width: 100%;
+    border: 1px solid $silver-base-light;
+    line-height: 36px;
+    padding: 0 16px;
+    font-size: 14px;
+    outline: none;
+
+    @include tablet-vertical {
+      font-size: 16px;
+    }
+
+    &.validatedInput {
+      border: 1px solid $red-light;
+    }
+
+    &.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+  .textAreaField {
+    height: 100%;
+  }
+  .validateAlert {
+    color: $red-light;
+  }
+}
+
+.checkbox {
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  .inputField {
+    width: auto;
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .label {
+    font-size: 14px;
+    margin: 0 0 0 4px;
+
+    &.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+}

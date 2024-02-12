@@ -1,0 +1,62 @@
+{
+  "th_TH": {
+    "fullpaymentredirect": "บัตรเครดิต / บัตรเดบิต",
+    "cashondelivery": "การเก็บเงินปลายทาง",
+    "p2c2p_123": "โอนเงิน / ชำระเงินผ่านเคาเตอร์",
+    "free": "ชำระด้วยคะแนน The 1 Card",
+    "p2c2p_ipp": "แบ่งชำระ",
+    "select_bank_ontop": "เลือกธนาคารของคุณเพื่อได้โปรโมชัน",
+    "counter_service": "เคาเตอร์ / ธนาคาร",
+    "channel_pay": "ช่องทางการชำระเงิน",
+    "button_pay": "ชำระเงิน",
+    "please_select_bank": "กรุณาเลือกธนาคารที่คุณต้องการชำระเงิน",
+    "select_payment_period": "เลือกระยะเวลาการชำระเงิน",
+    "installment": "แบ่งชำระ",
+    "remark": {
+      "pay2c2p": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner",
+      "pay123": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner",
+      "payIpp": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner",
+      "samsung_pay": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner",
+      "line_pay": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner"
+    },
+    "phone": "เบอร์โทรศัพท์",
+    "required_phone": "กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง",
+    "terms_and_conditions": "ข้อตกลงการใช้บริการ",
+    "onTopDiscount": "รับส่วนลดเพิ่ม",
+    "otherBank": "ธนาคารอื่นๆ",
+    "label_installment": "ดอกเบี้ย 0%",
+    "tootip": {
+      "pay_by_installment": "การแลกคะแนน The 1 ไม่สามารถใช้ร่วมกับการชำระเงินแบบแบ่งชำระได้"
+    }
+  },
+  "en_US": {
+    "fullpaymentredirect": "Credit Card (Full Payment)",
+    "cashondelivery": "Cash on Delivery / at Pickup Point",
+    "p2c2p_123": "Bank Transfer / Service Counter",
+    "free": "Pay With The 1 Card",
+    "p2c2p_ipp": "Pay by Installment",
+    "select_bank_ontop": "Select your bank to get promotions",
+    "counter_service": "Counter / Bank",
+    "channel_pay": "Payment Channel",
+    "button_pay": "Pay Now",
+    "please_select_bank": "Please select the bank that you want to pay",
+    "select_payment_period": "Select Payment period",
+    "installment": "Installment",
+    "remark": {
+      "pay2c2p": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner",
+      "pay123": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner",
+      "payIpp": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner",
+      "samsung_pay": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner",
+      "line_pay": "By clicking on Pay Now, you will be directed to Supersports's Payment gateway partner"
+    },
+    "phone": "Phone No.",
+    "required_phone": "Please enter a valid phone no.",
+    "terms_and_conditions": "Terms and Conditions",
+    "onTopDiscount": "On top discount",
+    "otherBank": "Other Banks",
+    "label_installment": "0% Installment",
+    "tootip": {
+      "pay_by_installment": "When using installment payment plans, The 1 points will not be redeemable as discounts"
+    }
+  }
+}

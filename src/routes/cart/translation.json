@@ -1,0 +1,32 @@
+{
+  "th_TH": {
+    "people_who_bought": "คนที่ซื้อสินค้าเหล่านี้ซื้อด้วยเช่นกัน",
+    "go_shopping": "ไปซื้อของ",
+    "empty_cart": "ถุงช้อปปิ้งของคุณยังว่างอยู่",
+    "empty_saved_login": "เข้าสู่ระบบเพื่อดูรายการที่เคยสั่งซื้อไว้",
+    "shopping_bag": "ถุงช้อปปิ้ง",
+    "item": "ชิ้น",
+    "items": "ชิ้น",
+    "sign_in": "เข้าสู่ระบบ",
+    "proceed_to_checkout": "ดำเนินการชำระเงิน",
+    "message_out_of_stock": "ขออภัย สินค้าบางรายการหมด",
+    "alert_info_coupon": "คูปองโค้ดนี้ใช้คู่กับการชำระเงินด้วย {credit_card_name} เท่านั้น",
+    "message_pay_by_installment": "ท่านสามารถแบ่งชำระสินค้าได้โดย 1 ออเดอร์จะต้องมีสินค้าเพียง 1 ชิ้นเท่านั้น",
+    "sold_by": "จัดจำหน่ายโดย"
+  },
+  "en_US": {
+    "people_who_bought": "People who bought these items also bought",
+    "go_shopping": "Continue Shopping",
+    "empty_cart": "Your shopping cart is currently empty.",
+    "empty_saved_login": "Log in to see your saved items.",
+    "shopping_bag": "shopping bag",
+    "item": "item",
+    "items": "items",
+    "sign_in": "LOG IN",
+    "proceed_to_checkout": "SECURE CHECKOUT",
+    "message_out_of_stock": "Sorry, some products are sold out.",
+    "alert_info_coupon": "This coupon needs to be applied with {credit_card_name} only.",
+    "message_pay_by_installment": "Paying with installment plan is available for single-item order only",
+    "sold_by": "Sold by"
+  }
+}

@@ -1,0 +1,40 @@
+.collapseTitle {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.giftSectionWrap {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+
+  .giftDescriptionSection {
+    margin-left: 15px;
+    line-height: 1.4;
+  }
+
+  .quantityGiftSection {
+    display: flex;
+
+    > div {
+      margin: 0 16px 0 0;
+    }
+
+    .productQuantity {
+      display: flex;
+    }
+  }
+}
+
+.giftImage {
+  width: 80px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+[data-anchor='collapse-panel'] {
+  justify-content: flex-start !important;
+}

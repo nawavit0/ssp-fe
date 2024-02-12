@@ -1,0 +1,54 @@
+.root {
+  .address {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    .title {
+      color: #3d3d3d;
+      font-weight: bold;
+      padding: 5px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .name {
+      color: #3d3d3d;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: bold;
+    }
+
+    .address {
+      color: #3d3d3d;
+      max-height: 38px;
+      overflow: hidden;
+      white-space: pre-wrap;
+    }
+
+    .telephone {
+      color: #3d3d3d;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .fullTagInfo {
+      color: #9b9b9b;
+      font-weight: normal;
+      font-size: 13px;
+    }
+  }
+}

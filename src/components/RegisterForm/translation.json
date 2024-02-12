@@ -1,0 +1,32 @@
+{
+  "th_TH": {
+    "name": "ชื่อ",
+    "last_name": "นามสกุล",
+    "email": "อีเมล์",
+    "password": "รหัสผ่าน",
+    "enter_first_name": "กรอกชื่อ",
+    "enter_last_name": "กรอกนามสกุล",
+    "enter_password": "กรอกรหัสผ่าน",
+    "enter_email": "กรอกอีเมล",
+    "required": "โปรดระบุ",
+    "email_format": "ระบุอีเมลไม่ถูกต้อง",
+    "email_length": "อีเมลจะต้องอยู่ระหว่าง 5-30 ตัวอักษร",
+    "password_length": "รหัสผ่านต้องเป็นภาษาอังกฤษประกอบด้วยตัวพิมพ์ใหญ่อย่างน้อย 1 ตัว ตัวพิมพ์เล็กอย่างน้อย 1 ตัว และตัวเลขอย่างน้อย 1 ตัว รวมกันไม่ต่ำกว่า 8 ตัว",
+    "password_format": "รูปแบบรหัสผ่านไม่ถูกต้อง"
+  },
+  "en_US": {
+    "name": "Name",
+    "last_name": "Last name",
+    "email": "Email",
+    "password": "Password",
+    "enter_first_name": "Enter First Name",
+    "enter_last_name": "Enter Last Name",
+    "enter_password": "Enter Password",
+    "enter_email": "Enter Email",
+    "required": "Required field.",
+    "email_format": "Invalid email format.",
+    "email_length": "Email should be between 5 and 30 characters",
+    "password_length": "The password must be at least 8 characters long, contain at least one number, one lowercase letter, and one uppercase letter.",
+    "password_format": "Invalid password format."
+  }
+}

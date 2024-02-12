@@ -1,0 +1,26 @@
+{
+  "th_TH": {
+    "clear_value": "ล้าง",
+    "filters": "ฟิลเตอร์",
+    "price_range": "ช่วงราคา",
+    "sort": "เรียง",
+    "asc": "ต่ำ-สูง",
+    "desc": "สูง-ต่ำ",
+    "recommended": "สินค้าแนะนำ",
+    "new_arrival": "สินค้ามาใหม่",
+    "price": "ราคา",
+    "price_discount": "ส่วนลด"
+  },
+  "en_US": {
+    "clear_value": "Clear",
+    "filters": "Filters",
+    "price_range": "Price Range",
+    "sort": "Sort",
+    "asc": "Low-High",
+    "desc": "High-Low",
+    "recommended": "Recommended",
+    "new_arrival": "New Arrivals",
+    "price": "Price",
+    "price_discount": "Discount"
+  }
+}

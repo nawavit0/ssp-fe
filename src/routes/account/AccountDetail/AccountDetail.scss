@@ -1,0 +1,51 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/media';
+
+.wrapper {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 72.5vw;
+  max-width: 100%;
+
+  @include tablet {
+    width: 100%;
+    padding-right:20px;
+  }
+
+  h1 {
+    color: $gray-base;
+    font-size: 18px;
+    height: 29px;
+  }
+
+  .cardWrapper {
+    margin-top: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .orderList {
+    margin-top: 20px;
+    margin-bottom: 101px;
+
+    @include tablet {
+      padding-right: 20px;
+    }
+
+    &:hover {
+      color: $blue-selected;
+      transition: .3s;
+    }
+  }
+
+  .orderListLink {
+    margin-left: 16px;
+    color: $medium-blue;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+
+

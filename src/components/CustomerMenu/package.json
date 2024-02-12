@@ -1,0 +1,6 @@
+{
+  "name": "CustomerMenu",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CustomerMenu.js"
+}

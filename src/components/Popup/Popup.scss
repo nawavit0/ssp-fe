@@ -1,0 +1,93 @@
+@import '../../styles/mixins/media';
+@import '../../styles/variables';
+
+.root {
+  z-index: 9999999;
+  position: relative;
+}
+.popoverHover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+}
+
+.popupOver {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.popoverContainer {
+  max-width: 700px;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  padding: 22px 33px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include tablet-vertical {
+    max-width: none;
+    width: auto;
+    font-size: 12px;
+    padding: 13px 26px 13px 10px;
+    margin: auto 20px;
+  }
+}
+.popoverMessage {
+  z-index: 1;
+}
+.notificationConainer {
+  position: fixed;
+  line-height: 1.57;
+  color: #333333;
+  line-height: 1.57;
+  font-family: Gotham;
+
+  font-size: 14px;
+  z-index: 9;
+  padding: 22px 33px;
+  right: 1%;
+  bottom: 1%;
+  background-color: #fff;
+  max-width: 440px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1px #eaeaea;
+
+  @include tablet-vertical {
+    max-width: none;
+    padding: 13px 26px 13px 10px;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    margin: 5px 10px;
+  }
+}
+.close {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+.notificationMessage {
+  z-index: 1;
+}
+.hide {
+  display: none;
+}

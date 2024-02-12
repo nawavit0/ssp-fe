@@ -1,0 +1,6 @@
+{
+  "name": "FreeGiftPanel",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FreeGiftPanel.js"
+}

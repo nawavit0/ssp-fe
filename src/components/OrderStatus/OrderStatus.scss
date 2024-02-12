@@ -1,0 +1,50 @@
+.root {
+  display: flex;
+  align-items: center;
+
+  .statusIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    path {
+      fill: #4B4B4B;
+      stroke: #4B4B4B;
+    }
+  }
+}
+
+
+.orderStatusIcon {
+  display: flex;
+  align-items: center;
+  line-height: 13px;
+  @media only screen and (max-width: 991px) {
+    margin-top: 7px;
+    align-items: baseline;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-top: -1px;
+    path {
+      fill: #4B4B4B;
+      stroke: #4B4B4B;
+    }
+  }
+}
+
+.orderStatusText {
+  font-size: 12px;
+
+  &.completed {
+    color: #5ea908;
+  }
+  &.inprogress {
+    color: #4B4B4B;
+  }
+  &.cancel {
+    color: #d11c2c;
+  }
+}

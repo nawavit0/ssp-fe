@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/media';
+
+.regularPrice {
+  .price {
+    font-size: 23px;
+  }
+}
+.discount {
+  padding: 10px 0;
+  @include mobile {
+    padding: 0;
+  }
+  div {
+    display: inline-block;
+  }
+  .discountCount {
+    padding-left: 10px;
+
+    .price {
+      color: #b0b8cb;
+      font-weight: normal;
+    }
+  }
+}
+.grayDarker {
+  color: $gray-main-darker;
+}

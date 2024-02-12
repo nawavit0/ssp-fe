@@ -1,0 +1,12 @@
+{
+  "th_TH": {
+    "full_tax_invoice_detail": "รายละเอียดใบกำกับภาษีเต็มรูปแบบ",
+    "tax_id": "หมายเลขผู้เสียภาษี",
+    "branch_id": "หมายเลขสาขา"
+  },
+  "en_US": {
+    "full_tax_invoice_detail": "Full Tax Invoice Details",
+    "tax_id": "Tax ID",
+    "branch_id": "Branch ID"
+  }
+}

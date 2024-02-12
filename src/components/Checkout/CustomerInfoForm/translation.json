@@ -1,0 +1,32 @@
+{
+  "th_TH": {
+    "firstname": "ชื่อ",
+    "lastname": "นามสกุล",
+    "email": "อีเมล",
+    "phone": "เบอร์โทรศัพท์",
+    "enterEmail": "your@email.com",
+    "enterPhone": "0987654321",
+    "t1cNumber": "หมายเลข T1C (ไม่จำเป็น)",
+    "enterT1C": "กรอกหมายเลข T1C",
+    "required": "โปรดระบุ",
+    "email_format": "ระบุอีเมลไม่ถูกต้อง",
+    "phone_format": "ระบุหมายเลขโทรศัพท์โดยไม่ต้องขีดคั่น",
+    "t1c_format": "ระบุเป็นตัวเลขเท่านั้น",
+    "text_error_t1c": "หมายเลขบัตรเดอะวันไม่ถูกต้อง"
+  },
+  "en_US": {
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "enterEmail": "your@email.com",
+    "enterPhone": "0987654321",
+    "t1cNumber": "T1C Number (optional)",
+    "enterT1C": "Enter T1C number",
+    "required": "Required field",
+    "email_format": "Invalid email format.",
+    "phone_format": "Number only.",
+    "t1c_format": "Number only.",
+    "text_error_t1c": "Invalid The 1 Card number"
+  }
+}

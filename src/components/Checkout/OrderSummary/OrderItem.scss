@@ -1,0 +1,69 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables.scss';
+
+.root {
+  display: flex;
+  padding: 0;
+  color: $gray-base;
+}
+
+.thumbnail {
+  flex: 0 0 80px;
+  height: auto;
+  margin-right: 10px;
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+
+  .brand {
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: normal;
+    font-weight: bold;
+    @include tablet-vertical {
+      font-size: 12px;
+    }
+  }
+
+  .name {
+    font-size: 14px;
+    overflow: hidden;
+    // comment to remind : Cds Code.
+    // height: 38px;
+    word-break: break-word;
+    margin-bottom: 8px;
+    @include tablet-vertical {
+      font-size: 12px;
+    }
+  }
+}
+
+.cartInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .price {
+    font-size: 18px;
+    @include tablet-vertical {
+      font-size: 21px;
+    }
+  }
+}
+.qty {
+  font-size: 14px;
+  color: #363636;
+  text-align: right;
+  @include tablet-vertical {
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+  }
+}

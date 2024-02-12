@@ -1,0 +1,23 @@
+@import '../../../styles/common.scss';
+@import '../../../styles/mixins/media.scss';
+
+.root {
+  margin: 0 8px;
+  border: 1px solid $white-base-light;
+
+  .checked {
+    color: $white-base;
+    font-size: 9px;
+    position: relative;
+    left: 6px;
+    line-height: 24px;
+  }
+
+  .unchecked {
+    font-size: 9px;
+    color: $gray-dark;
+    position: relative;
+    right: -8px;
+    line-height: 24px;
+  }
+}

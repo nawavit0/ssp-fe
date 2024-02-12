@@ -1,0 +1,334 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/media';
+
+.root {
+  margin-bottom: 100px;
+
+  @include tablet-vertical {
+    .progressbarWrapper {
+      border-bottom: 0;
+    }
+
+    .shortSummary {
+      padding-bottom: 24px;
+      border-bottom: 1px solid $white-base-light;
+
+      .orderTotal {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .colGrandTotal {
+        justify-content: center;
+      }
+
+      .viewSummary {
+        background-color: transparent;
+        color: $blue-light;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: underline;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .priceGrandTotal {
+        font-size: 18px !important;
+        display: flex;
+        align-self: flex-end;
+        justify-content: center;
+      }
+    }
+  }
+
+  .marginCol {
+    margin-bottom: 16px;
+  }
+
+  .summaryWrapper {
+    @include tablet-vertical {
+      display: none;
+    }
+  }
+
+  .marginLine {
+    margin-top: 0;
+  }
+
+  .headerCol,
+  .mainCol {
+    padding-right: 30px;
+    margin-bottom: 16px;
+
+    @include tablet-vertical {
+      padding-right: 0;
+    }
+  }
+
+  .orderInfoWrapper,
+  .orderItemsWrapper {
+    @include tablet-vertical {
+      display: none;
+    }
+  }
+
+  .fixMobileGutter {
+    @include tablet-vertical {
+      margin: 0 !important;
+
+      > div {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .repaymentBtn {
+    font-size: 14px;
+    line-height: 50px;
+    margin: 20px 0 0 0;
+    color: $white-base;
+    background-color: $red-base;
+    cursor: pointer;
+
+    .icon {
+      margin: 0 8px 0 0;
+    }
+  }
+
+  .printBtn {
+    font-size: 14px;
+    line-height: 50px;
+    margin: 20px 0;
+
+    .icon {
+      margin: 0 8px 0 0;
+    }
+  }
+
+  .linkContinueShopBtn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .continueShopBtn {
+    font-size: 16px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+    @include tablet-vertical {
+      margin-bottom: 0;
+    }
+  }
+
+  .shortSummary {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .mobileOrderInfo {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $white-base;
+    padding-bottom: 60px;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+@media print {
+  @page {
+    size: A4; 
+  }
+
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+    /* ... the rest of the rules ... */
+  
+  .printBtn,
+  .continueShopBtn,
+  .shortSummary,
+  .repaymentBtn
+  {
+    display: none !important;
+  }
+
+  .mobileOrderInfo {
+    position: static !important;
+  }
+
+  .marginCol {
+    margin-bottom: 16px;
+    width: 33%;
+  }
+
+  .summaryWrapper {
+    width: 50%;
+  }
+
+  .printHeader {
+    width: 100%;
+  }
+}
+
+@include desktop {
+  .last {
+    display: none;
+  }
+}
+
+@include tablet-vertical {
+  .last {
+    flex-direction: column;
+
+    &.hidden {
+      display: none;
+    }
+
+    .continue {
+      align-items: flex-end;
+    }
+
+    .mobileFooter {
+      background: $white-base;
+      border-top: 1px solid $white-base-light;
+      display: flex;
+      z-index: 3;
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px $gray-nobel;
+
+      .btn {
+        cursor: pointer;
+        background-color: $white-base;
+        color: $black-base;
+        border: 0;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        line-height: 37px;
+        height: 37px;
+        width: 100%;
+        max-width: 340px;
+        margin: auto;
+        padding: 0 16px;
+        text-align: center;
+
+        &:disabled {
+          color: $gray-lighter;
+        }
+
+        .icon {
+          margin: -2px 0 0 2px;
+        }
+      }
+    }
+  }
+}
+
+.modalOrderCollect {
+  max-width: 442px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+
+  @include tablet-vertical {
+    width: auto !important;
+    top: 50% !important;
+    right: 16px;
+    left: 16px !important;
+    bottom: auto !important;
+    transform: translate(0, -50%) !important;
+  }
+
+  .modalHeader {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #efefef;
+    padding-left: 10px;
+
+    @include tablet-vertical {
+      flex-direction: column;
+    }
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+
+      @include tablet-vertical {
+        padding: 10px 0 0;
+      }
+    }
+  }
+}
+
+.modalBody {
+  @include desktop {
+    padding: 18px 10px 20px;
+  }
+
+  @include tablet-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 13px 10px 14px;
+    overflow: auto;
+  }
+
+  .bodyTitle {
+    justify-content: center;
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 14px;
+    text-align: center;
+  }
+
+  .bodyContent {
+    .body {
+      display: flex;
+      flex-direction: column;
+      padding: 5px 0;
+      border-bottom: 1px solid $gray-icon-disabled;
+
+      .title {
+        color: $gray-nobel;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.btnClose {
+  top: 0 !important;
+  right: 0 !important;
+}
+
+.headerWrapper {
+  @include desktop {
+    height: 40px !important;
+  }
+
+  @include tablet-vertical {
+    display: flex !important;
+    flex-direction: column;
+    background-color: $white-base !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+}

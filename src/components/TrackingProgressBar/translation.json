@@ -1,0 +1,20 @@
+{
+  "th_TH": {
+    "payment": "ชำระเงิน",
+    "processing": "กำลังดำเนินการ",
+    "ready_to_ship": "เตรียมจัดส่ง",
+    "ready_to_collect": "สินค้าพร้อมรับ",
+    "shipping": "อยู่ระหว่างการจัดส่ง",
+    "complete": "ได้รับสินค้าแล้ว",
+    "collected": "ได้รับสินค้าแล้ว"
+  },
+  "en_US": {
+    "payment": "Payment",
+    "processing": "Processing",
+    "ready_to_ship": "Ready to ship",
+    "ready_to_collect": "Ready to Pickup",
+    "shipping": "Shipping",
+    "complete": "Complete",
+    "collected": "Complete"
+  }
+}

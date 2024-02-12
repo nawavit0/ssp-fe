@@ -1,0 +1,49 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/media';
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  font-size: 11px;
+  color: $gray-lighter;
+  margin-right: 3px;
+}
+
+.childrenWrapper {
+  max-height: 334px;
+  overflow-y: auto;
+
+  &.less {
+    max-height: 234px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $warm-grey;
+    border-radius: 2px;
+  }
+}
+
+.showLess {
+  margin-top: 10px;
+  line-height: 2.31;
+  color: $red-base;
+  cursor: pointer;
+}

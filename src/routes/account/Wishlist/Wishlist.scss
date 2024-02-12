@@ -1,0 +1,137 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/media';
+
+.headerWrapper{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title {
+  margin: 20px 0 24px;
+  height: 43px;
+  color: $gray-base;
+  border-bottom: solid 1px $gray-icon-disabled;
+  @include tablet-vertical{
+    text-align: center;
+    border-top: solid 1px $gray-icon-disabled;
+    border-bottom: none;
+    padding-top: 15px;
+    margin: 15px -15px 0px;
+  }
+}
+
+.title_name{
+  font-size: 26px;
+  font-weight: bold;
+  @include tablet {
+    display: none;
+  }
+}
+
+.title_item {
+  font-size: 14px;
+  line-height: 1.57;
+  color: $gray-base;
+  padding-left: 4px;
+  @include tablet-vertical{
+    color: $gray-nobel;
+  }
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 334px;
+  margin-bottom: 106px;
+}
+
+.wishlist_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-size: 14px;
+  margin-bottom: 106px;
+  @include tablet-vertical{
+    margin-bottom: 0px;
+  }
+}
+
+.rowWidth{
+  width: 100%;
+}
+
+.emptyWishlistLabel,
+.emptySaveLogin {
+  margin-bottom: 30px;
+  text-align: center;
+  @include tablet-vertical{
+    margin-bottom: 10px;
+  }
+}
+
+.simplyClick {
+  margin-bottom: 10px;
+  text-align: left;
+  @include tablet-vertical{
+    display:none;
+  }
+}
+
+.emptyWishlistIconWrapper {
+  margin-top: 26px;
+  margin-bottom: 20px;
+  width: 120px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goShoppingButton {
+  width: 278px;
+  height: 42px;
+  border-radius: 2px;
+  margin-bottom: 40px;
+  background-color: $red-base !important;
+}
+
+.iconArrowBack {
+  width: 6px;
+  margin-right: 10px;
+}
+
+.iconWishlistSmall {
+  width: 16px;
+  margin-right: 6px;
+}
+
+.labelGoToShopping {
+  font-size: 13px;
+  .labelGoToShoppingLink {
+    text-decoration: underline;
+    cursor: pointer;
+    color: $blue-light;
+  }
+}
+
+.pageSwitcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  @include tablet-vertical {
+    margin-top: 0;
+  }
+}
+
+.pagination{
+  width: 100%;
+  justify-content: flex-end;
+}
+
+

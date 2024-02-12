@@ -1,0 +1,6 @@
+{
+  "name": "CartSummary",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CartSummary.js"
+}

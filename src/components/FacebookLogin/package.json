@@ -1,0 +1,6 @@
+{
+  "name": "FacebookLoginButton",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FacebookLoginButton.js"
+}

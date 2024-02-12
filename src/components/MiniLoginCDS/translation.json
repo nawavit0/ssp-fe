@@ -1,0 +1,40 @@
+{
+  "th_TH": {
+    "title": "เข้าสู่ระบบด้วยบัญชีเซ็นทรัล",
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "forgot_password": "ลืมรหัสผ่าน?",
+    "button_login": "เข้าสู่ระบบ",
+    "label_or": "หรือ",
+    "button_facebook": "เข้าสู่ระบบด้วยบัญชีเฟซบุ๊ก",
+    "label_register": "ยังไม่เคยลงทะเบียน?",
+    "register_now": "ลงทะเบียน",
+    "placeholder_email": "กรุณากรอกอีเมล",
+    "placeholder_password": "กรุณากรอกรหัสผ่าน",
+    "login_loading": "กรุณารอสักครู่...",
+    "required": "โปรดระบุ",
+    "email_format": "ระบุอีเมลไม่ถูกต้อง",
+    "email_length": "อีเมลจะต้องอยู่ระหว่าง 5-30 ตัวอักษร",
+    "password_length": "รหัสผ่านจะต้องมีมากกว่า 6 ตัวอักษร",
+    "login_incorrect": "ระบุอีเมลหรือรหัสผ่านไม่ถูกต้อง"
+  },
+  "en_US": {
+    "title": "Log in to Central account",
+    "email": "Email Address",
+    "password": "Password",
+    "forgot_password": "Forgot your password?",
+    "button_login": "LOG IN",
+    "label_or": "Or",
+    "button_facebook": "LOG IN WITH FACEBOOK",
+    "label_register": "Not a member yet?",
+    "register_now": "Register now",
+    "placeholder_email": "Enter email address",
+    "placeholder_password": "Enter password",
+    "login_loading": "Loading...",
+    "required": "Required field.",
+    "email_format": "Invalid email format.",
+    "email_length": "Email should be between 5 and 30 characters",
+    "password_length": "Password must be at least 6 characters long",
+    "login_incorrect": "Email or Password is incorrect."
+  }
+}

@@ -1,0 +1,220 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins/media';
+
+.orderSummary {
+  border: 1px solid $white-base-light;
+  border-radius: 2px;
+
+  @include desktop {
+    margin-top: 20px;
+  }
+
+  h3,
+  h4 {
+    font-weight: bold;
+    margin: auto 0;
+  }
+
+  hr {
+    flex: 100%;
+    margin: 0;
+  }
+
+  .header {
+    background: $grey-color-light;
+    min-height: 50px;
+    h3 {
+      font-size: 18px;
+      color: #13283f;
+    }
+  }
+
+  .editLink {
+    text-decoration: underline;
+    color: #296db8;
+    font-size: 14px;
+    font-weight: bold;
+    @include tablet-vertical {
+      font-size: 11px;
+    }
+  }
+
+  .scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .content {
+    @include tablet-vertical {
+      padding: 20px 0 22px 0;
+    }
+  }
+
+  .line {
+    display: flex;
+    padding: 10px 20px;
+
+    @include tablet-vertical {
+      padding: 5px 10px;
+      &.deliveryTitle {
+        font-size: 13px;
+      }
+    }
+
+    &.subTotal {
+      padding: 12px 20px;
+    }
+
+    &.promoCode {
+      padding: 5px 20px 4px 20px;
+    }
+
+    &.couponCode {
+      padding: 5px 20px;
+    }
+
+    &.t1Redeem {
+      padding: 13px 20px 2px 20px;
+    }
+
+    &.t1ListRedeem {
+      padding: 10px 20px;
+    }
+
+    &.deliveryTitle {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+
+    &.deliveryList {
+      padding: 4px 20px 14px 20px;
+    }
+
+    &.grandTotal {
+      padding: 2px 20px 11px 20px;
+      .left {
+        font-size: 24px;
+      }
+    }
+
+    .left {
+      flex: 50%;
+      margin: auto 0;
+      font-size: 14px;
+      @include tablet-vertical {
+        &.resultDelivery {
+          font-size: 13px;
+        }
+        &.resultSubTotal {
+          font-size: 13px;
+        }
+        &.netTotal {
+          font-size: 17px;
+        }
+      }
+      @include tablet-vertical {
+        &.headerTitle {
+          flex: none;
+          font-size: 14px;
+          margin-right: 5px;
+        }
+      }
+      &.headerTitle {
+        color: #13283f;
+        font-size: 18px;
+        white-space: nowrap;
+      }
+    }
+
+    .right {
+      flex: 50%;
+      margin: auto 0;
+      text-align: right;
+      font-size: 14px;
+      @include tablet-vertical {
+        &.netTotal {
+          font-size: 17px;
+        }
+        &.resultSubTotal {
+          font-size: 13px;
+        }
+        &.resultDelivery {
+          font-size: 13px;
+        }
+      }
+      @include tablet-vertical {
+        &.editLink {
+          flex: none;
+          color: #4a90e2;
+        }
+      }
+      &.netTotal {
+        font-size: 24px;
+      }
+      &.resultDelivery {
+        font-size: 16px;
+        color: #2d2d2d;
+      }
+      &.resultSubTotal {
+        font-size: 14px;
+        color: #2d2d2d;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .net {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .btnClose {
+    background-color: transparent;
+    flex: 50% 1;
+    justify-content: flex-end;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.removeT1 {
+  margin-left: 5px;
+  text-decoration: underline;
+  color: $gray-nobel;
+  cursor: pointer;
+}
+
+.titleShippingAddress {
+  @include tablet-vertical {
+    font-size: 11px;
+  }
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  @include tablet-vertical {
+    font-size: 11px;
+  }
+}
+
+.freeItemList {
+  font-weight: bold;
+  padding: 0 18px;
+  font-size: 14px;
+}
+
+.freebieSection {
+  margin-left: 90px;
+  margin-top: 10px;
+}
+
+.orderItemSection {
+  margin: 0 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}

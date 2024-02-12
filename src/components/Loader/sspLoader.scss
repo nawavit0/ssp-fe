@@ -1,0 +1,115 @@
+@keyframes lds-flickr-opacity {
+  0% {
+    -webkit-transform: translate(0 0);
+    transform: translate(0 0);
+    opacity: 1;
+  }
+  49.99% {
+    opacity: 1;
+    -webkit-transform: translate(40px, 0);
+    transform: translate(40px, 0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(40px, 0);
+    transform: translate(40px, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes lds-flickr-opacity {
+  0% {
+    -webkit-transform: translate(0 0);
+    transform: translate(0 0);
+    opacity: 1;
+  }
+  49.99% {
+    opacity: 1;
+    -webkit-transform: translate(40px, 0);
+    transform: translate(40px, 0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(40px, 0);
+    transform: translate(40px, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes lds-flickr {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(40px, 0);
+    transform: translate(40px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes lds-flickr {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(40px, 0);
+    transform: translate(40px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.ldsFlickrBox {
+  top: 40%;
+  width: 100%;
+}
+.ldsFlickr {
+  margin: 0 auto;
+}
+.ldsFlickr div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 80px;
+  left: 60px;
+}
+.ldsFlickr div:nth-child(1) {
+  background: #13283f;
+  -webkit-animation: lds-flickr 1s linear infinite;
+  animation: lds-flickr 1s linear infinite;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.ldsFlickr div:nth-child(2) {
+  background: #97d700;
+  -webkit-animation: lds-flickr 1s linear infinite;
+  animation: lds-flickr 1s linear infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.ldsFlickr div:nth-child(3) {
+  background: #13283f;
+  -webkit-animation: lds-flickr-opacity 1s linear infinite;
+  animation: lds-flickr-opacity 1s linear infinite;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.ldsFlickr {
+  width: 200px !important;
+  height: 200px !important;
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}

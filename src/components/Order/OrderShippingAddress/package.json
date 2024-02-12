@@ -1,0 +1,6 @@
+{
+  "name": "OrderShippingAddress",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./OrderShippingAddress.js"
+}

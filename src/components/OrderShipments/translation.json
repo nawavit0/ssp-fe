@@ -1,0 +1,88 @@
+{
+  "th_TH": {
+    "dot": " ",
+    "orderInfo": {
+      "title": "ข้อมูลการสั่งซื้อ",
+      "shippingInfo": "รายละเอียดการจัดส่ง",
+      "customerInfo": "ข้อมูลลูกค้า",
+      "taxInfo": "รายละเอียดใบกำกับภาษี",
+      "taxId": "เลขที่ผู้เสียภาษี",
+      "tel": "เบอร์โทรศัพท์"
+    },
+    "paymentInfo": {
+      "title": "รายการชำระเงิน",
+      "subTotal": "รวมเงินทั้งหมด",
+      "promoCode": "โปรโมชั่น",
+      "gwOptions": "บริการห่อของขวัญ",
+      "gwFree": "ฟรี",
+      "gwService": "ค่าบริการห่อของขวัญ",
+      "t1cRedempiton": "แลกคะแนน T1C",
+      "delivery": "การจัดส่ง",
+      "orderTotal": "รวมเงินทั้งหมด"
+    },
+    "deliveredBy": "จัดส่งโดย",
+    "yourOrder": "สถานะการสั่งซื้อของคุณคือ ",
+    "package": "แพ็คเกจ",
+    "otherItem": "สินค้าอื่นๆ",
+    "cancelItem": "ยกเลิก",
+    "tracking_number": "หมายเลขแพ็คเกจ",
+    "pickup_code": "รหัสรับพัสดุ:",
+    "status": {
+      "ready_to_ship": "เตรียมจัดส่ง",
+      "in_transit": "อยู่ระหว่างการจัดส่ง",
+      "delivered": "ได้รับสินค้าแล้ว",
+      "partial_delivered": "ได้รับสินค้าบางส่วนแล้ว",
+      "ready_to_collect": "สินค้าพร้อมรับ",
+      "return": "คืนสินค้า",
+      "rejected": "จัดส่งไม่สำเร็จ",
+      "collected": "ได้รับสินค้าแล้ว",
+      "canceled": "ยกเลิก"
+    },
+    "sold_by": "จัดจำหน่ายโดย",
+    "quantity": "จำนวน",
+    "gift_wrapping": "ห่อของขวัญ"
+  },
+  "en_US": {
+    "dot": ".",
+    "orderInfo": {
+      "title": "ORDER INFORMATION",
+      "shippingInfo": "Shipping Details",
+      "customerInfo": "Customer info",
+      "taxInfo": "Full Tax Invoice Details",
+      "taxId": "Tax ID",
+      "tel": "Call"
+    },
+    "paymentInfo": {
+      "title": "PAYMENT SUMMARY",
+      "subTotal": "Sub Total",
+      "promoCode": "Promo code",
+      "gwOptions": "Gift Options",
+      "gwFree": "Free",
+      "gwService": "Gift Wrapping fee",
+      "t1cRedempiton": "T1C Redemption",
+      "delivery": "Delivery",
+      "orderTotal": "Order Total"
+    },
+    "deliveredBy": "Delivered by",
+    "yourOrder": "your order is",
+    "package": "Package",
+    "otherItem": "Other items",
+    "cancelItem": "Cancelled items",
+    "tracking_number": "TRACKING NUMBER",
+    "pickup_code": "Secret Code:",
+    "status": {
+      "ready_to_ship": "Ready to Ship",
+      "in_transit": "Shipping",
+      "delivered": "Complete",
+      "partial_delivered": "Partial Delivered",
+      "ready_to_collect": "Ready to Pickup",
+      "return": "Return",
+      "rejected": "Delivery Fail",
+      "collected": "Delivered",
+      "canceled": "Cancel"
+    },
+    "sold_by": "Sold by",
+    "quantity": "Quantity",
+    "gift_wrapping": "Gift wrapping"
+  }
+}

@@ -1,0 +1,113 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+
+.root {
+  .submit {
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    width: calc(50% - 15px);
+    font-size: 17px;
+    font-weight: bold;
+
+    @include tablet-vertical {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  .AccountHeader {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #e2e2e2;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+
+    @include tablet-vertical {
+      display: none;
+    }
+
+    .AccountTitle {
+      font-size: 28px;
+      color: $gray-base;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+
+      @include tablet-vertical {
+        display: none;
+      }
+    }
+
+    .addNewAddBtn {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+      color: $blue-light;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .accountContent {
+    padding: 30px 20px;
+    border: 1px solid $gray-icon-disabled;
+    margin-bottom: 50px;
+
+    @include tablet-vertical {
+      margin-bottom: 35px;
+      border-top: none;
+    }
+  }
+
+  .accountMiniTitle {
+    font-weight: bold;
+    font-size: 14px;
+    color: $gray-base;
+    margin-bottom: 24px;
+  }
+
+  .accountForm {
+    max-width: 665px;
+  }
+
+  .formButton {
+    display: flex;
+    margin: 0 -15px;
+
+    @include tablet-vertical {
+      flex-direction: column;
+    }
+
+    .submit {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 44px;
+
+      @include tablet-vertical {
+        margin-bottom: 15px;
+      }
+    }
+
+    .discard {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 36px;
+      font-weight: bold;
+    }
+  }
+
+  .errMsg {
+    color: red;
+    font-size: 14px;
+    padding: 4px 0;
+    margin-bottom: 10px;
+  }
+
+  .success {
+    color: green !important;
+  }
+}

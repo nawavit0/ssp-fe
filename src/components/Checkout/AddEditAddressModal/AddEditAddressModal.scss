@@ -1,0 +1,17 @@
+@import '../../../styles/mixins/media.scss';
+
+.root {
+  max-height: 70vh;
+  padding: 20px 18px 20px 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  @include tablet-vertical {
+    max-height: none;
+  }
+
+  .addressContainer {
+    max-width: 660px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "th_TH": {
+    "label": "ต้องการพูดคุยเกี่ยวกับการสั่งซื้อของคุณ?",
+    "tel": "1281",
+    "secure_checkout": "ชำระเงิน"
+  },
+  "en_US": {
+    "label": "Want to talk about your order?",
+    "tel": "1281",
+    "secure_checkout": "SECURE CHECKOUT"
+  }
+}

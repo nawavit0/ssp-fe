@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  redis:
+      build: ./docker/redis
+      volumes:
+          - ./docker/redis/data:/data
+      ports:
+          - "6379:6379"

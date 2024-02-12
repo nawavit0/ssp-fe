@@ -1,0 +1,95 @@
+@import '../../styles/mixins/media.scss';
+
+.root {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+
+  .modalContainer {
+    background: #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    @include tablet-vertical {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      transform: translate(0);
+    }
+  }
+
+  .backdropContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .modalHeader {
+    display: flex;
+    height: 75px;
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    align-content: center;
+    align-items: center;
+
+    @include tablet-vertical {
+      height: 40px;
+      background: #edeced;
+      padding: 0 10px;
+    }
+  }
+
+  .modalBody {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    [data-anchor='login-to-member-icon'] {
+      top: 32px;
+    }
+  }
+
+  .modalFooter {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid #eaeaea;
+    background: #ffffff;
+
+    @include tablet-vertical {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 57px;
+      box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .close {
+    right: 21px;
+    top: 8px;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    white-space: nowrap;
+
+    @include tablet-vertical {
+      top: -8px;
+      right: 0;
+    }
+  }
+}

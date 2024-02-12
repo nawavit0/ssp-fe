@@ -1,0 +1,6 @@
+{
+  "name": "SearchNotFound",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SearchNotFound.js"
+}

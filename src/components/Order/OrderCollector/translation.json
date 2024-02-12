@@ -1,0 +1,22 @@
+{
+  "th_TH": {
+    "collectorInfoTitle": "Collector info",
+    "collectorConditionTitle": "An email will be sent when your item(s) is ready to be collected.",
+    "collectorConditionDesc": "Confirmation code will be sent to collector's email and phone number.",
+    "collectorConditionDesc2": "Please show ID card together with confirmation code to collect your order.",
+    "collectorConditionLastline": "We will hold your item(s) for",
+    "collectorConditionHilightDay": " up to 7 days.",
+    "get_direction": "ดูเส้นทาง",
+    "detail": "รายละเอียด"
+  },
+  "en_US": {
+    "collectorInfoTitle": "Collector info",
+    "collectorConditionTitle": "An email will be sent when your item(s) is ready to be collected.",
+    "collectorConditionDesc": "Confirmation code will be sent to collector's email and phone number. Please show ID card together with confirmation code to collect your order.",
+    "collectorConditionDesc2": "Please show ID card together with confirmation code to collect your order.",
+    "collectorConditionLastline": "We will hold your item(s) for",
+    "collectorConditionHilightDay": " up to 7 days.",
+    "get_direction": "GET DIRECTION",
+    "detail": "Detail"
+  }
+}

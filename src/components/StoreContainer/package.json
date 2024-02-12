@@ -1,0 +1,6 @@
+{
+  "name": "StoreContainer",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./StoreContainer.js"
+}

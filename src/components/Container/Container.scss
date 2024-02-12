@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/media';
+
+.wrapper {
+  display: flex;
+
+  &.fullScreen {
+    width: 100%;
+    justify-content: center;
+  }
+
+  &.notFullScreen {
+    max-width: $max-content-width;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.noDesktopPadding {
+    @include desktop {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  &.noMobilePadding {
+    @include tablet-vertical {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+}
+
+.root {
+  max-width: $max-content-width;
+
+  &.padding-none {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.padding-small {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include tablet {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  //&.padding-medium {
+  //  padding-left: 30px;
+  //  padding-right: 30px;
+  //
+  //  @include tablet {
+  //    padding-left: 15px;
+  //    padding-right: 15px;
+  //  }
+  //}
+
+  &.fullScreen {
+    width: 100%;
+  }
+}

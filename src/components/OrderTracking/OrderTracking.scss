@@ -1,0 +1,89 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/media';
+
+.container {
+  color: $gray-base;
+  line-height: 1.8;
+  border-radius: 2px;
+  box-shadow: 0 4px 20px 0 $gray-eclipse;
+  background-color: $white-base;
+  border: solid 1px $white-base-light;
+  z-index: 6;
+  width: 323px;
+  position: absolute;
+  right: 0;
+
+  @include tablet-vertical {
+    margin: auto;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    position: static;
+  }
+
+  .formTracking {
+    margin: 0 16px;
+
+    .formGroup {
+      margin-top: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        height: 36px;
+        font-size: 14px;
+        padding: 0 10px;
+        width: 100%;
+        margin-bottom: 5px;
+        @include tablet-vertical {
+          border: 1px solid $gray-main-light;
+        }
+      }
+
+      .button {
+        width: 100%;
+        height: 42px;
+        border-radius: 2px;
+        border: solid 1px $red-base;
+        margin: 10px 0 15px;
+        background-color: $red-base;
+        color: $white-base;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          background-color: darken($red-base, 7%);
+          transition: 0.3s;
+        }
+      }
+
+      .labelTitle {
+        margin-bottom: 5px;
+      }
+
+      a:first-of-type {
+        margin-top: 15px;
+      }
+
+      .orderHistoryItem {
+        color: $blue-light;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: underline;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+
+      .validateAlert {
+        color: $red-light;
+      }
+
+      .validateInput {
+        border: 1px solid $red-light;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import '../../styles/mixins/media';
+
+.root {
+  padding: 20px 0 80px;
+
+  .mainTitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 62px;
+  }
+
+  .mainContent {
+    display: flex;
+    max-width: 830px;
+    margin: auto;
+
+    @include tablet-vertical {
+      flex-direction: column;
+    }
+  }
+
+  .loginContainer {
+    flex: 1;
+    padding-right: 102px;
+    padding-top: 4px;
+
+    @include tablet-vertical {
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+
+    .regisTitle {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .miniLogin {
+      position: static;
+      box-shadow: none;
+      border: 0;
+
+      form {
+        margin: 0;
+      }
+
+      h1 {
+        display: none;
+      }
+    }
+  }
+
+  .continue {
+    flex: 1;
+    border-left: 1px solid #eaeaea;
+    padding-left: 102px;
+    padding-top: 4px;
+
+    @include tablet-vertical {
+      padding-left: 0;
+      border: 0;
+      border-top: 1px solid #eaeaea;
+      padding-top: 40px;
+    }
+
+    .descBox {
+      max-width: 313px;
+
+      @include tablet-vertical {
+        max-width: none;
+      }
+    }
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333333;
+      margin: 0 0 21px 0;
+    }
+
+    .desc {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .button {
+      line-height: 43px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}

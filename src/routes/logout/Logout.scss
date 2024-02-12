@@ -1,0 +1,70 @@
+@import '../../styles/variables.scss';
+
+.root {
+  .container {
+    margin: 0 auto;
+    padding: 123px 20px 132px;
+
+    .icon {
+      width: 72px;
+      height: 72px;
+      color: $red-base;
+      margin: auto auto 10px;
+      path {
+        fill: $red-base;
+        stroke: $red-base;
+      }
+    }
+
+    .message {
+      margin: 0 auto;
+      line-height: 51px;
+      font-size: 32px;
+      font-weight: bold;
+      color: $red-base;
+      text-align: center;
+    }
+    .redirect {
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.36;
+      letter-spacing: normal;
+      text-align: center;
+      text-align: center;
+    }
+
+    .button {
+      display: block;
+      cursor: pointer;
+      box-sizing: border-box;
+      margin: 71px auto auto;
+      padding: 9px;
+      width: 220px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: $red-base;
+      border: solid 1px $red-base;
+      &:hover {
+        background-color: darken($red-base, 7%);
+        transition: 0.3s;
+      }
+    }
+
+    .buttonLayer {
+      display: block;
+      height: 22px;
+      font-size: 14px;
+      font-weight: bold;
+      margin: auto;
+      color: $white-base;
+      text-align: center;
+    }
+
+    .button:focus {
+      border-color: $red-base;
+      box-shadow: 0 0 8px $red-base;
+    }
+  }
+}

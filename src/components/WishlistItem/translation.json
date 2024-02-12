@@ -1,0 +1,30 @@
+{
+  "th_TH": {
+    "code": "รหัส",
+    "other_options": "ตัวเลือกอื่น ๆ",
+    "wishlist": "สิ่งที่อยากได้",
+    "quick_buy": "ซื้อด่วน",
+    "view_detail": "รายละเอียด",
+    "save": "ประหยัด",
+    "out_of_stock": "สินค้าหมด",
+    "first_reviewer": "รีวิวสินค้านี้คนแรก >",
+    "notifyme": "แจ้งเตือนเมื่อมีสินค้า",
+    "soldout": "ขออภัยสินค้านี้หมด.",
+    "colors": "สี",
+    "close": "ปิด"
+  },
+  "en_US": {
+    "code": "Code",
+    "other_options": "Other options",
+    "wishlist": "WISHLIST",
+    "quick_buy": "QUICK BUY",
+    "view_detail": "VIEW DETAILS",
+    "save": "SAVE",
+    "out_of_stock": "Out of Stock",
+    "first_reviewer": " Be the first to rate this >",
+    "notifyme": "Notify me when it's back",
+    "soldout": "Sorry. This selected options is soldout.",
+    "colors": "colors",
+    "close": "close"
+  }
+}

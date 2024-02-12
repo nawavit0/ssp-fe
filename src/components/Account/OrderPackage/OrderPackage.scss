@@ -1,0 +1,205 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+@import '../../../styles/common';
+
+.sectionPackage {
+  display: flex;
+  justify-content: start;
+  padding: 14px 20px;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+
+  @include tablet-vertical() {
+    align-items: flex-start;
+    justify-content: space-between;
+    .trackingNo {
+      margin-right: 0 !important;
+      text-align: right;
+    }
+  }
+
+  &.noStatus {
+    border-bottom: 0;
+  }
+
+  .package,
+  .status,
+  .trackingNo {
+    @include desktop-large {
+      min-width: 210px;
+    }
+    .trackLabel {
+      margin: 0;
+      display: inline-block;
+    }
+  }
+
+  .package {
+    margin-right: 15px;
+    font-weight: bold;
+    display: flex;
+
+    @include tablet-vertical {
+      margin-right: 0;
+    }
+
+    & span {
+      margin: 0 8px 0 12px;
+    }
+
+    .packageNo {
+      white-space: nowrap;
+      @include desktop() {
+        margin: 0 0 0 10px;
+      }
+    }
+
+    .packageNo,
+    .refNumber,
+    .packageArrow {
+      display: flex;
+    }
+
+    .packageArrow {
+      flex: 0 0 20px;
+    }
+  }
+
+  .refNumberMobile {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .packageName {
+    padding-left: 10px;
+  }
+
+  .status {
+    margin-right: 10px;
+    @include tablet-vertical {
+      margin-right: 0;
+      margin-top: 5px;
+    }
+    span {
+      color: #58CA00;
+      font-weight: bold;
+    }
+
+    &.Cancel span {
+      color: $red-status;
+    }
+    &.Completed span {
+      color: $green-light;
+    }
+  }
+
+  .trackingNo {
+    margin-right: 15px;
+    @include tablet-vertical {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .trackingValueMobile,
+    .trackingValue {
+      a {
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: underline;
+        color: $gray-base;
+
+        @include tablet-vertical {
+          word-break: break-word;
+        }
+      }
+    }
+  }
+
+  .packageMobile {
+    display: flex;
+    @include tablet-vertical {
+      flex-direction: column;
+    }
+    .sellerName {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.sectionBoxDetail {
+  display: none;
+  justify-content: space-between;
+  padding: 28px 23px;
+
+  @include tablet-vertical {
+    display: none;
+  }
+
+  .prodImgList {
+    display: flex;
+    flex: 1;
+
+    .prodImg {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      margin: 0 5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      .prodImgNum {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        background-color: #ffffff;
+        border: solid 1px #eaeaea;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: bold;
+        color: $gray-base;
+      }
+    }
+
+    .prodImgMore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: underline;
+      cursor: pointer;
+      margin: 0 20px;
+    }
+  }
+
+  .orderInfo {
+    flex: 0 0 54.5%;
+
+    @include tablet-vertical {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .trackingNo {
+        text-align: right;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
+.showPackage {
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.packageArrow {
+  margin-left: 10px;
+}

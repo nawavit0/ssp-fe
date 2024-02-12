@@ -1,0 +1,14 @@
+{
+  "th_TH": {
+    "create_account_title": "สมัครสมาชิก Supersports ตอนนี้",
+    "create_account_description": "บันทึกรายละเอียดส่วนตัว ที่อยู่ และ เพลิดเพลินกับประสบการณ์การช็อปปิ้งที่ไร้รอยต่อ",
+    "register": "สมัครสมาชิก",
+    "agree": "To Register, Please agree to our Terms of Service and Privacy Policy"
+  },
+  "en_US": {
+    "create_account_title": "Save your personal details, addresses and enjoy a seamless shopping experience.",
+    "create_account_description": "Tax ID",
+    "register": "Register",
+    "agree": "To Register, Please agree to our Terms of Service and Privacy Policy"
+  }
+}

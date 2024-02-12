@@ -1,0 +1,47 @@
+@import './variables.scss';
+@import './mixins/media.scss';
+// forms
+%form {
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $gray-lighter;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $gray-lighter;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: $gray-lighter;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: $gray-lighter;
+  }
+}
+
+// widget
+%accordion {
+  border-radius: inherit; /* align with parent */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &.active {
+    max-height: 100vh;
+    opacity: 1;
+  }
+}
+
+.showOnDesktop {
+  @include tablet-vertical() {
+    display: none !important;
+  }
+}
+
+.showOnMobile {
+  @include desktop() {
+    display: none !important;
+  }
+}

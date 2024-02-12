@@ -1,0 +1,217 @@
+@import '../../styles/mixins/media';
+@import '../../styles/variables';
+@import '../../styles/common';
+
+.ShipmentContainer {
+  margin-bottom: $gap * 2;
+  border: 1px solid $border-color-lighter;
+  @include tablet-vertical() {
+    margin-bottom: $gap;
+  }
+  .Header {
+    border-bottom: 1px solid $border-color-lighter;
+    background-color: $white-base-light;
+    padding: $gap;
+  }
+}
+
+.Packaging {
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color-lighter;
+  }
+}
+
+.PackagingNo {
+  display: flex;
+  padding: 20px $gap;
+  border-bottom: 1px solid $border-color-lighter;
+  align-items: center;
+
+  @include tablet-vertical() {
+    flex-direction: column;
+    align-items: flex-start;
+    .PackagingProvider {
+      margin-top: 10px;
+      flex-direction: row !important;
+      .Provider {
+        padding-left: 5px;
+        font-weight: normal;
+        color: #9b9b9b;
+      }
+    }
+  }
+
+  .PackagingTitle,
+  .PackagingProvider {
+    display: flex;
+  }
+  .PackageIcon {
+    margin-right: 10px;
+  }
+  .PackagingTitle {
+    font-weight: bold;
+  }
+  .PackagingProvider {
+    flex: auto;
+    align-items: flex-end;
+    flex-direction: column;
+    .Label,
+    .Provider {
+      display: flex;
+    }
+    .Label {
+      color: #9b9b9b;
+    }
+    .Provider {
+      text-transform: uppercase;
+      @include desktop() {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.PackagingProductContainer + .PackagingProgress {
+  border-top: 1px solid $border-color-lighter;
+}
+
+.PackagingProgress {
+  border-bottom: 1px solid $border-color-lighter;
+  padding: $gap * 2 $gap;
+  @include tablet-vertical() {
+    padding: $gap;
+  }
+  .PackagingTrackNumber {
+    margin: 0 0 $gap 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  .trackLink {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  .PackagingProcessBar {
+    height: auto;
+  }
+}
+
+.PackagingProductContainer {
+  .ProductContainer {
+    @include tablet-vertical() {
+      margin: $gap;
+      .Product {
+        margin: 0;
+      }
+    }
+    &:not(:first-child) {
+      @include tablet-vertical() {
+        padding-top: $gap;
+        border-top: 1px solid $border-color-lighter;
+      }
+      .Product {
+        @include desktop {
+          border-top: 1px solid $border-color-lighter;
+          padding-top: $gap;
+        }
+      }
+    }
+  }
+  .Product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: $gap;
+
+    @include tablet-vertical() {
+      .ProductImage {
+        padding: 0;
+      }
+      .ColLeft {
+        flex: 0 0 90px;
+      }
+      .ColRight {
+        flex-direction: column;
+        align-items: flex-start;
+        .ProductInfo,
+        .ProductQty,
+        .ProductPrice,
+        .ProductStatus {
+          padding: 0;
+        }
+      }
+    }
+    &:not(:last-child) {
+      padding-bottom: 15px;
+      border-bottom: 1px solid $border-color-lighter;
+    }
+
+    .ColLeft,
+    .ColRight {
+      display: flex;
+    }
+    .ColRight {
+      flex: auto;
+      flex-direction: row;
+      padding-left: 10px;
+    }
+  }
+  .ProductImage,
+  .ProductInfo,
+  .ProductQty,
+  .ProductPrice,
+  .ProductStatus {
+    display: flex;
+    padding: $gap;
+  }
+
+  .ProductImage {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  .ProductQty,
+  .ProductPrice {
+    @include desktop-medium() {
+      flex: 0 0 100px;
+      justify-content: flex-start;
+    }
+  }
+  .ProductPriceMobile {
+    display: inline;
+  }
+
+  .ProductInfo {
+    flex: auto;
+    flex-direction: column;
+    > p {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    .ProductBrandName {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ProductQty {
+    white-space: nowrap;
+  }
+
+  .ProductStatus {
+    color: $blue-light;
+    font-weight: bold;
+    text-transform: capitalize;
+    white-space: nowrap;
+
+    &.Cancel {
+      color: $red-status;
+    }
+    &.Completed {
+      color: $green-light;
+    }
+    &.isMobile {
+      display: block;
+      padding: 0 0 $gap/2 0;
+      text-align: right;
+    }
+  }
+}

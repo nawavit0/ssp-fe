@@ -1,0 +1,16 @@
+{
+  "th_TH": {
+    "promotions_and_privileges": "โปรโมชั่นและสิทธิพิเศษ",
+    "login_and_register": "เข้าสู่ระบบ",
+    "welcome_customer": "สวัสดี",
+    "confirm_login": "ยังไม่เป็นสมาชิกใช่ไหม? สมัครตอนนี้เลย",
+    "please_login": "กรุณาเข้าสู่ระบบเพื่อเพิ่มรายการสินค้าที่ต้องการ"
+  },
+  "en_US": {
+    "promotions_and_privileges": "Promotions and privileges",
+    "login_and_register": "Login",
+    "welcome_customer": "Hi!",
+    "confirm_login": "Not a member yet? Register now",
+    "please_login": "Please login to add products to wishlist"
+  }
+}

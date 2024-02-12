@@ -1,0 +1,36 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/media';
+
+.root {
+  .mainTitle {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 14px;
+
+    @include tablet-vertical {
+      margin-top: 14px;
+      padding: 0 10px;
+    }
+  }
+
+  .infoRow {
+    font-size: 14px;
+    margin: 0 0 14px 0;
+
+    @include tablet-vertical {
+      padding: 0 16px 0 10px;
+    }
+
+    .left {
+      color: #333333;
+      min-width: 100px;
+      word-break: break-word;
+    }
+
+    .right {
+      color: #333333;
+      text-align: right;
+      word-break: break-word;
+    }
+  }
+}

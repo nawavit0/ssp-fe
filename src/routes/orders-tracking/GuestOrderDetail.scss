@@ -1,0 +1,363 @@
+@import '../../styles/mixins/media';
+@import '../../styles/variables';
+
+.root {
+  @include mobile {
+    .mobile {
+      display: inline;
+    }
+    .desktop {
+      display: none;
+    }
+  }
+  .hr {
+    @include tablet {
+      display: none;
+    }
+  }
+  .OrderHeader {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+
+    .OrderTitle {
+      font-size: 28px;
+      color: #333;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  .sectionBoxTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 20px 15px 20px;
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+
+    @include tablet {
+      display: block;
+
+      p {
+        margin-bottom: 10px;
+      }
+      .orderInfo {
+        display: block;
+      }
+      .orderStatus {
+        display: flex;
+        justify-content: space-between;
+      }
+      .delivery {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          flex: 1 1;
+          text-align: right;
+        }
+        p.title {
+          flex: 1 1;
+          text-align: left;
+        }
+      }
+      .payment {
+        display: flex;
+        justify-content: space-between;
+      }
+      .totalPrice {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .orderInfo,
+    .orderStatus,
+    .delivery,
+    .payment {
+      flex: 1 1;
+      margin-right: 15px;
+
+      @include tablet {
+        margin-right: 0;
+      }
+    }
+    .totalPrice {
+      align-items: flex-end;
+    }
+
+    .payment {
+      position: relative;
+
+      .link {
+        color: #4a90e2;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin-bottom: 9px;
+    }
+
+    .title {
+      font-size: 14px;
+      color: #9b9b9b;
+    }
+    .orderStatusIcon {
+      display: flex;
+      align-items: center;
+      line-height: 13px;
+
+      .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        path {
+          fill: #5ea908;
+          stroke: #5ea908;
+        }
+      }
+    }
+    .orderStatusText {
+      font-size: 16px;
+      font-weight: bold;
+
+      &.completed {
+        color: #5ea908;
+      }
+      &.awaitingPayment {
+        color: #f5a623;
+      }
+      &.paymentFail {
+        color: #d11c2c;
+      }
+    }
+  }
+
+  .sectionBoxDetail {
+    width: 100%;
+    //height: 234px;
+    background-color: #ffffff;
+    border: solid 1px #eaeaea;
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+    .processBar {
+      margin: 30px 0;
+    }
+
+    .title {
+      text-align: center;
+      color: #333333;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .textCenter {
+      text-align: center;
+    }
+
+    .link {
+      font-size: 13px;
+      font-weight: bold;
+      text-align: right;
+      color: #4a90e2;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .prodWrap {
+      padding: 0 20px;
+
+      @include mobile {
+        padding: 0;
+      }
+    }
+  }
+
+  .sectionBoxBottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+    @include mobile {
+      display: block;
+    }
+
+    .BoxBottomLeft,
+    .BoxBottomRight {
+      background-color: #ffffff;
+      border: solid 1px #eaeaea;
+      flex: 1;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    .BoxBottomRight {
+      margin-left: 30px;
+
+      @include mobile {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+    .title {
+      text-transform: uppercase;
+      color: #333333;
+      font-weight: bold;
+      padding: 20px;
+      border-bottom: solid 1px #eaeaea;
+    }
+    .subTitle {
+      color: #333333;
+      font-weight: bold;
+      margin-bottom: 18px;
+
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+    .topic {
+      font-weight: normal;
+      color: #9b9b9b;
+    }
+    .shippingInfo {
+      padding: 20px 20px 0;
+    }
+    .billingInfo {
+      padding: 0 20px;
+    }
+    .summaryInfoWrap {
+      margin: 20px 20px 0;
+
+      .summaryInfo {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 1px #eaeaea;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+
+        @include tablet {
+          border-bottom: none;
+          padding: 0;
+          margin-bottom: 16px;
+        }
+
+        span {
+          flex: 1 1;
+
+          &:first-child {
+            align-items: flex-start;
+            text-align: left;
+          }
+          &:last-child {
+            align-items: flex-end;
+            text-align: right;
+          }
+        }
+      }
+
+      .promoCode {
+        border-bottom: solid 1px #eaeaea;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+
+        @include tablet {
+          border-bottom: none;
+          padding: 0;
+        }
+      }
+
+      .promoItem {
+        display: flex;
+        justify-content: space-between;
+      }
+      .t1cPoint {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+      }
+      .totalPrice {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .btnBottom {
+    display: flex;
+    justify-content: flex-end;
+
+    @include tablet {
+      display: none;
+    }
+
+    .printBtn {
+      font-size: 14px;
+      line-height: 50px;
+      margin: 20px 0;
+      width: 100%;
+      max-width: 265px;
+    }
+
+    .icon {
+      margin-right: 19px;
+    }
+  }
+
+  .noLine {
+    border-bottom: none !important;
+  }
+
+  .noPaddingBt {
+    padding-bottom: 0 !important;
+  }
+
+  .noMarginBt {
+    margin-bottom: 0;
+  }
+
+  .paymentMethodWrap {
+    width: 202px;
+    position: absolute;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+
+    @include mobile {
+      top: 20px;
+    }
+
+    .paymentBox {
+      padding: 17px 20px 22px 30px;
+
+      .link {
+        color: #4a90e2;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .desktop {
+    display: inline;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  .mobile {
+    display: none;
+
+    @include tablet {
+      display: inline;
+    }
+  }
+}

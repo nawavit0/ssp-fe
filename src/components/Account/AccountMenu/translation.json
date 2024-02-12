@@ -1,0 +1,28 @@
+{
+  "th_TH": {
+    "myAccount": "บัญชีของฉัน",
+    "Overview": "ข้อมูลของฉัน",
+    "Account Overview": "ข้อมูลของฉัน",
+    "My Profile": "ข้อมูลส่วนตัว",
+    "Address Book": "สมุดที่อยู่",
+    "Wishlist": "รายการที่ชอบ",
+    "My Orders": "การสั่งซื้อของฉัน",
+    "Return & Exchange": "การคืนสินค้า",
+    "Change Password": "เปลี่ยนรหัสผ่าน",
+    "signOut": "ออกจากระบบ",
+    "orderDetails": "รายการสั่งซื้อ"
+  },
+  "en_US": {
+    "myAccount": "My Account",
+    "Overview": "Account Overview",
+    "Account Overview": "Account Overview",
+    "My Profile": "My Profile",
+    "Address Book": "Address Book",
+    "Wishlist": "Wishlist",
+    "My Orders": "My Orders",
+    "Return & Exchange": "Return & Refund",
+    "Change Password": "Change Password",
+    "signOut": "Log out",
+    "orderDetails": "Order Details"
+  }
+}

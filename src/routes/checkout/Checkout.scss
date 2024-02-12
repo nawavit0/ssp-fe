@@ -1,0 +1,276 @@
+@import '../../styles/mixins/media';
+@import '../../styles/variables';
+
+@include tablet-vertical {
+  .hidden {
+    display: none;
+  }
+}
+
+.summary {
+  @include tablet-vertical {
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+.orderSummary {
+  @include desktop {
+    padding-left: 30px !important;
+  }
+
+  @include tablet-vertical {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: $white-base;
+  }
+}
+
+.checkoutBlock {
+  min-height: 270px;
+  margin-bottom: 60px;
+  @include tablet {
+    padding: 0 15px;
+  }
+  .loginTab {
+    background: $grey-color-light;
+    padding: 15px 15px 15px 20px;
+    margin-bottom: 15px;
+    color: #484848;
+    font-size: 18px;
+    @include tablet-vertical {
+      font-size: 12px;
+    }
+  }
+  .linkLogin {
+    text-decoration: underline;
+    font-weight: bold;
+    @include tablet-vertical {
+      font-size: 13px;
+    }
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #484848;
+    &.deliveryTitle {
+      margin-bottom: 20px;
+    }
+  }
+
+  hr {
+    margin-bottom: 24px;
+    border-color: #eaeaea;
+  }
+}
+.deliverySection {
+  padding: 24px 0 24px 0;
+}
+
+.billingSection {
+  // padding: 0 15px 0;
+
+  @include tablet-vertical {
+    margin: 20px 0 50px;
+  }
+}
+
+.last {
+  .mobileFooter {
+    @include mobile {
+      background: $white-base;
+      border-top: 1px solid $white-base-light;
+      display: flex;
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      height: 88px;
+      width: 100%;
+
+      // .sum {
+      //   display: block;
+      //   flex: 0 20%;
+      //   padding: 0 10px;
+      //   margin: auto;
+      //   @include desktop {
+      //     display: none;
+      //   }
+      // }
+
+      .viewDetail {
+        @include mobile {
+          background-color: transparent;
+          width: 80px;
+          color: $blue-light;
+          font-size: 12px;
+          font-weight: bold;
+          text-decoration: underline;
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  .billing {
+    flex: 0 50%;
+    margin: auto;
+    @include mobile {
+      flex: auto;
+      padding: 10px 0;
+    }
+  }
+
+  .sum {
+    display: none;
+    margin: auto;
+    @include mobile {
+      display: block;
+      flex: 0 20%;
+      padding: 0 10px;
+    }
+  }
+
+  .continue {
+    flex: 0 100%;
+    margin: auto;
+    text-align: right;
+    @include mobile {
+      flex: 0 73%;
+      padding: 0 10px;
+    }
+
+    .btn {
+      cursor: pointer;
+      background-color: $red-base;
+      color: $white-base;
+      border: 0;
+      font-size: 16px;
+      // letter-spacing: 0.8px; // "Continue to Payment" Too long!
+      line-height: 37px;
+      height: 37px;
+      width: 100%;
+      max-width: 340px;
+      margin: auto;
+      padding: 0 16px;
+      text-align: center;
+
+      @include mobile {
+        font-size: 14px;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        background: $gray-light;
+      }
+
+      .icon {
+        margin: -2px 0 0 2px;
+      }
+    }
+  }
+}
+
+.whiteBox {
+  background: $white-base;
+  border: 1px solid $blue-light;
+  border-radius: 4px;
+  padding: 12px 20px 20px 20px;
+  box-shadow: 0 0 4px 0 rgba(74, 144, 226, 0.4);
+  max-width: 656px;
+  margin-bottom: 12px;
+
+  &.noAddress {
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    color: #bbb;
+    font-size: 13px !important;
+    padding-bottom: 12px;
+    font-style: italic;
+  }
+}
+
+.changeAddressBtn {
+  font-weight: bold;
+  color: #4a90e2;
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.root {
+  max-width: 442px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+
+  @include tablet-vertical {
+    width: auto !important;
+    top: 50% !important;
+    right: 16px;
+    left: 16px !important;
+    bottom: auto !important;
+    transform: translate(0, -50%) !important;
+    padding: 10px;
+  }
+
+  .modalHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include tablet-vertical {
+      flex-direction: column;
+      padding: 10px 0 20px;
+    }
+
+    .title {
+      align-self: center;
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: bold;
+
+      @include tablet-vertical {
+        padding: 10px 0 0;
+      }
+    }
+  }
+
+  .modalBody {
+    @include desktop {
+      padding: 22px 64px 47px 65px;
+    }
+
+    @include tablet-vertical {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 13px 0;
+      padding-bottom: 14px;
+      overflow: auto;
+    }
+  }
+}
+
+.headerWrapper {
+  @include tablet-vertical {
+    display: flex !important;
+    flex-direction: column;
+    background-color: $white-base !important;
+    height: auto !important;
+  }
+}
+
+.allMethodDisable {
+  padding: 16px;
+  color: $red-base;
+  line-height: 140%;
+  background: #fafafa;
+}

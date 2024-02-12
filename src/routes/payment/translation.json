@@ -1,0 +1,42 @@
+{
+  "th_TH": {
+    "use_point_and_giftcard_title": "ใช้คะแนนสะสม The 1 Card",
+    "choose_payment_method": "เลือกวิธีการชำระเงิน",
+    "cart_summary_title": "สรุปรายการสั่งซื้อ",
+    "policy_and_service": "By clicking on Pay  Now, you have read and agreed to our Privacy Policy and Service Condition.",
+    "msg_error_selected_agent": "กรุณาเลือกชำระผ่านทางเคาเตอร์ธนาคาร หรือ ร้านค้าอื่น ๆ",
+    "please_choose_payment": "กรุณาเลือกวิธีการชำระเงิน",
+    "pay_now": "ชำระเงิน >",
+    "view_detail": "ดูรายละเอียด",
+    "textBeforePolicy": "By clicking on Pay Now, you agree and confirm that you have read our",
+    "policy": "Privacy",
+    "and": "and",
+    "service": "Service Condition",
+    "payment_empty": "ท่านไม่สามารถเลือกวิธีการจัดส่งของสินค้าทั้งหมดพร้อมกันได้ เนื่องจากสินค้าบางรายการไม่รองรับวิธีการจัดส่งบางประเภท กรุณานำสินค้าบางรายการออกจากตะกร้า ท่านสามารถตรวจสอบประเภทการจัดส่งที่รองรับได้ที่หน้ารายละเอียดสินค้าแต่ละรายการ",
+    "modal_title": "จำนวนสินค้าไม่เพียงพอ",
+    "modal_title_t1c": "ขออภัยค่ะ คุณทำรายการไม่สำเร็จ",
+    "cart_message": "สินค้าบางอย่างมีปริมาณไม่เพียงพอต่อความต้องการของคุณ",
+    "t1c_message": "กรุณาเลือกวิธีชำระเงินและดำเนินการใหม่อีกครั้ง",
+    "terms_and_conditions": "ข้อตกลงการใช้บริการ"
+  },
+  "en_US": {
+    "use_point_and_giftcard_title": "REDEEM POINTS",
+    "choose_payment_method": "Choose payment method",
+    "cart_summary_title": "Summary",
+    "policy_and_service": "By clicking on Pay  Now, you have read and agreed to our Privacy Policy and Service Condition.",
+    "msg_error_selected_agent": "Please select payment via bank or other counter.",
+    "please_choose_payment": "Please choose your payment.",
+    "pay_now": "PAY NOW >",
+    "view_detail": "View Details",
+    "textBeforePolicy": "By clicking on Pay Now, you agree and confirm that you have read our ",
+    "policy": "Privacy Policy ",
+    "and": "and ",
+    "service": "Service Condition",
+    "payment_empty": "No available shipping method for all products in cart. Please remove some products. Available shipping method for each product will be displayed in Product Detail page",
+    "modal_title": "Stock quantity is not enough.",
+    "modal_title_t1c": "Sorry, you do not succeed.",
+    "cart_message": "Not all of your products are available in the requested quantity.",
+    "t1c_message": "Please select payment method and try again.",
+    "terms_and_conditions": "Terms and Conditions"
+  }
+}

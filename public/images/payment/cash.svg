@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="42" viewBox="0 0 72 42">
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <rect width="70" height="40" fill="#FFF" stroke="#EAEAEA" rx="2"/>
+        <text fill="#9B9B9B" font-family="Gotham-Medium, Gotham" font-size="14" font-weight="400">
+            <tspan x="15" y="22">CASH</tspan>
+        </text>
+    </g>
+</svg>

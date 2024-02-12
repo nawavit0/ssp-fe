@@ -1,0 +1,41 @@
+{
+  "th_TH": {
+    "new_password": "รหัสผ่านใหม่",
+    "new_password_placeholder": "ใส่รหัสผ่านใหม่ของคุณ",
+    "confirm_new_password": "ยืนยันรหัสผ่าน",
+    "confirm_new_password_placeholder": "ยืนยันรหัสผ่านใหม่ของคุณ",
+    "reset_submit_text": "รีเซ็ท",
+    "password_not_matched": "รหัสผ่านไม่ตรงกัน",
+    "password_format": "รหัสผ่านต้องมีอักขระและตัวเลขรวมกันอย่างน้อย 8 ตัว",
+    "title": "สร้างรหัสผ่านใหม่",
+    "sub_title": "สร้างรหัสผ่านใหม่เพื่อเข้าถึงบัญชีของคุณ",
+    "title_success": "สร้างรหัสผ่านใหม่เรียบร้อยแล้ว!",
+    "subTitle_success": "สร้างรหัสผ่านใหม่เรียบร้อยแล้ว โปรดลงชื่อเข้าใช้อีกครั้งเพื่อเข้าถึงบัญชีของคุณ",
+    "go_to_login": "เข้าสู่ระบบ",
+    "notic_pass": "รหัสผ่านต้องเป็นภาษาอังกฤษประกอบด้วยตัวพิมพ์ใหญ่อย่างน้อย 1 ตัว ตัวพิมพ์เล็กอย่างน้อย 1 ตัว และตัวเลขอย่างน้อย 1 ตัว รวมกันไม่ต่ำกว่า 8 ตัว",
+    "required": "โปรดระบุ",
+    "reset_pass_expired": "ลิงค์สำหรับตั้งรหัสผ่านใหม่ของท่านหมดอายุ",
+    "reset_pass_text": "กรุณากรอกอีเมลของท่านอีกครั้ง ระบบจะส่งลิงค์สำหรับตั้งรหัสผ่านใหม่ให้ทางอีเมล",
+    "reset_pass_link": "กรอกอีเมลของท่านที่นี่"
+  },
+  "en_US": {
+    "new_password": "New Password",
+    "new_password_placeholder": "Enter your new password",
+    "confirm_new_password": "Confirm New Password",
+    "confirm_new_password_placeholder": "Confirm your new password",
+    "incorrect": "Your email is not correct. Please try again.",
+    "reset_submit_text": "SUBMIT",
+    "password_not_matched": "Password does not match",
+    "password_format": "Passwords must contain at least 8 characters and numbers.",
+    "title": "CREATE NEW PASSWORD",
+    "sub_title": "Create new password to acccess your Central account",
+    "title_success": "YOUR NEW PASSWORD CREATED SUCCESSFULLY!",
+    "subTitle_success": "Your new password is successfully created. Please login again to access your account.",
+    "go_to_login": "GO TO LOGIN",
+    "notic_pass": "The password must be at least 8 characters long, contain at least one number, one lowercase letter, and one uppercase letter.",
+    "required": "Required field.",
+    "reset_pass_expired": "Your reset password link has been expired",
+    "reset_pass_text": "Enter your email address and we will send a new link to reset your password",
+    "reset_pass_link": "Enter your email address here"
+  }
+}

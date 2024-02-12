@@ -1,0 +1,334 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/media';
+
+.row {
+  margin-bottom: 25px;
+
+  @include tablet-vertical {
+    margin-bottom: 120px;
+  }
+}
+.paymentSection {
+  padding: 0 15px;
+}
+@include tablet-vertical {
+  .hidden {
+    display: none;
+  }
+}
+
+.policyAndService {
+  font-size: 13px;
+  color: $gray-main-dark;
+  margin: 15px 0 0 30px;
+}
+
+.title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 18px 0 24px 0;
+  @include tablet-vertical {
+    font-size: 14px;
+    margin: 19px 0 9px 0;
+  }
+  &.titleDesktop {
+    @include tablet-vertical {
+      display: none;
+    }
+  }
+}
+
+.textPaymentEmpty {
+  color: $red-base;
+}
+.titleSelectWrapper {
+  @include tablet-vertical {
+    margin: 19px 0 11px 0;
+  }
+
+  .titleMobile {
+    @include desktop {
+      display: none;
+    }
+
+    .blockTitle {
+      font-size: 14px;
+    }
+  }
+}
+
+.summary {
+  @include tablet-vertical {
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+.orderSummary {
+  @include desktop {
+    padding-left: 30px !important;
+  }
+
+  @include tablet-vertical {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $white-base;
+  }
+}
+
+@include desktop {
+  .last {
+    display: none;
+  }
+}
+
+.button {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: $red-base;
+  border: solid 1px $red-base;
+  line-height: 20px;
+  font-size: 13px;
+  color: $white-base;
+  text-transform: uppercase;
+  width: 420px;
+  height: 50px;
+  margin-top: 15px;
+
+  @include mobile {
+    display: none;
+  }
+
+  &:hover {
+    background-color: darken($red-base, 7%);
+    transition: 0.3s;
+  }
+}
+
+@include tablet-vertical {
+  .last {
+    flex-direction: column;
+
+    &.hidden {
+      display: none;
+    }
+
+    .continue {
+      align-items: flex-end;
+      padding: 10px 0 0;
+    }
+
+    .mobileFooter {
+      background: $white-base;
+      border-top: 1px solid $white-base-light;
+      z-index: 3;
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      height: 100px;
+      width: 100%;
+      .policy {
+        font-size: 10px;
+        text-align: center;
+        padding: 0px 10px;
+        margin-bottom: 10px;
+        .link {
+          color: $red-base;
+        }
+      }
+      .boxMobileFooterSum {
+        display: flex;
+        .sum {
+          display: block;
+          line-height: 1.5;
+
+          .viewSummary {
+            background-color: transparent;
+            color: $blue-light;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: underline;
+            display: flex;
+            justify-content: flex-start;
+          }
+        }
+
+        .left {
+          flex: 0 30%;
+          margin: auto;
+          padding: 0 10px;
+        }
+
+        .right {
+          flex: 0 70%;
+          margin: auto;
+          padding: 0 10px;
+        }
+
+        .btn {
+          cursor: pointer;
+          background-color: $red-base;
+          color: $white-base;
+          border: 0;
+          font-size: 16px;
+          letter-spacing: 0.8px;
+          line-height: 37px;
+          height: 37px;
+          width: 100%;
+          max-width: 340px;
+          margin: auto;
+          padding: 0 16px;
+          text-align: center;
+
+          &:disabled {
+            color: $gray-lighter;
+          }
+          &.selectEmpty {
+            background: $gray-lighter;
+          }
+
+          .icon {
+            margin: -2px 0 0 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.root {
+  max-width: 442px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+
+  @include tablet-vertical {
+    width: auto !important;
+    overflow-y: scroll;
+    top: 50% !important;
+    right: 16px;
+    left: 16px !important;
+    bottom: auto !important;
+    transform: translate(0, -50%) !important;
+    padding: 10px;
+  }
+
+  &.termsAndConditions {
+    max-width: 80%;
+
+    @include tablet-vertical {
+      max-width: 100%;
+      max-height: 80%;
+    }
+  }
+
+  .modalHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include tablet-vertical {
+      flex-direction: column;
+      padding: 10px 0 20px;
+    }
+
+    .title {
+      align-self: center;
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: bold;
+
+      @include tablet-vertical {
+        padding: 10px 0 0;
+      }
+    }
+  }
+
+  .modalFooter {
+    width: 100%;
+    text-align: right;
+  }
+
+  .modalBody {
+    @include desktop {
+      padding: 22px 64px 47px 65px;
+    }
+
+    @include tablet-vertical {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 13px 0;
+      padding-bottom: 14px;
+      overflow: auto;
+    }
+    .formGroupLogin {
+      .formGroup {
+        padding: 10px 0;
+
+        @include tablet-vertical {
+          width: 100%;
+        }
+
+        input {
+          height: 36px;
+        }
+
+        label {
+          font-size: 12px;
+          padding: 6px 0;
+        }
+      }
+
+      .forgotPassword {
+        color: $gray-nobel;
+        display: flex;
+        justify-content: center;
+        padding: 6px 0;
+        font-size: 13px;
+      }
+
+      .connectT1CButton {
+        margin: 10px 0;
+        display: block;
+        color: white;
+        width: 100%;
+        height: 36px;
+        background-color: $red-base;
+        border: solid 1px $red-base;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .labelNoAccountT1 {
+        font-size: 14px;
+        line-height: 1.36;
+        color: $gray-nobel;
+        padding: 19px 0 3px 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .linkRegisterT1 {
+        font-size: 13px;
+        color: $blue-light;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.headerWrapper {
+  @include tablet-vertical {
+    display: flex !important;
+    flex-direction: column;
+    background-color: $white-base !important;
+    height: auto !important;
+  }
+}

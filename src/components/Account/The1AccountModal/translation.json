@@ -1,0 +1,26 @@
+{
+  "th_TH": {
+    "email": "อีเมล์",
+    "password": "รหัสผ่าน",
+    "forgot_password": "ลืมรหัสผ่าน ?",
+    "register_now": "ลงทะเบียนตอนนี้",
+    "connect_t1c_button": "เข้าสู่ระบบ",
+    "placeholder_email": "กรอกอีเมล์",
+    "placeholder_password": "รหัสผ่าน The 1",
+    "dont_have_t1_account": "ไม่มีบัญชี The 1 ?",
+    "loading": "Loading",
+    "errorMsgT1C": "ข้อมูลไม่ถูกต้อง กรุณาตรวจสอบ และ ลองใหม่อีกครั้งค่ะ"
+  },
+  "en_US": {
+    "email": "Email",
+    "password": "Password",
+    "register_now": "Register now",
+    "forgot_password": "Forgot password ?",
+    "connect_t1c_button": "Login",
+    "placeholder_email": "Enter email address",
+    "placeholder_password": "The 1 password",
+    "dont_have_t1_account": "Don't have a The 1 account?",
+    "loading": "Loading",
+    "errorMsgT1C": "Invalid data, Please check and try again."
+  }
+}

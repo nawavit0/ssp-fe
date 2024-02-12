@@ -1,0 +1,139 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/media';
+
+.title {
+  text-transform: uppercase;
+  margin-top: 28px;
+  margin-bottom: 22px;
+  font-weight: bold;
+  line-height: 1.57;
+
+  @include tablet-vertical {
+    padding-left: 15px;
+  }
+}
+.displayDayOne{
+  display: none!important;
+}
+
+.root {
+  margin-bottom: 28px;
+
+  .choice {
+    height: 80px;
+    border: solid 1px $gray-icon-disabled;
+    display: flex;
+    align-content: center;
+
+    .giftImageWrapper {
+      width: 80px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: solid 1px $gray-icon-disabled;
+
+      img {
+        width: 31px;
+        height: 36px;
+      }
+    }
+
+    .giftWrapping {
+      font-weight: bold;
+    }
+
+    .checkbox {
+      padding-top: 20px !important;
+      margin-left: 20px;
+      padding-top: 18px;
+    }
+  }
+}
+
+.selectForm {
+  display: flex;
+  flex-direction: column;
+
+  .select {
+    height: 300px;
+    background-color: $white-snow;
+    padding-top: 18px;
+    padding-left: 20px;
+
+    border-radius: 4px;
+    border: solid 1px $gray-icon-disabled;
+    border-top: none;
+
+    .selectTitle {
+      font-weight: bold;
+      padding-bottom: 22px;
+      text-transform: uppercase;
+    }
+
+    .selectOptions {
+      display: flex;
+
+      .option {
+        width: 313px;
+        height: 60px;
+        border-radius: 4px;
+        background-color: $white-base;
+        border: solid 1px $gray-icon-disabled;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+        padding-left: 10px;
+        padding-right: 20px;
+
+        .optionCheck {
+          display: flex;
+          align-items: center;
+        }
+
+        .optionName {
+          padding-left: 8px;
+          font-weight: bold;
+        }
+
+        &.active {
+          box-shadow: 0 0 3px 0 $blue-light;
+          border: solid 1px $blue-light;
+        }
+      }
+    }
+
+    .selectMessage {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+
+      .selectMessageTitle {
+        display: flex;
+        justify-content: space-between;
+        max-width: 646px;
+
+        .charactersLeft {
+          color: $gray-light;
+        }
+      }
+
+      .selectTextarea {
+        margin-top: 6px;
+        border-radius: 4px;
+        background-color: $white-base;
+        border: solid 1px $gray-icon-disabled;
+        max-width: 646px;
+        height: 108px;
+        padding: 8px 16px;
+      }
+    }
+  }
+}
+
+.separator {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $gray-icon-disabled;
+}

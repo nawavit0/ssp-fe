@@ -1,0 +1,42 @@
+{
+  "th_TH": {
+    "discount": "ส่วนลด",
+    "move_to_wishlist": "เพิ่มในสินค้าที่ต้องการ",
+    "save": "ประหยัด",
+    "remove": "เอาออก",
+    "click_collect": "Click & Collect",
+    "gift_wrapping": "บริการห่อของขวัญ",
+    "pay_on_delivery": "บริการเก็บเงินปลายทาง",
+    "out_of_stock": "สินค้าไม่เพียงพอกับความต้องการ",
+    "tooltip": {
+      "click_collect": "รับสินค้าที่ห้างฯ ส่งฟรี! ไม่มีขั้นต่ำ",
+      "gift_wrapping": "ฟรี! บริการห่อของขวัญ เมื่อช้อปครบ 300 บาทขึ้นไปต่อ 1 กล่องของขวัญ",
+      "pay_on_delivery": "บริการเก็บเงินปลายทาง ชำระเงินเมื่อได้รับสินค้า",
+      "pay_by_installment": "สามารถเลือกแบ่งชำระเป็นระยะเวลา 4, 6 หรือ 10 เดือน โดยยอดชำระต่อเดือนต้องมากกว่าหรือเท่ากับ 500 บาท"
+    },
+    "preOrder": "สินค้า Pre-order จะเริ่มจัดส่งสินค้าตั้งแต่วันที่ {preorder_date}",
+    "pay_by_installment": "ผ่อนชำระ",
+    "adding_bag": "กำลังเพิ่ม",
+    "message_stock_qty": "ขออภัย สินค้าในสต๊อกมีไม่เพียงพอ"
+  },
+  "en_US": {
+    "discount": "Discount",
+    "move_to_wishlist": "Remove from wishlist",
+    "save": "save",
+    "remove": "Remove",
+    "click_collect": "Click & Collect",
+    "gift_wrapping": "Gift wrapping available",
+    "pay_on_delivery": "Cash on delivery",
+    "out_of_stock": "Sorry, this product is sold out",
+    "tooltip": {
+      "click_collect": "In-Store Pickup FREE! with no minimum",
+      "gift_wrapping": "FREE Gift Wrapping minimum 300 per gift package",
+      "pay_on_delivery": "Order and pay later",
+      "pay_by_installment": "Customer can choose 4, 6 or 10 month installment payment plans with the condition that the minimum monthly payment must be more than or equal to THB500"
+    },
+    "preOrder": "Pre-order product will be started shipping from {preorder_date}.",
+    "pay_by_installment": "Installment",
+    "adding_bag": "Adding",
+    "message_stock_qty": "Sorry, insufficient stock "
+  }
+}

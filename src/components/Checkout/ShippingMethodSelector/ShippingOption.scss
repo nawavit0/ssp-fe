@@ -1,0 +1,59 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+
+.option {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @media only screen {
+    .title {
+      flex: 1 80%;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 16px 0;
+    }
+
+    .fee {
+      color: $blue-light;
+      font-weight: bold;
+      padding: 16px;
+    }
+
+    .inputBox {
+      flex: 0 36px;
+      margin: auto;
+      order: 2; // last
+      text-align: center;
+      input {
+        -webkit-appearance: radio;
+      }
+    }
+
+    .input {
+      padding: 2px 10px;
+      border: 1px $gray-main-base solid;
+      margin-bottom: 5px;
+      border-radius: 2px;
+      font-size: 14px;
+      vertical-align: middle;
+      &.selected {
+        border: 1px $blue-selected solid;
+        background-color: $blue-light;
+      }
+    }
+  }
+
+  @include desktop {
+    .inputBox {
+      order: 0; // first
+    }
+  }
+
+  &.active {
+    background: $white-base;
+    border: 1px solid #eaeaea;
+  }
+}

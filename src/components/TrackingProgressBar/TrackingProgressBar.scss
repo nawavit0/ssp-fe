@@ -1,0 +1,196 @@
+@import '../../styles/variables';
+@import '../../styles/mixins/media';
+
+.wrapper {
+  height: 100px;
+  background-color: $white-base;
+  //border-bottom: 1px solid $silver-light;
+
+  @include mobile {
+    height: auto;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0 24px;
+
+  @include tablet {
+    width: 80%;
+  }
+}
+
+.progressbar {
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progressbar li.circle {
+  list-style-type: none;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #fff;
+  background: transparent;
+  position: relative;
+
+  @include mobile {
+    width: 14px;
+    height: 14px;
+  }
+
+  &:before {
+    display: none;
+    content: '';
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background: $gray-main-light;
+    border-radius: 50%;
+    display: block;
+
+    @include mobile {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &.complete {
+    width: 32px;
+    height: 32px;
+
+    @include mobile {
+      width: 14px;
+      height: 14px;
+    }
+
+    &:before {
+      background: #68CE26;
+    }
+
+    .checkMark {
+      display: none;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include mobile {
+        width: 5px;
+        height: 5px;
+      }
+    }
+    .fontWeightBold {
+      font-weight: bold;
+    }
+  }
+
+  &.active {
+    border-color: $red-base;
+
+    &:before {
+      width: 32px;
+      height: 32px;
+      left: 3px;
+      top: 3px;
+      background: $red-base;
+    }
+  }
+
+  .text {
+    margin: 5px 0 0 0;
+    position: absolute;
+    display: flex;
+    white-space: nowrap;
+    color: $gray-base;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 13px;
+    font-weight: bold;
+    top: 30px;
+
+    @include mobile {
+      top: 15px;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+  .number {
+    position: relative;
+    line-height: 38px;
+    width: 100%;
+    color: $white-base;
+    font-size: 18px;
+    z-index: 9;
+    text-align: center;
+  }
+}
+
+@include mobile {
+  .progressbar li:nth-child(4n-1) .text {
+    top: -50px;
+  }
+}
+
+.progressbar li.line {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  height: 2px;
+  background: $gray-main-light;
+  align-self: center;
+  flex-direction: column;
+  margin: 0 8px;
+  transition: background 0.3s ease-in-out;
+
+  &.complete {
+    background: #68CE26;
+  }
+
+  &.active {
+    background: linear-gradient(to right, #4a90e2, $gray-main-base);
+  }
+}
+//
+// .progressbar li:first-child:after {
+//   content: none;
+// }
+//
+// .progressbar li.active {
+//   color: $gray-base;
+// }
+//
+// .progressbar li.active:before {
+//   background-color: $red-base;
+//   border-color: $red-base;
+// }
+//
+// .progressbar li.active + li:after {
+//   background: linear-gradient(to right, $red-base , $gray-main-base);
+// }
+//
+// .progressbar li.complete {
+//   color: $gray-base;
+// }
+// .progressbar li.complete:before {
+//   content:  $checkmark;
+//   background-color: $red-base;
+//   border-color: $red-base;
+// }
+// .progressbar li.complete + li:after {
+//   background-color: $red-base;
+// }

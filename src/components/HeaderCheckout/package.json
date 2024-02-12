@@ -1,0 +1,6 @@
+{
+  "name": "HeaderCheckout",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./HeaderCheckout.js"
+}

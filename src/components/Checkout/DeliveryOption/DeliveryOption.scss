@@ -1,0 +1,123 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+
+$acd-border: 1px solid #eaeaea;
+$acd-padding: 5px;
+
+.accordion {
+  border: $acd-border;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .header {
+    border-bottom: $acd-border;
+    cursor: pointer;
+    display: flex;
+
+    /* default mobile first */
+    @media only screen {
+      .icon {
+        border-right: $acd-border;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        min-height: 80px;
+        width: 80px;
+
+        img {
+          margin: auto;
+          height: auto;
+          width: 40px;
+        }
+      }
+
+      .radioBox {
+        flex: 0 0 45px;
+        order: 2; // last
+        text-align: center;
+        margin: auto;
+        input {
+          -webkit-appearance: radio;
+        }
+      }
+
+      .labelBox {
+        margin: 10px;
+        padding: 0;
+        flex: 2 60%;
+
+        label {
+          font-weight: bold;
+          font-size: 14px;
+        }
+
+        .hint {
+          display: none;
+          padding: $acd-padding 0;
+        }
+
+        .feeLabel {
+          color: $blue-light;
+          display: block;
+          font-size: 12px;
+          font-weight: bold;
+          padding: $acd-padding 0;
+        }
+      }
+
+      .fee {
+        display: none;
+        padding: 0 24px 0 0;
+        margin: auto;
+        text-align: center;
+      }
+    }
+
+    // @media screen and (min-device-width: 750px) and (-webkit-min-device-pixel-ratio: 1) {
+    @include desktop {
+      .radioBox {
+        order: 0;
+        margin: 0;
+        padding-top: 22px;
+      }
+
+      .labelBox {
+        padding-left: 0;
+
+        .hint {
+          display: block;
+        }
+
+        .feeLabel {
+          display: none;
+        }
+      }
+
+      .fee {
+        // either .fee or .feeLabel
+        display: block;
+        span {
+          color: $blue-light;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  /* whatever in expanded content */
+  .content {
+    background-color: $white-snow;
+    border-radius: inherit; /* align with parent */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    &.selected {
+      max-height: 999px;
+      opacity: 1;
+      padding: 10px;
+    }
+  }
+}

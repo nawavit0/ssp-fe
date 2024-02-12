@@ -1,0 +1,83 @@
+@import '../../../styles/mixins/media';
+
+.root {
+  @include tablet-vertical {
+    padding: 12px 0;
+  }
+  .AccountHeader {
+    @include desktop {
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 28px;
+      margin-bottom: 14px;
+    }
+    @include tablet-vertical {
+      display: none;
+    }
+    .AccountTitle {
+      font-size: 28px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .addNewAddBtn {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+      color: #4a90e2;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .accountContent {
+    padding: 30px 20px;
+    border-top: 1px solid #eaeaea;
+
+    @include tablet-vertical {
+      border: 1px solid #eaeaea;
+    }
+  }
+  .noAddressText {
+    color: #4b8fe1;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .accountMiniTitle {
+    font-weight: bold;
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 24px;
+  }
+
+  .accountForm {
+    max-width: 665px;
+  }
+
+  .formButton {
+    display: flex;
+    margin: 0 -15px;
+
+    @include tablet-vertical {
+      flex-direction: column;
+    }
+
+    .submit {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 36px;
+      margin-bottom: 8px;
+    }
+
+    .discard {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 36px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  }
+}

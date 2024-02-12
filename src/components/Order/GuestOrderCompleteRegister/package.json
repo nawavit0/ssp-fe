@@ -1,0 +1,6 @@
+{
+  "name": "GuestOrderCompleteRegister",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GuestOrderCompleteRegister.js"
+}

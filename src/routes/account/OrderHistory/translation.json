@@ -1,0 +1,16 @@
+{
+  "th_TH": {
+    "title": "รายการสั่งซื้อของฉัน",
+    "placeholder_search": "ค้นหาจากรหัสการสั่งซื้อ",
+    "filter_by_date": "กรองตามวันที่",
+    "placeholder_from_date": "จากวันที่",
+    "placeholder_to_date": "ถึงวันที่"
+  },
+  "en_US": {
+    "title": "MY ORDERS",
+    "placeholder_search": "Search by order number",
+    "filter_by_date": "Filter by date",
+    "placeholder_from_date": "From Date",
+    "placeholder_to_date": "To Date"
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../styles/mixins/media';
+@import '../../styles/variables.scss';
+
+.addToWishlist {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  :hover {
+    cursor: pointer;
+  }
+
+  img {
+    margin-right: 5px;
+  }
+
+}
+
+.wishlist_message {
+  margin-left: 10px;
+}
+.buttonAddToWishlist {
+  width: 389px;
+  height: 50px;
+  border: solid 1px $silver;
+  cursor: pointer;
+  font-size: 16px;
+  color: $gray-night-rider;
+  background-color: #fff;
+  @include tablet-vertical{
+    width: 100%;
+  }
+}

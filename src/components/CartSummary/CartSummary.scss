@@ -1,0 +1,304 @@
+@import '../../styles/variables';
+@import '../../styles/mixins/media';
+
+.summaryWrapper {
+  @include desktop {
+    padding-left: 30px;
+  }
+
+  .summary {
+    @include desktop {
+      border: 1px solid $white-base-light;
+      border-radius: 2px;
+    }
+
+    @include tablet {
+      border-bottom: 1px solid $warm-grey-light;
+    }
+
+    .couponWrapper {
+      @include tablet {
+        background-color: $gray-bg;
+      }
+
+      .promocodeSection {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+          padding-bottom: 27px;
+          border-bottom: 1px solid $gray-icon-disabled;
+        }
+
+        .promocodeSectionTitle {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 6px;
+          font-size: 14px;
+          font-weight: normal;
+
+          @include tablet-vertical {
+            font-weight: bold;
+          }
+
+          a {
+            color: $gray-nobel;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .priceDetails {
+      padding: 18px 18px 10px;
+
+      @include tablet {
+        padding: 20px 15px 10px 15px;
+      }
+    }
+  }
+}
+
+.header {
+  font-size: 16px;
+  padding-bottom: 14px;
+
+  @include tablet {
+    padding-top: 14px;
+    padding-left: 15px;
+    border-bottom: 1px solid $warm-grey-light;
+  }
+}
+
+.logoT1C {
+  width: 20px;
+  margin: 0 5px 0 10px;
+}
+
+.removeCoupon {
+  margin: 0 10px;
+  text-decoration: underline;
+  font-size: 13px;
+  color: $gray-nobel;
+  cursor: pointer;
+}
+
+.promocodeWrapper {
+  height: 44px !important;
+  border: none;
+  padding: 0 !important;
+}
+
+.shippingWrapper {
+  width: 50%;
+}
+.couponWrapper {
+  @include tablet {
+    border-bottom: 1px solid $warm-grey-light;
+  }
+}
+.buttonCheckoutWrapper,
+.couponWrapper {
+  padding: 18px 20px 0;
+
+  @include tablet {
+    padding: 10px 15px;
+  }
+}
+
+.buttonCheckoutWrapper {
+  border-top: 1px solid $warm-grey-light;
+
+  @include tablet-vertical {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: none;
+  }
+}
+
+.countProduct,
+.giftOptionsTitle {
+  color: $gray-base;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.promocode {
+  padding-left: 12px;
+  border: solid 1px $silver;
+  margin-right: 10px;
+}
+
+.processToCheckout {
+  border-radius: 2px;
+  margin-bottom: 18px;
+  display: block;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $red-base !important;
+  color: $white-base;
+  font-size: 16px;
+  cursor: pointer;
+
+  // @include tablet {
+  //   display: none;
+  // }
+
+  &.disabled {
+    opacity: 0.4;
+  }
+}
+
+.applyPromocode {
+  border-left: 1px solid $warm-grey-light;
+  color: $white-base;
+  background-color: $red-base;
+  width: 100px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.grandTotal {
+  font-weight: bold;
+  font-size: 20px;
+  color: $gray-base;
+
+  @include tablet {
+    font-size: 18px;
+
+    .grandTotalPrice {
+      font-size: 18px;
+    }
+  }
+}
+
+.row {
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.deliveryFee {
+  display: flex;
+
+  .text {
+    margin-right: 7px;
+  }
+}
+
+.suggestion {
+  height: 32px;
+  background-color: $ice-blue-light;
+  border: 1px solid #d2e6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+
+  @include tablet {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.t1Wrapper {
+  border-top: 1px solid $warm-grey-light;
+  border-bottom: 1px solid $warm-grey-light;
+  padding-top: 16px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.totalSave {
+  font-size: 11px;
+}
+
+.mobileFooter {
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 88px;
+  border-top: 1px solid #ebebeb;
+  background-color: $white-base;
+  z-index: 15;
+  padding: 0 15px;
+
+  @include desktop {
+    display: none;
+  }
+
+  .totalAndCheckoutWrapper {
+    display: flex;
+    flex: 1;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .checkoutButton {
+    height: 37px;
+    width: 193px;
+    background-color: $red-base;
+
+    &.disabled {
+      opacity: 0.4;
+    }
+  }
+}
+
+.desktopSummary {
+  @include tablet-vertical {
+    display: none;
+  }
+}
+
+.inputError {
+  border-color: $red-error;
+}
+
+.msgError {
+  margin-top: 5px;
+  color: $red-error;
+}
+
+.hidden {
+  display: none;
+}
+
+.shipingSuggest {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.warningPayInstallmentMessageDesktop {
+  padding: 0 20px 20px;
+  @include tablet-vertical {
+    display: none;
+  }
+}

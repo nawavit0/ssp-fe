@@ -1,0 +1,27 @@
+{
+  "th_TH": {
+    "payment_summary": "สรุปยอดชำระ",
+    "total": "ทั้งหมด",
+    "promo_code": "โปรโมชั่น",
+    "the1_redeem": "แลกคะแนน The 1",
+    "redeem_t1": "แลกคะแนน {point} คะแนน",
+    "other_discount": "ส่วนลดอื่นๆ",
+    "gift_options": "ห่อของขวัญ",
+    "delivery": "การจัดส่ง",
+    "netTotal": "ยอดรวมคำสั่งซื้อ",
+    "credit_ontop": "ส่วนลดจากบัตรเครดิต"
+  },
+  "en_US": {
+    "payment_summary": "PAYMENT SUMMARY",
+    "total": "Total",
+    "discount": "Discount",
+    "promo_code": "Promo code",
+    "the1_redeem": "The 1 Redemption",
+    "redeem_t1": "Redeem {point} pts",
+    "other_discount": "Other discount",
+    "gift_options": "Gift Options",
+    "delivery": "Delivery",
+    "netTotal": "Order Total",
+    "credit_ontop": "Credit Card On-Top Discount"
+  }
+}

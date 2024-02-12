@@ -1,0 +1,66 @@
+@import '../../../styles/variables.scss';
+
+.paginationWrap {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    li{
+      a{
+        color: $gray-nobel;
+        padding: 10px;
+        cursor: pointer;  
+        :hover {
+          color: $gray-main-darker;
+         }
+      }
+    }
+    .activePaginationNumber {
+      a {
+        color: $red-base;
+        text-decoration: underline;
+        font-weight: bold;
+        :hover {
+          color: $red-base;
+          text-decoration: underline;
+          font-weight: bold;
+         }
+       }
+    }
+    .paginationIcon:hover {
+      fill: $red-base;
+      transition: .3s;
+     }
+   }
+
+
+   .paginationList {
+    .paginationBreak {
+      text-decoration: none;
+      :hover {
+        color: $gray-nobel;
+       }
+     }
+   }
+   
+   
+   @media only screen and (max-width: 768px) {
+    .paginationWrap {
+      li {
+        a {
+          padding: 6px;
+        }
+      }
+     }
+    }
+
+   .previousArrow{
+     
+   }
+
+   .nextArrow{
+
+   }
+   
+   

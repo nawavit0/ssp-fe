@@ -1,0 +1,6 @@
+{
+  "name": "GuestRegisterForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GuestRegisterForm.js"
+}

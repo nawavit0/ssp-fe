@@ -1,0 +1,139 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+
+.prodItem {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 0;
+  @include tablet {
+    padding: 20px;
+    > div:nth-child(1) {
+      width: 90px;
+      display: flex;
+      margin-right: 20px;
+    }
+  }
+  > div:nth-child(1) {
+    width: 120px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 10px;
+  }
+
+  .prodImg {
+    width: 100%;
+    height: auto;
+    max-width: 82px;
+    max-height: 82px;
+    flex: 0 0 80px;
+    margin-right: 46px;
+    border: 1px solid #CCC;
+    text-align: center;
+    > img {
+      width: auto;
+      height: auto;
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+
+  .prodItemDetail {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  .prodName {
+    flex: 1 1 360px;
+    margin-right: 60px;
+
+    @include mobile {
+      margin-right: 0;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .giveWrapping {
+      display: flex;
+      align-items: center;
+      > img {
+        margin-right: 6px;
+      }
+    }
+
+    .title {
+      font-weight: bold;
+      text-align: left;
+      text-transform: uppercase;
+      @include tablet {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .prodQty {
+    flex: 1 1 100px;
+    margin-right: 20px;
+    white-space: nowrap;
+    margin-top: 1px;
+  }
+
+  .prodPrice {
+    flex: 1 1 100px;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 16px;
+  }
+}
+
+.mobileOnly {
+  display: none;
+
+  @include mobile {
+    display: flex;
+    align-items: center;
+  }
+}
+.desktopOnly {
+  display: block;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.itemStatus,
+.itemStatusMobile {
+  color: $blue-light;
+  font-weight: bold;
+  text-transform: capitalize;
+
+  &.itemStatusCancel {
+    color: $error-red;
+  }
+  &.itemStatusCompleted {
+    color: $green-light;
+  }
+}
+
+.itemStatus {
+  padding-left: 10px;
+}
+
+.itemStatusMobile {
+  text-align: right;
+  @include mobile {
+    display: block;
+    padding: 0 15px 0;
+  }
+}

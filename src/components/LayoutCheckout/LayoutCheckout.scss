@@ -1,0 +1,279 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/media';
+
+/*
+ * normalize.css is imported in JS file.
+ * If you import external CSS file from your internal CSS
+ * then it will be inlined and processed with CSS modules.
+ */
+
+/*
+ * Base styles
+ * ========================================================================== */
+
+* {
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  color: #333333;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.375;
+  font-family: $font-family;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0074c2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/*
+ * Browser upgrade prompt
+ * ========================================================================== */
+
+:global(.browserupgrade) {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/*
+ * Print styles
+ * Inlined to avoid the additional HTTP request:
+ * http://www.phpied.com/delay-loading-your-print-css/
+ * ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  // a[href]::after {
+  //   content: ' (' attr(href) ')';
+  // }
+
+  abbr[title]::after {
+    content: ' (' attr(title) ')';
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+
+  a[href^='#']::after,
+  a[href^='javascript:']::after {
+    content: '';
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+.contentWrapper {
+  // padding-top: $mobile-header-height;
+
+  @include desktop {
+    &.padding {
+      padding-top: 0;
+    }
+
+    &.margin {
+      margin-top: calc(#{$main-header-height});
+    }
+  }
+}
+
+.footerWrapper {
+  @include tablet-vertical {
+    display: none !important;
+  }
+}
+
+@font-face {
+  font-family: 'sukhumvit_tadmaitext';
+  src: url('/fonts/sukhumvittadmai_bol-webfont.eot');
+  src: url('/fonts/sukhumvittadmai_bol-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/sukhumvittadmai_bol-webfont.woff2') format('woff2'),
+    url('/fonts/sukhumvittadmai_bol-webfont.woff') format('woff'),
+    url('/fonts/sukhumvittadmai_bol-webfont.svg#sukhumvit_tadmaitext')
+      format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sukhumvit_tadmaitext';
+  src: url('/fonts/sukhumvittadmai_tex-webfont.eot');
+  src: url('/fonts/sukhumvittadmai_tex-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/sukhumvittadmai_tex-webfont.woff2') format('woff2'),
+    url('/fonts/sukhumvittadmai_tex-webfont.woff') format('woff'),
+    url('/fonts/sukhumvittadmai_tex-webfont.svg#sukhumvit_tadmaitext')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Book.eot');
+  src: url('/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Gotham-Book.woff2') format('woff2'),
+    url('/fonts/Gotham-Book.woff') format('woff'),
+    url('/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Medium.eot');
+  src: url('/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Gotham-Medium.woff2') format('woff2'),
+    url('/fonts/Gotham-Medium.woff') format('woff'),
+    url('/fonts/Gotham-Medium.svg#Gotham-Book') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@include tablet-vertical {
+  .desktop {
+    display: none;
+  }
+}

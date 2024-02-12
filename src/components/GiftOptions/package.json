@@ -1,0 +1,6 @@
+{
+  "name": "GiftOptions",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GiftOptions.js"
+}

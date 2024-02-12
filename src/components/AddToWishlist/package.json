@@ -1,0 +1,6 @@
+{
+  "name": "AddToWishlist",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AddToWishlist.js"
+}

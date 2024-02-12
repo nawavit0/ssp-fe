@@ -1,0 +1,28 @@
+@import '../variables.scss';
+
+.button {
+  padding: 0 24px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid $white-base;
+  line-height: 40px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.red-button {
+    background-color: $red-base;
+    color: $white-base;
+    border-color: $red-base;
+    @extend .button;
+  }
+
+.gray-button {
+  background-color: $grey-color-light;
+  color: $gray-base;
+  border-color: $grey-color-light;
+  @extend .button;
+}

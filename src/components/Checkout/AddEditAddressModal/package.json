@@ -1,0 +1,6 @@
+{
+  "name": "AddEditAddressModal",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AddEditAddressModal.js"
+}

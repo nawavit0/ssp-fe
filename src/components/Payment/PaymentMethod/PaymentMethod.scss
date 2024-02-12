@@ -1,0 +1,452 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/media';
+
+.row {
+  height: 80px;
+
+  .rowIconPay {
+    justify-content: flex-end;
+    padding-right: 15px;
+
+    @include tablet-vertical {
+      display: none;
+    }
+
+    .iconPay {
+      width: 70px;
+      margin: 0 5px;
+    }
+  }
+
+  .contentIconMethod {
+    display: flex;
+    justify-content: center;
+    border: 1px solid $grey-color-light;
+    border-radius: 4px 0 0 4px;
+
+    @include tablet {
+      flex: 0 0 100px;
+    }
+
+    @include tablet-vertical {
+      flex: 0 0 50px;
+    }
+
+    .iconMethod {
+      width: 40px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.otherBank {
+  height: 57px;
+}
+.link {
+  color: #4a90e2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contentWrapper {
+  margin: 10px 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  &.disabled {
+    cursor: normal;
+    .contentIconMethod,
+    .methodWrapper {
+      background-color: $grey-color-light;
+      border-color: $gray-main-light;
+    }
+  }
+}
+
+.methodWrapper {
+  display: flex;
+  justify-content: center;
+  border: 1px solid $grey-color-light;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+
+  @include tablet {
+    flex: 1;
+  }
+  .tooltip {
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.methodTitle {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @include tablet-vertical {
+    flex: 1;
+  }
+
+  &::before {
+    background: url(/icons/radio-unchecked.svg) no-repeat;
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include tablet-vertical {
+      right: 20px;
+      left: auto;
+    }
+  }
+  &.active {
+    &::before {
+      background: url(/icons/radio-checked.svg) no-repeat;
+      background-size: 24px;
+    }
+  }
+  .title {
+    padding: 10px 10px 10px 0;
+    align-items: center;
+  }
+
+  .radioMethod {
+    margin: 0 10px;
+    opacity: 0;
+    position: absolute;
+  }
+
+  .labelTab {
+    padding-left: 54px;
+    position: relative;
+    z-index: 1;
+
+    @include tablet-vertical {
+      padding-left: 13px;
+    }
+  }
+}
+
+.tab {
+  width: 25%;
+  display: inline-block;
+  padding: 4px;
+  vertical-align: top;
+
+  @include tablet {
+    display: block;
+    width: 100%;
+  }
+
+  &.selected {
+    .payMethod {
+      border: 1px solid $medium-blue;
+
+      @include tablet {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.tab:focus {
+  border: none;
+  outline: none;
+}
+
+.tabList {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0 -4px;
+}
+
+.tabsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+
+  @include tablet {
+    display: block;
+    width: 100%;
+  }
+
+  .tabTitle {
+    flex: 0 0 25%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+
+    @include tablet {
+      height: 60px;
+      justify-content: flex-start;
+    }
+
+    .payMethod {
+      width: 100%;
+      border: 1px solid $gray-main-light;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+
+      @include tablet {
+        justify-content: flex-start;
+      }
+    }
+
+    .active {
+      border: 1px solid $medium-blue;
+    }
+  }
+
+  .tabContent {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    order: 2;
+    background: #fafafa;
+    display: none;
+    margin-top: 10px;
+    padding: 20px;
+
+    .bankingList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0 -5px;
+    }
+
+    .counterList {
+      margin: 0 -5px;
+    }
+
+    .title {
+      font-size: 17px;
+    }
+
+    .smallText {
+      font-size: 11px;
+    }
+
+    .link {
+      color: $medium-blue;
+    }
+
+    .input {
+      width: 248px;
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.accordionWrapper {
+  background: #fafafa;
+  border: 1px solid $grey-color-light;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  padding: 20px;
+  display: none;
+  font-size: 13px;
+
+  .inner {
+    max-width: 468px;
+  }
+
+  &.show {
+    display: block;
+  }
+
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .line {
+    border-top: 1px solid $grey-color-light;
+  }
+
+  .smallText {
+    margin: 10px 0;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: $red-base;
+    border: solid 1px $red-base;
+    line-height: 20px;
+    font-size: 13px;
+    color: $white-base;
+    text-transform: uppercase;
+    width: 420px;
+    height: 50px;
+
+    @include tablet-vertical {
+      display: none;
+    }
+
+    &:hover {
+      background-color: darken($red-base, 7%);
+      transition: 0.3s;
+    }
+    &:disabled {
+      cursor: not-allowed;
+      background: $gray-light;
+      border: none;
+    }
+  }
+}
+
+.installWrap {
+  max-width: 468px;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  .subTitle {
+    margin-bottom: 6px;
+    font-size: 12px;
+  }
+
+  .selectContainer {
+    position: relative;
+  }
+
+  .arrowRight {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .inputField {
+    width: 100%;
+    border: 1px solid #b8b8b8;
+    line-height: 36px;
+    height: 36px;
+    background: #ffffff;
+    padding: 0 16px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+
+    @include tablet-vertical {
+      font-size: 16px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.validatedInput {
+      border: 1px solid #ed1f1f;
+    }
+  }
+}
+
+.inputField {
+  width: 100%;
+  border: 1px solid #dededf;
+  line-height: 36px;
+  height: 40px;
+  background: $white-base;
+  padding: 0 19px;
+  font-size: 14px;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+
+  @include tablet-vertical {
+    font-size: 13px;
+    color: $gray-base;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.validatedInput {
+    border: 1px solid $red-light;
+  }
+}
+
+.selectContainer {
+  position: relative;
+  width: 200px;
+}
+
+.selectIppContainer {
+  position: relative;
+  width: 100%;
+}
+
+.agentsWrapper {
+  display: flex;
+}
+
+.selectContainer:first-child {
+  margin-right: 10px;
+}
+
+.arrowRight {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.formTelephone {
+  padding: 10px 0;
+  width: 46%;
+
+  @include tablet-vertical {
+    width: 100%;
+  }
+
+  .requiredPhone {
+    border: 1px solid $red-light;
+  }
+
+  .requiredPhoneMsg {
+    color: $red-light;
+    font-size: 12px;
+    padding-top: 5px;
+  }
+}
+
+.onTopIcon {
+  width: 120px;
+  border-radius: 8px 8px 8px 0px;
+  background-color: #a6192e;
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 8px;
+  padding: 4px 11px;
+  text-align: center;
+  font-size: 12px;
+
+  @include tablet-vertical {
+    padding: 3px 5px;
+    margin: 5px 0 0 0;
+    display: block;
+  }
+}

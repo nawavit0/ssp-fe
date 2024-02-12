@@ -1,0 +1,86 @@
+.root {
+  .addressGroup {
+    position: relative;
+    input[type='checkbox'] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+  .addressField {
+    margin-bottom: 25px;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ababab;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ababab;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ababab;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #ababab;
+  }
+
+  .line {
+    margin: 0 0 16px 0;
+    border: 0;
+    background: #eaeaea;
+  }
+
+  .fulltag {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .toggle {
+    vertical-align: middle;
+    margin: 0 8px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .toggleYes {
+    color: #ffffff;
+    font-size: 9px;
+    position: relative;
+    left: 6px;
+  }
+
+  .toggleNo {
+    font-size: 9px;
+    color: #acacac;
+    position: relative;
+    right: -8px;
+  }
+
+  .customInputRadio {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 14px 0 28px;
+
+    span {
+      margin: 0 0 0 8px;
+    }
+  }
+
+  .postcodeErr {
+    color: #ed1f1f;
+    position: absolute;
+    top: 100%;
+  }
+}
+.hidden {
+  display: none;
+}
+.radioTaxOption {
+  margin-bottom: 20px;
+}
+.colRadio {
+  margin-bottom: 10px;
+}

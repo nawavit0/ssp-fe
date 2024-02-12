@@ -1,0 +1,26 @@
+{
+  "th_TH": {
+    "address-list": "รายการที่อยู่",
+    "edit-address": "แก้ไขที่อยู่",
+    "add-shipping-title": "เพิ่มที่อยู่จัดส่ง",
+    "add-shipping-address": "+ เพิ่มที่อยู่จัดส่ง",
+    "add-billing-address": "+ เพิ่มที่อยู่ใบเสร็จ",
+    "change-shipping-address": "เปลี่ยนที่อยู่จัดส่ง",
+    "change-billing-address": "เปลี่ยนที่อยู่ใบเสร็จ",
+    "use-selected-address": "ใช้ที่อยู่ที่เลือก",
+    "save-address": "บันทึกที่อยู่",
+    "warning-active-no-tax-id-address": "ที่อยู่นี้ไม่มีข้อมูลสำหรับออกใบกำกับภาษี กรุณากรอกข้อมูลให้สมบูรณ์ก่อนเลือกที่อยู่นี้"
+  },
+  "en_US": {
+    "address-list": "Address list",
+    "edit-address": "EDIT ADDRESS",
+    "add-shipping-title": "ADD ADDRESS",
+    "add-shipping-address": "+ Add more shipping address",
+    "add-billing-address": "+ Add more billing address",
+    "change-shipping-address": "CHANGE SHIPPING ADDRESS",
+    "change-billing-address": "CHANGE BILLING ADDRESS",
+    "use-selected-address": "USE SELECTED ADDRESS",
+    "save-address": "SAVE ADDRESS",
+    "warning-active-no-tax-id-address": "This address has incomplete required fields. Please complete all required fields before selecting"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "th_TH": {
+    "your_email_address": "ที่อยู่อีเมลของคุณ",
+    "your_order_number": "หมายเลขคำสั่งซื้อของคุณ",
+    "your_latest_orders": "คำสั่งซื้อล่าสุดของคุณ",
+    "enter_order_number": "ป้อนเลขที่ใบสั่งซื้อ",
+    "track_order": "ติดตามใบสั่ง",
+    "tracking_incorrect": "อีเมลหรือหมายเลขคำสั่งซื้อไม่ถูกต้อง",
+    "placeholder_email": "abc@domain.com",
+    "placeholder_order_number": "eg.12345679",
+    "required": "โปรดระบุ",
+    "order_number_format": "รูปแบบหมายเลขคำสั่งซื้อไม่ถูกต้อง",
+    "email_format": "ระบุอีเมลไม่ถูกต้อง",
+    "email_length": "อีเมลจะต้องอยู่ระหว่าง 5-30 ตัวอักษร"
+  },
+  "en_US": {
+    "your_email_address": "Your Email Address",
+    "your_order_number": "Your Order Number",
+    "your_latest_orders": "Your Latest Orders",
+    "enter_order_number": "Enter Order Number",
+    "track_order": "TRACK ORDER",
+    "tracking_incorrect": "Email and order number do not match.",
+    "placeholder_email": "abc@domain.coms",
+    "placeholder_order_number": "eg.12345679",
+    "required": "Required field.",
+    "order_number_format": "Invalid order number format.",
+    "email_format": "Invalid email format.",
+    "email_length": "Email should be between 5 and 30 characters"
+  }
+}

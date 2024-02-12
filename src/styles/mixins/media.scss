@@ -1,0 +1,56 @@
+/*
+ * Media queries breakpoints
+ * ======================================================================== */
+
+ $screen-xxs-max: 479px; /* Extra extra small screen max / small phone */
+ $screen-xs-min: 480px; /* Extra small screen min / phone */
+ $screen-xs-max: 768px; /* Extra small screen max / phone */
+ $screen-sm-min: 769px; /* Small screen min / tablet */
+ $screen-sm-max: 991px; /* Small screen max / tablet */
+ $screen-md-min: 992px; /* Medium screen min / desktop */
+ $screen-md-max: 1199px; /* Medium screen max / desktop */
+ $screen-lg-min: 1300px; /* Large screen min / wide desktop */
+
+ $border-color-lighter: '#000000';
+
+ @mixin desktop {
+   @media (min-width: #{$screen-sm-min}) {
+     @content;
+   }
+ }
+
+ @mixin desktop-medium {
+   @media (min-width: #{$screen-md-min}) {
+     @content;
+   }
+ }
+
+ @mixin desktop-large {
+   @media (min-width: #{$screen-lg-min}) {
+     @content;
+   }
+ }
+
+ @mixin desktop-small {
+   @media (min-width: #{$screen-sm-min}) and (max-width: #{$screen-lg-min}) {
+     @content;
+   }
+ }
+
+ @mixin tablet-vertical {
+   @media only screen and (max-width: #{$screen-xs-max}) {
+     @content;
+   }
+ }
+
+ @mixin tablet {
+   @media only screen and (max-width: #{$screen-sm-max}) {
+     @content;
+   }
+ }
+
+ @mixin mobile {
+   @media (max-width: #{$screen-xxs-max}) {
+     @content;
+   }
+ }

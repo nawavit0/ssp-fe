@@ -1,0 +1,387 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/media';
+
+.contentWrapper {
+  border-bottom: 1px solid $warm-grey-light;
+  padding: 0 15px;
+
+  @include desktop {
+    padding: 0;
+  }
+
+  &.disabledItem {
+    pointer-events: none;
+
+    .buttonGroupMobile {
+      display: none;
+    }
+  }
+}
+
+.displayDesktop {
+  @include tablet {
+    display: none;
+  }
+}
+
+.displayMobile {
+  @include desktop {
+    display: none;
+  }
+}
+
+.desktop {
+  height: 200px;
+  padding: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablet-vertical {
+    display: none;
+  }
+
+  .desktopRow {
+    flex-wrap: nowrap;
+  }
+}
+
+.mobile {
+  // height: 182px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-right: 15px;
+
+  @include desktop {
+    display: none;
+  }
+
+  @include tablet-vertical {
+    padding: 30px 0;
+  }
+
+  .inputField {
+    width: 100%;
+    border: 1px solid #dededf;
+    line-height: 36px;
+    height: 40px;
+    background: $white-base;
+    padding: 0 19px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+
+    @include tablet-vertical {
+      font-size: 16px;
+      color: $gray-base;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.validatedInput {
+      border: 1px solid $red-light;
+    }
+  }
+
+  .selectContainer {
+    position: relative;
+    width: 60px;
+
+    &.disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .arrowRight {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+}
+
+.row {
+  height: 100px;
+  justify-content: space-between;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: flex-start;
+  @include tablet-vertical {
+    flex: 0 80px;
+  }
+}
+
+.description {
+  line-height: 2.5;
+
+  @include tablet-vertical {
+    line-height: 2;
+
+    .options {
+      font-size: 12px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-right: 8px;
+    }
+  }
+
+  .productName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 25px;
+    cursor: pointer;
+
+    @include tablet-vertical {
+      font-size: 12px;
+    }
+  }
+}
+
+.counterWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+
+  .counterQty {
+    width: 60px;
+
+    &.disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .selectPanel {
+    height: 50px !important;
+    padding-left: 17.5px;
+  }
+
+  .selectOption {
+    padding: 17.5px;
+  }
+}
+
+.qtyWrapper {
+  display: flex;
+  align-items: center;
+
+  .rowTotal {
+    margin-right: 9px;
+  }
+}
+
+.totalPriceWrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.priceWrapper {
+  padding-left: 30px !important;
+}
+
+.priceClass {
+  margin-top: 2px;
+}
+.specialPrice {
+  margin-left: 5px;
+}
+
+.controls {
+  justify-content: space-between;
+  display: flex;
+  margin: 15px 0;
+}
+.preOrder {
+  padding-bottom: 5px;
+  @include tablet-vertical {
+    font-size: 12px;
+  }
+}
+
+.remove {
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+
+  @include desktop {
+    margin-top: 26px;
+  }
+}
+
+.wishlist {
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 30px;
+}
+
+.iconCheckmark {
+  margin-right: 12px;
+}
+
+.allowAttr {
+  margin-right: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.addToWishlist {
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.nameMobile {
+  font-weight: bold;
+}
+
+.priceInfoMobile {
+  justify-content: space-between;
+  align-items: center;
+
+  .counterQty {
+    width: 60px;
+  }
+
+  .selectPanel {
+    height: 40px !important;
+    padding-left: 17.5px;
+  }
+
+  .selectOption {
+    padding: 17.5px;
+  }
+}
+
+.descriptionMobile {
+  flex: 1;
+  overflow: hidden;
+}
+
+.controlsMobile {
+  justify-content: space-between;
+}
+
+.deleteIcon {
+  @include tablet-vertical {
+    margin-left: 20px;
+  }
+}
+
+.brand {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.57;
+}
+
+.offerOptions {
+  display: flex;
+  align-items: flex-end;
+}
+
+.allow_attr {
+  font-size: 14px;
+}
+
+.content {
+  padding-left: 20px !important;
+}
+
+.image {
+  height: auto;
+  cursor: pointer;
+  @include tablet-vertical {
+    height: auto;
+    width: 60px;
+  }
+}
+
+.linkImage {
+  height: 100%;
+}
+
+.tooltip {
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+
+  max-width: 500px;
+  @include tablet-vertical {
+    max-width: 250px;
+  }
+}
+
+.discountCount {
+  display: flex;
+  // margin-top: 16px;
+  margin-top: 10px;
+}
+
+.soldOutLabel {
+  color: $red-base;
+
+  &.showLabel {
+    display: none;
+  }
+}
+
+.hideIcon {
+  display: none;
+}
+
+.freebieDetail {
+}
+
+.freePrice {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.buttonGroupMobile {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  @include tablet-vertical {
+    justify-content: normal;
+  }
+}
+
+.addWishlist {
+  text-decoration: underline;
+  width: auto !important;
+  @include tablet-vertical {
+    margin-left: 20px;
+  }
+}
+.imgItemCart {
+  width: 106px;
+  height: auto;
+  display: inline-block;
+}
+
+.fixedQty {
+  margin-top: 3px;
+  text-align: center;
+  font-size: 15px;
+
+  @include tablet-vertical {
+    line-height: 40px;
+    border: 1px solid #dededf;
+    padding: 0 19px;
+    font-size: 14px;
+  }
+}
+
+.productOptions {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 8px;
+}

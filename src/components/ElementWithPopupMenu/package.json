@@ -1,0 +1,6 @@
+{
+  "name": "ElementWithPopupMenu",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ElementWithPopupMenu.js"
+}

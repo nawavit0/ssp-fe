@@ -1,0 +1,10 @@
+{
+  "th_TH": {
+    "shipping_detail": "รายละเอียดที่อยู่จัดส่ง",
+    "call": "โทร"
+  },
+  "en_US": {
+    "shipping_detail": "Shipping Detail",
+    "call": "Call"
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.container {
+  width: 220px;
+  position: absolute;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  border-bottom: 1px solid $gray-main-light;
+  .iconT1C {
+    margin: 13px 10px 13px 0;
+    width: 30px;
+    height: 30px;
+  }
+  .t1cPoint {
+    font-size: 14px;
+    font-weight: bold;
+    color: $back-base;
+  }
+}
+
+.menuList {
+  padding: 5px 15px 10px;
+  .menuItems {
+    line-height: 3;
+    display: block;
+    font-size: 14px;
+    color: $gray-eclipse;
+
+    &:last-child {
+      border-bottom: 1px solid $gray-main-light;
+    }
+  }
+}
+
+.logout {
+  padding: 10px 15px 20px;
+  cursor: pointer;
+  .labelLogout {
+    font-weight: bold;
+    color: $red-base;
+    font-size: 14px;
+  }
+  .logoutIcon {
+    margin-left: 10px;
+  }
+}

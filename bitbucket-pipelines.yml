@@ -1,0 +1,14 @@
+image: node:10.14.1
+pipelines:
+  branches: # Pipelines that run automatically on a commit to a branch
+    master:
+      - step:
+          name: Shift Version
+          script:
+            - git remote set-url origin ${BITBUCKET_GIT_SSH_ORIGIN}
+            - git fetch --all
+            - PATCH="$(git tag | sort -V | tail -n1 | tr "version/" ' '  | echo "$(cut -d'.' -f3)" | awk '{print $1 + 1}')"
+            - MINOR="$(git tag | sort -V | tail -n1 | tr "version/" ' '  | echo "$(cut -d'.' -f2)" | awk '{print $1}')"
+            - MAJOR="$(git tag | sort -V | tail -n1 | tr "version/" ' '  | echo "$(cut -d'.' -f1)" | awk '{print $1}')"
+            - git tag "version/$MAJOR.$MINOR.$PATCH"
+            - git push origin "version/$MAJOR.$MINOR.$PATCH"

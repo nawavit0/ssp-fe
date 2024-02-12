@@ -1,0 +1,18 @@
+{
+  "th_TH": {
+    "my_profile": "ข้อมูลของฉัน",
+    "personal_information": "ข้อมูลส่วนตัว",
+    "save_btn": "แก้ไข",
+    "discard_btn": "ยกเลิก",
+    "alertDiscard":
+      "คุณแน่ใจแล้วหรือไม่ ว่าต้องการเปลี่ยนข้อมูล ข้อมูลของคุณยังไม่ได้ถูกจัดเก็บ"
+  },
+  "en_US": {
+    "my_profile": "My Profile",
+    "personal_information": "PERSONAL INFORMATION",
+    "save_btn": "SAVE CHANGES",
+    "discard_btn": "DISCARD",
+    "alertDiscard":
+      "Are you sure you want to discard changes? Information you added will not be saved."
+  }
+}

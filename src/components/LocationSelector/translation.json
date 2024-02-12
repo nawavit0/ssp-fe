@@ -1,0 +1,20 @@
+{
+  "th_TH": {
+    "selectStore": "เลือกสถานที่รับสินค้า",
+    "selected": "รับที่นี่",
+    "select": "เลือกรับสินค้าที่นี่",
+    "deselect": "ยกเลิก",
+    "contact": "ติดต่อ",
+    "check_btn": "ตรวจสอบ",
+    "near_by_store": "ตรวจสอบสาขาที่อยู่ใกล้คุณ"
+  },
+  "en_US": {
+    "selectStore": "SELECT STORE",
+    "selected": "SELECTED",
+    "select": "SELECT THIS STORE",
+    "deselect": "UNSELECT",
+    "contact": "Contact",
+    "check_btn": "CHECK",
+    "near_by_store": "Check availability at your nearby store."
+  }
+}

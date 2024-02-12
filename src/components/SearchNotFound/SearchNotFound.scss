@@ -1,0 +1,134 @@
+@import '../../styles/mixins/media';
+
+.button {
+  height: 100%;
+  background-color: transparent !important;
+}
+
+.button {
+  cursor: inherit !important;
+}
+.suggestion {
+  font-size: 16px;
+  color: #303232;
+  @include tablet {
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 8px;
+  }
+}
+.breakBorder {
+  border-bottom: 1px solid #d7d7d7;
+  width: 680px;
+  margin: 50px auto;
+  @include tablet {
+    width: 100%;
+    margin: 13px auto 24px auto;
+  }
+}
+.searchWrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  font-size: 28px;
+  color: #13283f;
+  align-items: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    align-items: flex-start;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .iconSearchNotFound {
+    margin-bottom: 32px;
+    @include tablet {
+      margin: 18px auto 32px auto;
+    }
+  }
+}
+
+.categoriesListDesktop {
+  @include mobile {
+    display: none;
+  }
+}
+
+.categoriesListMobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+    img {
+      margin-top: 13px;
+    }
+  }
+}
+
+.input {
+  padding: 20px 0;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}
+
+.description {
+  width: 100%;
+  display: block;
+  text-align: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+
+  @include mobile {
+    margin-bottom: 29px;
+  }
+
+  ul {
+    width: 280px;
+    margin: 0 auto;
+
+    @include mobile {
+      padding: 0;
+    }
+
+    li {
+      width: 280px;
+      text-align: left;
+      line-height: 30px;
+
+      @include mobile {
+        list-style: none;
+        text-align: center;
+      }
+    }
+  }
+}
+.titleTrending {
+  color: #303232;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 17px;
+  @include tablet {
+    font-size: 13px;
+    color: #2a2b2c;
+  }
+}
+.linkTrending {
+  font-size: 16px;
+  color: #303232;
+  margin-bottom: 17px;
+  @include tablet {
+    color: #2a2b2c;
+    font-size: 13px;
+  }
+}

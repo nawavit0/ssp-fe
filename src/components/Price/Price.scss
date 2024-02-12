@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+
+.root {
+  &.bold {
+    color: $gray-base;
+    font-weight: bold;
+  }
+
+  &.strike {
+    text-decoration: line-through;
+    color: $gray-base;
+  }
+  &.mini-tiny {
+    font-size: 12px;
+  }
+
+  &.tiny {
+    font-size: 13px;
+  }
+
+  &.small {
+    font-size: 14px;
+  }
+
+  &.medium {
+    font-size: 15px;
+  }
+
+  &.large {
+    font-size: 16px;
+  }
+
+  &.medium-x-large {
+    font-size: 18px;
+  }
+
+  &.x-large {
+    font-size: 20px;
+  }
+
+  &.huge {
+    font-size: 26px;
+  }
+
+  &.gray {
+    color: $gray-base;
+  }
+
+  &.red {
+    color: $red-base;
+  }
+
+  &.blue {
+    color: $blue-light;
+  }
+}

@@ -1,0 +1,107 @@
+@import '../../../styles/mixins/media';
+
+.rootCartFreeGift {
+  margin-left: 106px;
+  margin-bottom: 18px;
+  padding-left: 20px;
+
+  .loading {
+    margin-left: 8px;
+  }
+
+  .freeMsg {
+    font-size: 13px;
+    color: #4a90e2;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .header {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .outOfStockMessage {
+      display: block;
+      color: #9f3a38;
+      font-size: 13px;
+    }
+
+    .item {
+      display: flex;
+      flex: 1;
+      margin-bottom: 9px;
+
+      .image {
+        flex: 0 0 100px;
+
+        @include tablet-vertical {
+          flex: 0 0 60px;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+
+      .detail {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+
+        .brand {
+          font-weight: bold;
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+
+        .name {
+          font-size: 12px;
+          margin-bottom: 10px;
+          word-break: break-all;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 400px;
+        }
+
+        .attrDetail {
+          display: flex;
+          font-size: 12px;
+          margin-bottom: 10px;
+
+          .attr {
+            margin: 0 8px 0 0;
+          }
+
+          .qty {
+            margin: 0 8px 0 0;
+          }
+
+          .price {
+            font-weight: bold;
+          }
+        }
+
+        .butGroup {
+          .changeProductBtn {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet-vertical {
+  .rootCartFreeGift {
+    margin-left: 60px;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CartPromotionPopup",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CartPromotionPopup.js"
+}

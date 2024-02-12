@@ -1,0 +1,212 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/media';
+
+@mixin inlineLink {
+  a {
+    color: $gray-base;
+    &:hover {
+      color: lighten($gray-base, 30%);
+      transition: .3s;
+    }
+  }
+}
+
+.errorContainer {
+  color: $red-light;
+  margin-top: 5px;
+}
+
+.memberLogin {
+  text-align: right;
+  margin: 10px 0 10px;
+}
+
+hr {
+  margin: 0;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.colFirst {
+  border-right: 1px solid $grey-color-light;
+  box-sizing: border-box;
+
+  @include tablet {
+    border: none;
+    padding: 0 !important;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+.colSecond {
+  @include tablet {
+    padding: 0 !important;
+    max-width: 500px;
+    width: 100%;
+  }
+  .mobileOnly {
+    display: none;
+    @include tablet {
+      display: block;
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+.tabList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.facebookLogin {
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  .facebookLoginTitle {
+    font-size: 14px;
+    margin: 10px 30%;
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  .loginButton,
+  .facebookButton {
+    width: 313px;
+    height: 43px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @include tablet {
+      width: 100%;
+      height: 36px;
+    }
+  }
+
+  .loginButton {
+    width: 100%;
+    color: $black-base;
+    background-color: $white-base;
+    border: 1px solid $black-base;
+    margin-bottom: 10px;
+    &:hover {
+      background-color: darken($white-base, 3%);
+      transition: .3s;
+    }
+  }
+
+  .facebookButton {
+    background-color: $blue-base;
+    color: $white-base;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    &:hover {
+      background-color: darken($blue-base, 10%);
+      transition: .3s;
+    }
+
+    .facebookButtonTitle {
+      margin-left: 10px;
+    }
+
+    .icon {
+      display: inline-block;
+      margin: 2px 10px;
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+  }
+}
+
+.lineThrough {
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+.formFooter {
+  margin-top: 13px;
+
+  .terms {
+    @include inlineLink();
+  }
+
+  .subscriptionCheckboxWrapper {
+    display: flex;
+    justify-content: left;
+
+    .checkboxText {
+      margin-left: 12px;
+    }
+
+    .chkSubscribe {
+      padding: 0;
+    }
+  }
+
+  .registerButton {
+    width: 100%;
+    height: 43px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: $white-base;
+    background-color: $red-base;
+    border: none;
+    font-weight: bold;
+    @include tablet {
+      height: 36px;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: darken($red-base, 7%);
+      transition: .3s;
+    }
+  }
+  .registerButton:disabled {
+    opacity: 0.5;
+  }
+}
+@include tablet {
+  .divider {
+    position: relative;
+    overflow: hidden;
+
+    span {
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        position: relative;
+        padding: 0 7px;
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            width: 1000px;
+            position: absolute;
+            top: 0.73em;
+            border-top: 1px solid #aaaaaa;
+        }
+
+        &:before { right: 100%; }
+        &:after { left: 100%; }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "th_TH": {
+    "central_card": "ชำระด้วยบัตร Central The 1",
+    "credit_card": "บัตรเครดิต / บัตรเดบิต",
+    "cash_on_delivery": "การเก็บเงินปลายทาง",
+    "installment": "การแบ่งชำระ",
+    "counter_service": "ชำระเงินผ่านเคาเตอร์ / ชำระเงินที่ ATM",
+    "online_banking": "Online Banking",
+    "transfer": "โอนเงิน",
+    "line_pay": "Line Pay",
+    "free": "ชำระด้วยคะแนน The 1 Card"
+  },
+  "en_US": {
+    "central_card": "Central The 1 Credit Card",
+    "credit_card": "Credit Card / Debit Card",
+    "cash_on_delivery": "Cash On Delivery",
+    "installment": "Installment",
+    "counter_service": "Counter Service / ATM",
+    "online_banking": "Online Banking",
+    "transfer": "Transfer",
+    "line_pay": "Line Pay",
+    "free": "Pay With The 1 Card"
+  }
+}

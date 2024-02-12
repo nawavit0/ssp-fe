@@ -1,0 +1,109 @@
+@import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+
+.root {
+  .OrderHeader {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .OrderTitle {
+      font-size: 28px;
+      color: $gray-base;
+      font-weight: bold;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  .filterWrapper {
+    margin: 20px 0;
+    display: flex;
+
+    @include desktop {
+      justify-content: space-between;
+    }
+
+    @include tablet-vertical {
+      flex-direction: column;
+    }
+
+    .searchWrapper {
+      position: relative;
+
+      .searchOrderNo {
+        width: 258px;
+        height: 48px;
+        line-height: 150%;
+        padding-left: 25px;
+        font-size: 14px;
+        border: 1px solid #E2E2E2;
+
+        @include tablet-vertical {
+          width: 100%;
+        }
+      }
+
+      .iconSearch {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+      }
+    }
+
+    .filterDateWrapper {
+      display: flex;
+      height: 48px;
+      align-items: center;
+
+      @include tablet-vertical {
+        justify-content: space-between;
+        margin-top: 22px;
+      }
+
+      .labelFilterDate {
+        color: $gray-base;
+        margin-right: 15px;
+      }
+
+      .datepickerWrapper {
+        position: relative;
+
+        .iconDatepicker {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          z-index: 1;
+          transform: translateY(-50%);
+        }
+
+        .fromDate,
+        .toDate {
+          width: 110px;
+          padding: 5px 0 5px 20px;
+          border: none;
+          text-align: right;
+          border-bottom: 1px solid $silver;
+        }
+
+        .fromDate {
+          margin-right: 20px;
+        }
+
+        .poperEndDateCalendar {
+          [class='react-datepicker__triangle'] {
+            left: auto;
+            right: 50px;
+          }
+        }
+      }
+    }
+  }
+}

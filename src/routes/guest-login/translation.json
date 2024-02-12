@@ -1,0 +1,16 @@
+{
+  "th_TH": {
+    "title": "เข้าสู่ระบบ หรือ สั่งซื้อเลย",
+    "registerd": "ลงทะเบียนแล้ว",
+    "new_member": "สำหรับสมาชิกใหม่",
+    "detail": "คุณสามารถสมัครสมาชิก หลักจากสั่งซื้อเสร็จแล้ว เพื่อให้การซื้อสินค้าในครั้งถัดไปง่ายขึ้น",
+    "checkout_as_guest": "สั่งซื้อเลย"
+  },
+  "en_US": {
+    "title": "LOG IN OR CONTINUE AS GUEST",
+    "registerd": "REGISTERED CUSTOMER?",
+    "new_member": "NEW TO CENTRAL ONLINE?",
+    "detail": "You will be able to create an account during checkout to make future purchase faster",
+    "checkout_as_guest": "CHECKOUT AS GUEST"
+  }
+}

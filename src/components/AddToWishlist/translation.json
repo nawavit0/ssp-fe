@@ -1,0 +1,18 @@
+{
+  "th_TH": {
+    "confirm_login": "โปรด Login",
+    "please_login": "กรุณาเข้าสู่ระบบเพื่อเพิ่มรายการสินค้าที่ต้องการ คุณต้องการ Login ใช่ไหม?",
+    "add_to_wishlist": "รายการโปรด",
+    "add_to_wishlist_button": "เพิ่มเข้ารายการโปรด",
+    "add_wishlist_full_text": "เพิ่มเข้ารายการโปรด",
+    "remove_wishlist_full_text": "ลบรายการโปรด"
+  },
+  "en_US": {
+    "confirm_login": "Please login?",
+    "please_login": "Please login to add products to wishlist. Do you want to Login?",
+    "add_to_wishlist": "Wishlist",
+    "add_to_wishlist_button": "ADD TO WISHLIST",
+    "add_wishlist_full_text": "Add to wishlist",
+    "remove_wishlist_full_text": "Remove from wishlist"
+  }
+}

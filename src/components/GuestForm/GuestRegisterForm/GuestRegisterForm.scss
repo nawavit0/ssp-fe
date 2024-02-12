@@ -1,0 +1,29 @@
+.root {
+  .input {
+    margin-bottom: 16px;
+  }
+
+  .checkbox {
+    display: inline-block;
+  }
+
+  .hiddenField {
+    display: block;
+  }
+
+  .checkBoxConfirmation {
+    width: auto;
+  }
+
+  .passwordMaskup {
+    position: relative;
+
+    .iconShow {
+      position: absolute;
+      right: 8px;
+      top: 32px;
+      width: 24px;
+      cursor: pointer;
+    }
+  }
+}

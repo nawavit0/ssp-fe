@@ -1,0 +1,6 @@
+{
+  "name": "OrderFailHeader",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./OrderFailHeader.js"
+}

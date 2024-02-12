@@ -1,0 +1,139 @@
+@import '../../styles/mixins/media';
+@import '../../styles/variables';
+
+.root {
+  //display: grid;
+  grid: auto / repeat(5, 1fr);
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 15px 0;
+  max-height: 120px;
+  grid-gap: 10px;
+
+  @media only screen and (max-width: 1366px) {
+    //grid: auto / repeat(4, 1fr);
+    display: block;
+    max-height: 180px;
+  }
+
+  @include tablet-vertical {
+    grid: auto / 0.94fr 1fr;
+    max-height: 60px;
+    padding: 10px;
+    grid-gap: 5px;
+    box-sizing: border-box;
+    background: #000;
+  }
+
+  @include mobile {
+    max-height: 40px;
+    padding: 7px;
+    margin: unset;
+    background: #000;
+  }
+}
+
+.filterItem {
+  @include mobile {
+    border-bottom: 1px solid red;
+    &:first-child {
+      display: none;
+    }
+  }
+}
+
+.collapse {
+  width: 100%;
+  margin-bottom: 0px;
+  position: relative;
+  // z-index: 1;
+}
+
+.collapsePanel {
+  height: 31px;
+  border-bottom: 1px solid $silver-light;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.36;
+  letter-spacing: normal;
+  color: $gray-base;
+
+  @include tablet-vertical {
+    height: 46px;
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  @include mobile {
+    border-bottom: unset;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 100%;
+  }
+
+  &:hover {
+    font-weight: normal;
+    border-color: $gray-base;
+    box-shadow: 0 4px 2px -2px $grey-color-light;
+
+    @include tablet-vertical {
+      box-shadow: unset;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filterContent {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  text-transform: capitalize;
+
+  span {
+    color: $silver-base-light;
+    padding-left: 10px;
+  }
+}
+
+.checkboxContent {
+  width: 100%;
+  padding-right: 8.5px;
+}
+
+.mobileFilters {
+  width: 100%;
+}
+
+.isNotTablet {
+  @include tablet-vertical {
+    display: none;
+  }
+}
+
+.isTablet {
+  display: none;
+  @include tablet-vertical {
+    display: grid;
+  }
+}
+
+.padingFilter {
+  @include mobile {
+    padding-left: 15px;
+  }
+}

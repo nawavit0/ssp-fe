@@ -1,0 +1,318 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/media';
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: $red-base;
+}
+
+.headerT1Wrapper {
+  display: flex;
+  font-size: 16px;
+
+  @include tablet-vertical {
+    flex-direction: column;
+    font-size: 13px;
+  }
+
+  .labelTitle {
+    align-self: center;
+
+    @include tablet-vertical {
+      align-self: flex-start;
+    }
+  }
+
+  .disconnectT1 {
+    height: 100%;
+    color: $blue-light;
+    text-decoration: underline;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 0;
+    align-self: flex-start;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.t1c {
+  border: 1px solid $grey-color-light;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  @include tablet-vertical {
+    margin-bottom: 0px;
+  }
+  .header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 5px 15px;
+    .left {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+      @include tablet-vertical {
+        font-size: 13px;
+      }
+      .logoT1C {
+        margin: 0 15px 0 0;
+      }
+
+      .statusT1C {
+        display: flex;
+        align-items: center;
+
+        .iconUseT1C {
+          width: 24px;
+          margin: 0 5px 0 15px;
+        }
+
+        .label {
+          color: $gray-base;
+          font-weight: 400;
+          font-size: 15px;
+        }
+      }
+
+      .openT1Form {
+        color: $blue-light;
+        margin: 15px;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        background: none;
+
+        @include tablet-vertical {
+          margin: 3px 0 0 0;
+          padding: 0;
+
+          &.redeem {
+            align-self: flex-start;
+          }
+        }
+      }
+
+      .openT1Form:focus {
+        outline: none;
+      }
+    }
+
+    .right {
+      align-self: center;
+      color: $medium-blue;
+      font-size: 16px;
+
+      .iconAdd {
+        width: 32px;
+        cursor: pointer;
+      }
+
+      .btnCancel {
+        margin: 0 15px;
+        cursor: pointer;
+      }
+
+      .btnEdit {
+        margin: 0 20px 0 10px;
+        cursor: pointer;
+      }
+
+      .iconClose {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content {
+    background-color: $white-base;
+    padding: 5px 15px;
+
+    .formGroupLogin {
+      display: flex;
+      flex-flow: column;
+
+      .loginToYourT1 {
+        font-size: 14px;
+        color: $gray-base;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+
+      .formGroup {
+        width: 50%;
+        padding: 10px 0;
+
+        @include tablet-vertical {
+          width: 100%;
+        }
+
+        input {
+          height: 36px;
+        }
+      }
+    }
+
+    .formGroupT1CPoint {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
+
+      .formTitle {
+        display: block;
+        font-size: 16px;
+        color: $gray-base;
+        margin: 0 0 15px 0;
+      }
+
+      .formInput {
+        display: flex;
+        align-items: center;
+
+        .labelAs {
+          margin: 10px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .forgotPassword {
+      width: 50%;
+      color: $gray-base;
+      margin: 20px 0 0 0;
+      font-size: 14px;
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      color: $gray-nobel;
+      text-decoration: underline;
+
+      @include tablet-vertical {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .connectT1CButton,
+    .useT1CPointButton {
+      margin: 10px 0;
+      display: block;
+      color: white;
+      width: 50%;
+      height: 45px;
+      border-radius: 3px;
+      background-color: $red-base;
+      border: solid 1px $red-base;
+      font-size: 16px;
+      font-weight: 300;
+
+      @include tablet-vertical {
+        width: 100%;
+      }
+    }
+
+    .connectT1CButton:disabled,
+    .useT1CPointButton:disabled {
+      opacity: 0.5;
+    }
+
+    .useT1CPointButton {
+      width: 150px;
+      height: 35px;
+      margin-left: 35px;
+    }
+  }
+}
+
+.the1OptionWrapper {
+  display: flex;
+
+  @include tablet-vertical {
+    flex-direction: column;
+  }
+
+  .the1Options {
+    width: 400px;
+    height: 36px;
+    margin-right: 10px;
+
+    @include tablet-vertical {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .inputPoints {
+    width: 91px;
+  }
+
+  .labelPoints {
+    align-self: center;
+    margin-left: 10px;
+  }
+
+  .inputPointsWrapper {
+    display: flex;
+    &.inputInvalid {
+      > div {
+        color: #d0021b;
+        border-color: #d0021b;
+      }
+    }
+  }
+}
+.remarkText {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.the1ButtonWrapper {
+  display: flex;
+  height: 36px;
+  margin-top: 20px;
+
+  @include tablet-vertical {
+    margin-top: 16px;
+  }
+
+  .applyT1 {
+    width: 186px;
+    height: 100%;
+    color: $white-base;
+    background-color: $red-base;
+    cursor: pointer;
+
+    @include tablet-vertical {
+      width: 100%;
+    }
+  }
+
+  .disconnectT1 {
+    height: 100%;
+    color: $blue-light;
+    text-decoration: underline;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 40px;
+
+    @include tablet-vertical {
+      display: none;
+    }
+  }
+}
+
+.alertInputPointInvalid {
+  color: #d0021b;
+}
+
+.inputPointInvalid {
+  border: red;
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="48" viewBox="0 0 38 48">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#4A90E2" d="M19 0C8.55 0 0 8.144 0 18.167c0 3.968 1.372 7.726 3.8 10.858L18.155 47.61c.317.417 1.055.523 1.478.21l.212-.21L34.2 29.025c2.428-3.132 3.8-6.89 3.8-10.858C38 8.144 29.45 0 19 0z"/>
+        <text fill="#FFF" font-family="Gotham-Medium, Gotham" font-size="16" font-weight="400">
+            <!-- <tspan x="15.332" y="25"></tspan> -->
+        </text>
+    </g>
+</svg>

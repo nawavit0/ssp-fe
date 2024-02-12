@@ -1,0 +1,14 @@
+{
+  "th_TH": {
+    "delivery_detail": "การจัดส่งสินค้า",
+    "delivery": "การจัดส่งสินค้า",
+    "payment": "การชำระเงิน",
+    "complete": "เสร็จสิ้น"
+  },
+  "en_US": {
+    "delivery_detail": "Delivery Details",
+    "delivery": "Delivery",
+    "payment": "Payment",
+    "complete": "Complete"
+  }
+}

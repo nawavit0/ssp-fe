@@ -1,0 +1,91 @@
+.root {
+  padding: 15px;
+  border-bottom: 1px solid #eaeaea;
+
+  .titleCon {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-bottom: 20px;
+
+    .title {
+      font-size: 12px;
+      flex: 1;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+      strong.inlineBlockProps {
+        display: inline-block;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .view {
+      font-size: 13px;
+      flex: 0 0 auto;
+      color: #9b9b9b;
+      text-decoration: underline;
+    }
+  }
+
+  .contentCon {
+    position: relative;
+
+    .progress {
+      position: relative;
+    }
+
+    .progressDetail {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+
+      .start {
+        font-size: 13px;
+      }
+
+      .end {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .freebieSection {
+    padding: 20px 4px 18px;
+    display: flex;
+
+    .freebieImage {
+      flex: 0 0 60px;
+      height: 80px;
+      overflow: hidden;
+      margin: 0 25px 0 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .freebieDetail {
+      flex: 1 1 auto;
+      overflow: hidden;
+
+      .freebieBrand {
+        font-size: 14px;
+        font-weight: bold;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .freebieName {
+        font-size: 14px;
+        overflow: hidden;
+        height: 38px;
+      }
+    }
+  }
+}

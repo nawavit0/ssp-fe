@@ -1,0 +1,30 @@
+{
+  "th_TH": {
+    "self_pickup": "คุณจะมารับสินค้าด้วยตัวเอง?",
+    "how_to": "Confirmation code will be sent to collector's email and phone no. Please show ID card together with confirmation code to collect your order.",
+    "collector_info": "ข้อมูลผู้รับสินค้า",
+    "firstname": "ชื่อ",
+    "lastname": "นามสกุล",
+    "email": "Email",
+    "phone": "เบอร์โทรศัพท์",
+    "enterEmail": "your@email.com",
+    "enterPhone": "0987654321",
+    "required": "โปรดระบุ",
+    "email_format": "ระบุอีเมลไม่ถูกต้อง",
+    "number_format": "ระบุตัวเลขไม่ถูกต้อง"
+  },
+  "en_US": {
+    "self_pickup": "Will you pickup your items by your self?",
+    "how_to": "Confirmation code will be sent to collector's email and phone no. Please show ID card together with confirmation code to collect your order.",
+    "collector_info": "COLLECTOR INFO",
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "enterEmail": "your@email.com",
+    "enterPhone": "0987654321",
+    "required": "Required field.",
+    "email_format": "Invalid email format.",
+    "number_format": "Invalid number format."
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  height: 100%;
+  border: solid 0.5px $gray-icon-disabled;
+  cursor: pointer;
+  color: #a6192e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.disabled {
+    cursor: inherit;
+    color: $gray-icon-disabled;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.counter {
+  height: 100%;
+  border-top: solid 0.5px $gray-icon-disabled;
+  border-bottom: solid 0.5px $gray-icon-disabled;
+  flex: 1;
+  text-align: center;
+  color: $gray-main-darker;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minus {
+  border-radius: 2px 0 0 2px;
+}
+
+.plus {
+  border-radius: 0 2px 2px 0;
+}

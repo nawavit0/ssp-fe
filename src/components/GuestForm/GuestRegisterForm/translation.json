@@ -1,0 +1,12 @@
+{
+  "th_TH": {
+    "required": "โปรดระบุ",
+    "email_format": "ระบุอีเมลไม่ถูกต้อง",
+    "agree": "To Register, Please agree to our Terms of Service and Privacy Policy"
+  },
+  "en_US": {
+    "required": "Required field.",
+    "email_format": "Invalid email format.",
+    "agree": "To Register, Please agree to our Terms of Service and Privacy Policy"
+  }
+}

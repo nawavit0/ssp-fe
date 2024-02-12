@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+@import '../Loader/sspLoader';
+
+.loader {
+  background: url($loading-image-full-page) top center no-repeat;
+  width: 100%;
+  top: 40%;
+  height: 10em;
+}

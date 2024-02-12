@@ -1,0 +1,30 @@
+{
+  "th_TH": {
+    "gift_options": "ตัวเลือกของขวัญ",
+    "gift_wrapping": "ห่อของขวัญ",
+    "if_you_are_purchasing": "หากคุณซื้อของขวัญคุณสามารถป้อนข้อความส่วนตัวได้",
+    "standard_box": "กล่องมาตรฐาน",
+    "premium_box": "กล่องพรีเมี่ยม",
+    "add_your_gift_message": "เพิ่มข้อความของขวัญของคุณ",
+    "characters_left": "อักขระที่เหลือ",
+    "gift_message": "ข้อความของขวัญ",
+    "select_gift_wrap_options": "เลือกตัวเลือกห่อของขวัญ",
+    "secure_checkout": "เช็คเอาต์ที่ปลอดภัย",
+    "box_id_1": "กล่องมาตรฐาน",
+    "box_id_2": "กล่องพรีเมี่ยม"
+  },
+  "en_US": {
+    "gift_options": "Gift options",
+    "gift_wrapping": "Gift wrapping",
+    "if_you_are_purchasing": "If you're purchasing a gift, you can enter a personal message.",
+    "standard_box": "Standard Box",
+    "premium_box": "Premium Box",
+    "add_your_gift_message": "Add your gift message",
+    "characters_left": "characters left",
+    "gift_message": "Gift message",
+    "select_gift_wrap_options": "select gift wrap options",
+    "secure_checkout": "secure checkout",
+    "box_id_1": "Standard Box",
+    "box_id_2": "Premium Box"
+  }
+}

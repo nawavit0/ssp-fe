@@ -1,0 +1,24 @@
+{
+  "th_TH": {
+    "title": "สมุดที่อยู่",
+    "new": "เพิ่มที่อยู่ใหม่",
+    "alertDel": "คุณแน่ใจแล้วหรือไม่ ว่าต้องการลบที่อยู่นี้ถาวร",
+    "default_shipping": "ที่อยู่เริ่มต้น",
+    "default_billing": "ใบกำกับภาษีเริ่มต้น",
+    "add_address": "เพิ่มที่อยู่ใหม่",
+    "edit": "แก้ไข",
+    "delete": "ลบ",
+    "no_any_add_address": "You don't have any address"
+  },
+  "en_US": {
+    "title": "ADDRESS BOOK",
+    "new": "Add new address",
+    "alertDel": "Are you sure you want to permanently delete this address?",
+    "default_shipping": "Default Shipping Address",
+    "default_billing": "Default Full Tax Invoice",
+    "add_address": "Add New Address",
+    "edit": "Edit",
+    "delete": "Delete",
+    "no_any_add_address": "You don't have any address"
+  }
+}

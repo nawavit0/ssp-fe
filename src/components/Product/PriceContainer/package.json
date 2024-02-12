@@ -1,0 +1,6 @@
+{
+  "name": "PriceContainer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PriceContainer.js"
+}

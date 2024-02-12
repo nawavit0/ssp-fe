@@ -1,0 +1,20 @@
+{
+  "th_TH": {
+    "bigc": "บิ๊ก ซี",
+    "tesco": "เทสโก้ โลตัส",
+    "mpay": "เอ็มเปย์ สเตชั่น",
+    "payatpost": "เพย์แอทโพสต์",
+    "truemoney": "ทรูมันนี่",
+    "cenpay": "เซ็นเพย์",
+    "familymart": "แฟมิลี่มาร์ท"
+  },
+  "en_US": {
+    "bigc": "Big C",
+    "tesco": "TESCO",
+    "mpay": "mPay Station",
+    "payatpost": "Pay@Post",
+    "truemoney": "True Money",
+    "cenpay": "CenPay",
+    "familymart": "FamilyMart"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "th_TH": {
+    "free_gift_message": "คุณได้รับโปรโมชั่นจากการซื้อสินค้านี้",
+    "out_of_stock": "ขออภัย ของสมนาคุณหมด",
+    "not_correct_stock": "ขออภัย ของแถมมีจำนวนไม่เพียงพอ",
+    "free_title": "ของสมนาคุณ"
+  },
+  "en_US": {
+    "free_gift_message": "You have Promotion Item(s) with this order purchase",
+    "out_of_stock": "Sorry, free gift is now out of stock",
+    "not_correct_stock": "Sorry, free gift in stock is not enough for purchased items",
+    "free_title": "FREE ITEMS"
+  }
+}

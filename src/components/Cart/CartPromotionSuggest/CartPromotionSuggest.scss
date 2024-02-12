@@ -1,0 +1,10 @@
+@import '../../../styles/mixins/media';
+.rootPromotionSuggest {
+  margin-left: 30px;
+  border: 1px solid #eaeaea;
+  border-top: 0;
+
+  @include tablet-vertical {
+    margin-left: 0px;
+  }
+}

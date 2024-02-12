@@ -1,0 +1,94 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+
+.root {
+  .AccountHeader {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .AccountTitle {
+      font-size: 28px;
+      margin: 32px 0 20px;
+      text-transform: uppercase;
+      color: $gray-base;
+      font-weight: bold;
+
+      @include tablet-vertical {
+        display: none;
+      }
+    }
+
+    .addNewAddBtn {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+      color: $blue-light;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .accountContent {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border: 1px solid $gray-icon-disabled;
+
+    @include tablet-vertical {
+      margin: 15px 10px;
+      padding: 25px 15px;
+    }
+  }
+
+  .accountMiniTitle {
+    font-weight: bold;
+    font-size: 18px;
+    color: #484848;
+    margin-bottom: 24px;
+
+    @include tablet-vertical {
+      font-size: 13px;
+      color: #1c1c1c;
+      font-weight: bold;
+    }
+  }
+
+  .accountForm {
+    max-width: 665px;
+  }
+
+  .formButton {
+    display: flex;
+    margin: 0 -15px;
+
+    @include tablet-vertical {
+      flex-direction: column;
+    }
+
+    .submit {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 47px;
+      font-size: 16px;
+      font-weight: bold;
+
+      @include tablet-vertical {
+        margin-bottom: 15px;
+        font-size: 13px;
+      }
+    }
+
+    .discard {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 45px;
+      font-size: 16px;
+      font-weight: bold;
+
+      @include tablet-vertical {
+        font-size: 13px;
+      }
+    }
+  }
+}

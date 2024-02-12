@@ -1,0 +1,16 @@
+{
+  "th_TH": {
+    "labelSelectStore": "เลือกสถานที่รับสินค้า",
+    "labelContact": "ติดต่อ",
+    "buttonSelectStore": "เลือกรับสินค้าที่นี่",
+    "buttonDeSelectStore": "ยกเลิก",
+    "placeholderFilter": "ค้นหาด้วยชื่อห้างสรรพสินค้าหรือตำแหน่งที่อยู่"
+  },
+  "en_US": {
+    "labelSelectStore": "SELECT STORE",
+    "labelContact": "Contact",
+    "buttonSelectStore": "SELECT THIS STORE",
+    "buttonDeSelectStore": "UNSELECT",
+    "placeholderFilter": "Type store name or location here"
+  }
+}

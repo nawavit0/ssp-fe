@@ -1,0 +1,14 @@
+{
+  "th_TH": {
+    "view_promo": "ดูโปรโมชั่นพิเศษ",
+    "campaigns": "โปรโมชั่น",
+    "coupon_code": "รหัสคูปอง",
+    "modal_title": "รหัสโปรโมชั่นพิเศษ"
+  },
+  "en_US": {
+    "view_promo": "View Promo Code",
+    "campaigns": "Campaigns",
+    "coupon_code": "Code",
+    "modal_title": "Special promotion code"
+  }
+}

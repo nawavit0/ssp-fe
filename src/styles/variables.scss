@@ -1,0 +1,147 @@
+/*
+ * Colors
+ * ======================================================================== */
+
+// Basic Colors
+
+$blue-light: #4a90e2;
+$regent-st-blue:#96c8da;
+$blue-zodiac: #404553;
+$medium-blue: #2a6dc9;
+$blue-selected: #005cb0;
+$blue-bright: #0059aa;
+$blue-base: #3b5998;
+$blue-alice: #e1effc;
+$error-red: #9f3a38;
+$warm-red: #fa615f;
+$red-light: #ed1f1f;
+$red-base: #a6192e;
+$red-dark: #a40018;
+$red-error: #d0021b;
+$red-status: #d11c2c;
+$gray-bg: #f8f8f8;
+$white-base: #ffffff;
+$white-base-gray: #b5b5b5;
+$white-base-light: #ececec;
+$white-snow: #fafafa;
+$white-smoke: #f7f7f7;
+$white-smoke-8: #f8f8f8;
+$white-smoke-2: #f2f2f2;
+$white-dark: #f9f9f9;
+$ice-gray: #dddddd;
+$white-dim-gray: #747474;
+$black-base: #000000;
+$gray-main-light: #cccccc;
+$gray-main-base: #b0b8cb;
+$gray-main-dark: #888888;
+$grey-color-light: #e4e4e4;
+$gray-main-darker: #222222;
+$gray-lighter: #aaaaaa;
+$gray-quartz: #dededf;
+$gray-light: #d5d5d5;
+$gray-nobel: #9b9b9b;
+$gray-base: #333333;
+$gray-dark: #acacac;
+$gray-dark-b0: #acacac;
+$gray-eclipse: #393939;
+$gray-night-rider: #353535;
+$gray-gainsboro: #e3e3e3;
+$silver-ba: #bababa;
+$gray-pdp-boder:#e3e3e3;
+$silver: #c1c1c1;
+$gray-icon-disabled: #eaeaea;
+$silver-base-light: #b8b8b8;
+$silver-light: #efeff4;
+$silver-2: #bababa;
+$back-base: #000000;
+$warm-grey: $gray-nobel;
+$warm-grey-light: #e0e0e0;
+$gray-shadow: #aaaaa6;
+$green-light: #58CA00;
+$ice-blue: #c6e0f5;
+$ice-blue-warm: #eef6fe;
+$ice-blue-light: #f5faff;
+$white-light: #f7f9fb;
+$blue-oxford: #263238;
+$default-ssp: #0B233D;
+
+// Header
+
+$upper-header-section-color: $gray-base;
+$nav-bar-text-color: $gray-base;
+$central-title: $red-base;
+
+// Main components
+
+$main-btn-color: $red-base;
+$border-color: $gray-lighter;
+$background-color: $white-base;
+
+// Footer
+
+$social-section-color: $gray-base;
+$footer-title-color: $gray-base;
+$footer-text-color: $gray-base;
+$footer-background-color: $white-dark;
+
+// Products
+
+$promotion-color: $gray-dark;
+$discount-color: $red-base;
+$category-title-color: $gray-base;
+$category-description-color: $gray-base;
+$category-scroll-color: $blue-light;
+$product-rating-color: $red-base;
+$pink-product-page-label: #ff5157;
+$gray-separator: #eee;
+$blue-tab: #367dbc;
+
+/*
+ * Typography
+ * ======================================================================== */
+
+$font-family: '"Gotham", "Prompt", sans-serif';
+
+/*
+ * Layout
+ * ======================================================================== */
+
+$max-content-width: 1366px;
+$main-header-height: 72px;
+$mobile-header-height: 90px;
+$upper-header-height: 32px;
+$category-bar-height: 50px;
+$mobile-header-height: 60px;
+
+/*sps*/
+$header-color: #13283f;
+$loading-image-full-page: '/images/loading/loading-ssp.svg';
+$loading-image-in-div: '/images/loading/loading-ssp.svg';
+$red-base: $default-ssp;
+
+/*
+ * Typography
+ * ======================================================================== */
+
+ $font-family: 'Prompt', sans-serif;
+
+ /*
+  * Layout
+  * ======================================================================== */
+
+ $max-content-width: 1366px;
+ $main-header-height: 115px;
+ $upper-header-height: 32px;
+ $category-bar-height: 50px;
+ $mobile-header-height: 132px;
+ $gap: 15px;
+
+ /*stylelint-disable*/
+ :export {
+   major: $header-color;
+   majorDark: $header-color;
+   majorLight: $header-color;
+
+   discountColor: $red-base;
+ }
+ /*stylelint-enable*/

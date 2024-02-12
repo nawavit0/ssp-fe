@@ -1,0 +1,22 @@
+{
+  "th_TH": {
+    "brands": "แบรนด์",
+    "shop_by_brands": "สินค้าตามแบรนด์",
+    "recommended_brands": "แบรนด์แนะนำ",
+    "all_categories": "หมวดหมู่ทั้งหมด",
+    "all_brand": "All A-Z Brands",
+    "all": "ทั้งหมด",
+    "popup_title": "Brands from Alphabet",
+    "wait_to_loading_brands": "กำลังโหลด แบรนด์ กรุณารอสักครู่"
+  },
+  "en_US": {
+    "brands": "Brands",
+    "shop_by_brands": "SHOP BY BRAND",
+    "recommended_brands": "Recommended Brands",
+    "all_categories": "All Categories",
+    "all_brand": "All A-Z Brands",
+    "all": "ALL",
+    "popup_title": "Brands from Alphabet",
+    "wait_to_loading_brands": "Loading brands. Please wait a moment..."
+  }
+}

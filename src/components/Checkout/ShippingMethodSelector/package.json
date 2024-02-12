@@ -1,0 +1,6 @@
+{
+  "name": "ShippingMethodSelector",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ShippingMethodSelector.js"
+}

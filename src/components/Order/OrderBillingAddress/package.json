@@ -1,0 +1,6 @@
+{
+  "name": "OrderBillingAddress",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./OrderBillingAddress.js"
+}

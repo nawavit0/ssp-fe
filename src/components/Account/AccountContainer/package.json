@@ -1,0 +1,6 @@
+{
+  "name": "AccountContainer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AccountContainer.js"
+}

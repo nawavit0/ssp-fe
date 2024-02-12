@@ -1,0 +1,36 @@
+{
+  "th_TH": {
+    "successful": "ได้รับสินค้าแล้ว",
+    "awaiting_payment": "รอการชำระเงิน",
+    "processing": "กำลังดำเนินการ",
+    "shipping": "อยู่ระหว่างการจัดส่ง",
+    "ready_to_ship": "เตรียมจัดส่ง",
+    "ready_to_pickup": "สินค้าพร้อมรับ",
+    "payment_fail": "ชำระเงินไม่สำเร็จ",
+    "canceled": "ยกเลิก",
+    "rejected": "จัดส่งไม่สำเร็จ",
+    "delivery_fail": "จัดส่งไม่สำเร็จ",
+    "in_transit": "อยู่ระหว่างการจัดส่ง",
+    "delivered": "ได้รับสินค้าแล้ว",
+    "partial_delivered": "ได้รับสินค้าบางส่วนแล้ว",
+    "ready_to_collect": "สินค้าพร้อมรับ",
+    "collected": "ได้รับสินค้าแล้ว"
+  },
+  "en_US": {
+    "successful": "Successful",
+    "awaiting_payment": "Awaiting Payment",
+    "processing": "Processing",
+    "shipping": "Shipping",
+    "ready_to_ship": "Ready to ship",
+    "ready_to_pickup": "Ready to pickup",
+    "payment_fail": "Payment Fail",
+    "canceled": "Cancel",
+    "rejected": "Delivery Fail",
+    "delivery_fail": "Delivery Fail",
+    "in_transit": "Shipping",
+    "delivered": "Successful",
+    "partial_delivered": "Partial Delivered",
+    "ready_to_collect": "Ready to Pickup",
+    "collected": "Successful"
+  }
+}

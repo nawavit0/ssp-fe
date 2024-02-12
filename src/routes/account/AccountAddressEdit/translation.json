@@ -1,0 +1,28 @@
+{
+  "th_TH": {
+    "edit": "Edit",
+    "edit_address_title": "EDIT ADDRESS",
+    "add_address_title": "ADD NEW ADDRESS",
+    "Personal Information": "ข้อมูลส่วนตัว",
+    "Billing Address": "ที่อยู่ในการออกใบกำกับภาษี ",
+    "viewAllOrders": "ดูรายการสั่งสินค้าทั้งหมด >",
+    "recentOrders": "รายการสินค้าล่าสุด",
+    "accountSummaryTitle": "My account Summary",
+    "Delivery Address": "ที่อยู่ที่รับสินค้า",
+    "alertDiscard": "คุณแน่ใจแล้วหรือไม่ ว่าต้องการเปลี่ยนข้อมูล ข้อมูลของคุณยังไม่ได้ถูกจัดเก็บ",
+    "no_any_add_address": "You don't have any address"
+  },
+  "en_US": {
+    "edit": "Edit",
+    "edit_address_title": "EDIT ADDRESS",
+    "add_address_title": "ADD NEW ADDRESS",
+    "Personal Information": "Personal Information",
+    "Billing Address": "Billing Address",
+    "viewAllOrders": "View all orders >",
+    "accountSummaryTitle": "My account Summary",
+    "recentOrders": "Recent Orders",
+    "Delivery Address": "Delivery Address",
+    "alertDiscard": "Are you sure you want to discard changes? Information you added will not be saved.",
+    "no_any_add_address": "You don't have any address"
+  }
+}

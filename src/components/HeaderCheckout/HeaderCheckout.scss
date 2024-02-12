@@ -1,0 +1,103 @@
+@import '../../styles/variables';
+@import '../../styles/mixins/media';
+
+.wrapper {
+  background-color: $white-base;
+  border-bottom: 1px solid $silver-light;
+}
+
+.root {
+  height: 72px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  @include tablet {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    padding: 0 15px;
+  }
+}
+
+.left {
+  display: flex;
+  align-items: flex-start;
+
+  .labelSecure {
+    display: flex;
+    @include tablet {
+      label {
+        display: none;
+      }
+    }
+    label {
+      padding-top: 3px;
+      font-weight: bold;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  .logoBlueText {
+    width: 264px;
+    @include tablet {
+      width: 194px;
+    }
+  }
+}
+
+.right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.talkAbout {
+  display: flex;
+
+  label {
+    color: $white-base;
+    font-size: 16px;
+  }
+
+  .tel {
+    display: flex;
+    margin-left: 5px;
+
+    .imgTel {
+      align-items: center;
+    }
+
+    .labelTel {
+      font-weight: 400;
+    }
+  }
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.keyLockIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+@media print {
+  .left,
+  .right {
+    display: none !important;
+  }
+  .center {
+    width: 100% !important;
+  }
+}

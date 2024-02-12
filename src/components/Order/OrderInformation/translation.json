@@ -1,0 +1,18 @@
+{
+  "th_TH": {
+    "order_info": "รายละเอียดการสั่งซื้อ",
+    "order_date": "วันที่สั่งซื้อ",
+    "payment_type": "ประเภทการชำระ",
+    "payment_status": "สถานะการชำระ",
+    "phone_number": "เบอร์โทรศัพท์",
+    "t1_number": "หมายเลข The 1 Card"
+  },
+  "en_US": {
+    "order_info": "Order information",
+    "order_date": "Order date",
+    "payment_type": "Payment Type",
+    "payment_status": "Payment Status",
+    "phone_number": "Customer Phone",
+    "t1_number": "The 1 Card No."
+  }
+}

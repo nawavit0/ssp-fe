@@ -1,0 +1,143 @@
+@import '../../../styles/variables';
+$rows: 3;
+$height-small: 28px;
+$height-medium: 32px;
+$height-large: 36px;
+
+.root {
+  cursor: pointer;
+}
+
+.panel {
+  justify-content: space-between;
+  border: 1px solid $gray-quartz;
+
+  .text {
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &.border-radius-small {
+    border-radius: 2px;
+  }
+
+  &.border-radius-medium {
+    border-radius: 4px;
+  }
+
+  &.open {
+    border-color: $regent-st-blue;
+    // border-bottom: 0;
+
+    &.border-radius-small {
+      border-radius: 2px 2px 0 0;
+    }
+
+    &.border-radius-medium {
+      border-radius: 4px 4px 0 0;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+  padding-right: 6px;
+
+  &.small {
+    height: $height-small;
+  }
+
+  &.medium {
+    height: $height-medium;
+  }
+
+  &.large {
+    height: $height-large;
+  }
+}
+
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+}
+
+.optionsWrapper {
+  position: relative;
+  visibility: hidden;
+  margin-top: -1px;
+  &.open {
+    visibility: visible;
+  }
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  overflow-y: auto;
+  width: 100%;
+  border: 1px solid $regent-st-blue;
+  border-top: 0;
+  background-color: $white-base;
+
+  &.small {
+    max-height: calc(#{$height-small} * #{$rows} + 1px);
+  }
+
+  &.medium {
+    max-height: calc(#{$height-medium} * #{$rows} + 1px);
+  }
+
+  &.large {
+    max-height: calc(#{$height-large} * #{$rows} + 1px);
+  }
+
+  &.border-radius-small {
+    border-radius: 0 0 2px 2px;
+  }
+
+  &.border-radius-medium {
+    border-radius: 0 0 4px 4px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray-dark;
+  }
+}
+
+.option {
+  border-top: 1px solid $white-snow;
+
+  &.active {
+    background-color: $white-smoke;
+    font-weight: bold;
+  }
+
+  &:hover {
+    background-color: $white-smoke-2;
+  }
+}
+
+.hiddenInput {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+}
+
+// .isOutStock {
+//   text-decoration: line-through;
+// }

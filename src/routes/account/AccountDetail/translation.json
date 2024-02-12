@@ -1,0 +1,20 @@
+{
+  "th_TH": {
+    "edit": "Edit",
+    "Personal Information": "ข้อมูลส่วนตัว",
+    "Billing Address": "ที่อยู่ในการออกใบกำกับภาษี ",
+    "viewAllOrders": "ดูรายการสั่งสินค้าทั้งหมด >",
+    "recentOrders": "รายการสินค้าล่าสุด",
+    "accountSummaryTitle": "My account Summary",
+    "Delivery Address": "ที่อยู่ที่รับสินค้า"
+  },
+  "en_US": {
+    "edit": "Edit",
+    "Personal Information": "Personal Information",
+    "Billing Address": "Billing Address",
+    "viewAllOrders": "View all orders >",
+    "accountSummaryTitle": "My account Summary",
+    "recentOrders": "Recent Orders",
+    "Delivery Address": "Delivery Address"
+  }
+}

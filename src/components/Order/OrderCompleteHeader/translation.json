@@ -1,0 +1,23 @@
+{
+  "th_TH": {
+    "status_title": "ขอบคุณสำหรับการสั่งซื้อของคุณ",
+    "status_description": "การทำรายการเสร็จสมบูรณ์",
+    "order_no": "หมายเลขการสั่งซื้อ",
+    "order_tacking":
+      "คุณสามารถติดตามคำสั่งซื้อได้ที่ บัญชีผู้ใช้ > การสั่งซื้อของฉัน",
+    "guest_order_tacking": "ข้อมูลการสั่งซื้อของคุณจะถูกส่งไปที่",
+    "you_can": "คุณสามารถ",
+    "track_your_order": "ติดตามใบสั่งซื้อของคุณ",
+    "at_homepage_header": "ที่ส่วนหัวของหน้าแรก"
+  },
+  "en_US": {
+    "status_title": "Thank you for your order.",
+    "status_description": "Ordered successfully",
+    "order_no": "Order Number",
+    "order_tacking": "You can track your order at Account > My Orders",
+    "guest_order_tacking": "Your order information will be sent to",
+    "you_can": "You can",
+    "track_your_order": "Track Your Order",
+    "at_homepage_header": "at homepage header"
+  }
+}

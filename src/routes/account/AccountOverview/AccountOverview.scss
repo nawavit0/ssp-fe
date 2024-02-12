@@ -1,0 +1,264 @@
+@import '../../../styles/mixins/media';
+@import '../../../styles/variables';
+
+.root {
+  padding: 16px;
+  .accountContent,
+  .accountT1Content {
+    height: 210px;
+    box-sizing: border-box;
+  }
+  .AccountHeader {
+    margin: 16px 16px 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet-vertical {
+      display: none;
+    }
+    .AccountTitle {
+      font-size: 28px;
+      color: $gray-base;
+      font-weight: bold;
+    }
+    .addNewAddBtn {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+      color: $blue-light;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .accountContent {
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    @include tablet-vertical {
+      padding: 17px 10px 16px;
+      height: auto;
+    }
+    &.hasData {
+      padding: 30px 14px 14px 14px;
+      @include tablet-vertical {
+        padding: 14px;
+      }
+    }
+  }
+
+  .accountT1Content {
+    padding: 24px 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+
+    @include tablet-vertical {
+      padding: 17px 10px 16px;
+      height: auto;
+    }
+  }
+
+  .accountMiniTitle {
+    font-weight: bold;
+    font-size: 14px;
+    color: $gray-base;
+    margin-bottom: 16px;
+  }
+
+  .accountForm {
+    max-width: 665px;
+  }
+
+  .trackMyOrderLink {
+    margin: 12px 12px 12px 0;
+    @include tablet-vertical {
+      text-align: center;
+      margin: 12px;
+    }
+    > a {
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-right: 16px;
+      color: #3a3a3a;
+      font-size: 14px;
+      cursor: pointer;
+      vertical-align: middle;
+      width: auto;
+      display: inline-block;
+      > .trackOrderIcon {
+        margin-right: 10px;
+      }
+      > .arrowLink {
+        margin-left: 8px;
+        transform: rotate(270deg);
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  .formButton {
+    display: flex;
+    margin: 0 -15px;
+
+    @include tablet-vertical {
+      flex-direction: column;
+    }
+
+    .submit {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 44px;
+
+      @include tablet-vertical {
+        margin-bottom: 15px;
+      }
+    }
+
+    .discard {
+      flex: 1;
+      margin: 0 15px;
+      line-height: 36px;
+      font-weight: bold;
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    &.noData {
+      justify-content: center;
+      margin-bottom: 5px;
+    }
+    &.hasData {
+      border-bottom: 1px solid #b7b7b7;
+      padding-bottom: 13px;
+    }
+    .title,
+    .titleT1 {
+      font-size: 14px;
+      color: #1c1c1c;
+      font-weight: bold;
+      @include tablet-vertical {
+        font-size: 13px;
+      }
+    }
+
+    .titleT1 {
+      display: flex;
+      .logoT1 {
+        width: 22px;
+      }
+
+      .labelT1 {
+        align-self: center;
+        margin: 0 8px;
+      }
+    }
+
+    .disconnctBtn {
+      align-self: center;
+      color: $gray-base;
+      font-size: 13px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .editBtn {
+      color: #3d88e0;
+      cursor: pointer;
+      font-size: 13px;
+      text-decoration: underline;
+
+      &:hover {
+        color: $blue-selected;
+        transition: 0.3s;
+      }
+
+      &.gray {
+        color: #313131;
+      }
+      &.viewAllOrder {
+        font-size: 14px;
+        @include tablet-vertical {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .content {
+    .contentRow {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 14px;
+      margin-bottom: 15px;
+
+      @include tablet-vertical {
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+    }
+
+    .left {
+      color: #9c9c9c;
+      justify-content: flex-start;
+      width: 130px;
+
+      @include tablet-vertical {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+    }
+
+    .right {
+      color: #484848;
+      justify-content: flex-start;
+      @include tablet-vertical {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .pointsAmount {
+        margin-left: 5px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .t1cConnect {
+    line-height: 36px;
+    text-align: center;
+    max-width: 255px;
+    margin: 20px 0 8px 0;
+
+    @include tablet-vertical {
+      width: 100%;
+      max-width: none;
+      margin: 20px 0 0px 0;
+    }
+  }
+
+  .noMsg {
+    padding: 0 0 10px 0;
+    color: #3d88e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    @include tablet-vertical {
+      font-size: 11px;
+      padding: 0;
+    }
+    a {
+      margin-top: 10px;
+    }
+    .iconPlus {
+      width: 61px;
+      height: 61px;
+      @include tablet-vertical {
+        width: 34px;
+        height: 34px;
+      }
+    }
+  }
+}

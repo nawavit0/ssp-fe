@@ -1,0 +1,10 @@
+{
+  "th_TH": {
+    "title": "คืนสินค้า",
+    "downloadReturnDoc": "ดาวน์โหลดเอกสารขอคืนสินค้า"
+  },
+  "en_US": {
+    "title": "RETURN",
+    "downloadReturnDoc": "Download Return document"
+  }
+}

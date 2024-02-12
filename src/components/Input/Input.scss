@@ -1,0 +1,70 @@
+@import '../../styles/variables';
+
+.wrapper {
+  background-color: $white-base;
+  border: solid 1px #dfdfdf;
+  height: 40px; // do not use !important there
+  padding: 0 10px;
+
+  &.error {
+    background-color: #fff6f6;
+    border-color: $red-base;
+    color: $error-red;
+  }
+
+  &.medium {
+    height: 34px;
+  }
+
+  &.large {
+    height: 37px;
+  }
+
+  &.huge {
+    height: 42px;
+  }
+
+  &.borderRadius-small {
+    border-radius: 2px;
+  }
+
+  &.borderRadius-large {
+    border-radius: 4px;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+
+  &::placeholder {
+    color: $gray-nobel;
+  }
+
+  &.error {
+    background-color: #fff6f6;
+    color: $error-red;
+
+    &::placeholder {
+      color: $error-red;
+    }
+  }
+
+  &.medium {
+    padding-left: 14px;
+  }
+
+  &.large {
+    padding-left: 19px;
+  }
+}

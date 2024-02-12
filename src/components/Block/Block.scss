@@ -1,0 +1,101 @@
+@import '../../styles/mixins/media';
+@import '../../styles/variables.scss';
+
+.root {
+  position: relative;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet-vertical {
+      width: 100%;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $gray-base;
+      margin-bottom: 4px;
+
+      @include tablet-vertical {
+        font-size: 18px;
+        // margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .borderLines {
+        overflow: hidden;
+        text-align: center;
+        // margin: 33px 0;
+        @include tablet-vertical {
+          position: relative;
+        }
+
+        span {
+          @include tablet-vertical {
+            background: $white-base;
+            padding: 0 10px;
+          }
+        }
+
+        h1, h2{
+          display: inline-block;
+          @include tablet-vertical {
+            background: $white-base;
+            padding: 0 10px;
+            display: inline;
+          }
+        }
+      }
+
+      .borderLines::before,
+      .borderLines::after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        background-color: $border-color;
+        height: 1px;
+      }
+
+      .borderLines::before {
+        right: 30px;
+        width: 200px;
+
+        @include tablet-vertical {
+          position: relative;
+          z-index: 1;
+          content: '';
+          margin: 0 auto; /* this centers the line to the full width specified */
+          position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+          top: 50%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 95%;
+          z-index: -1;
+        }
+
+        @include mobile {
+          width: 99%;
+        }
+      }
+
+      .borderLines::after {
+        left: 30px;
+        width: 200px;
+
+        @include tablet-vertical {
+          display: none;
+        }
+      }
+    }
+
+    .clearMargin {
+      margin: 0;
+    }
+  }
+}

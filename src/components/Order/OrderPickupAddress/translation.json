@@ -1,0 +1,12 @@
+{
+  "th_TH": {
+    "pickup_location": "Pickup Location",
+    "contact_phone": "ติดต่อ",
+    "get_direction": "ดูเส้นทาง"
+  },
+  "en_US": {
+    "pickup_location": "Pickup Location",
+    "contact_phone": "Contact",
+    "get_direction": "GET DIRECTION"
+  }
+}

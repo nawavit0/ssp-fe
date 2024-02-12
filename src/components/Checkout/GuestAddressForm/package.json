@@ -1,0 +1,6 @@
+{
+  "name": "GuestAddressForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GuestAddressForm.js"
+}
